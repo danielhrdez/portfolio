@@ -1,0 +1,22 @@
+@import url('base/_variables.css');
+
+@import url('components/_buttons.css');
+@import url('components/_slider.css');
+@import url('components/_links.css');
+
+@import url('layout/_header.css');
+@import url('layout/_footer.css');
+
+@import url('pages/_about.css');
+@import url('pages/_contact.css');
+@import url('pages/_experiences.css');
+@import url('pages/_home.css');
+@import url('pages/_projects.css');
+
+@import url('themes/_dark.css');
+@import url('themes/_light.css');
+
+* {
+  margin: 0;
+  padding: 0; 
+}
