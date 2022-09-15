@@ -1,7 +1,12 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.sayHelloWorld = void 0;
-function sayHelloWorld(world) {
-    return `Hello ${world}`;
+const active = (node) => {
+    const activeNode = document.querySelector('.active');
+    if (activeNode) {
+        activeNode.classList.remove('active');
+    }
+    node.classList.add('active');
+};
+
+const toggleTheme = () => {
+    const body = document.querySelector('body');
+    body.classList.toggle('dark');
 }
-exports.sayHelloWorld = sayHelloWorld;

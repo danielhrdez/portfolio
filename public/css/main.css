@@ -1,7 +1,6 @@
-@import url('base/_variables.css');
+@import url('base/_constants.css');
 
 @import url('components/_buttons.css');
-@import url('components/_slider.css');
 @import url('components/_links.css');
 
 @import url('layout/_header.css');
@@ -18,5 +17,21 @@
 
 * {
   margin: 0;
-  padding: 0; 
+  padding: 0;
+  background-color: var(--color-background);
+  scroll-behavior: smooth;
+  font-family: 'Roboto', sans-serif;
+}
+
+body.preload *{
+  animation-duration: 0s !important;
+  -webkit-animation-duration: 0s !important;
+  transition:
+    background-color 0s,
+    opacity 0s,
+    color 0s,
+    width 0s,
+    height 0s,
+    padding 0s,
+    margin 0s !important;
 }
