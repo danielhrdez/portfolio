@@ -1,15 +1,6 @@
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --color-primary: rgb(35, 35, 35);
-    --color-background: rgb(25, 25, 25);
-    --color-text: rgb(220, 220, 220);
-    --color-active: rgb(26, 180, 126);
-  }
-} */
-
 [data-theme="dark"] {
-  --color-primary: rgb(35, 35, 35);
-  --color-background: rgb(25, 25, 25);
+  --color-primary: rgb(59, 59, 59);
+  --color-background: rgb(45, 45, 45);
   --color-text: rgb(220, 220, 220);
-  --color-active: rgb(26, 180, 126);
+  --color-active: rgb(30, 209, 131);
 }

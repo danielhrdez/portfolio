@@ -5,6 +5,7 @@
 
 @import url('layout/_header.css');
 @import url('layout/_footer.css');
+@import url('layout/_main.css');
 
 @import url('pages/_about.css');
 @import url('pages/_contact.css');
@@ -21,6 +22,7 @@
   background-color: var(--color-background);
   scroll-behavior: smooth;
   font-family: 'Roboto', sans-serif;
+  color: var(--color-text);
 }
 
 body.preload *{

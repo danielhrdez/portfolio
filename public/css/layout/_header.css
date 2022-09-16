@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: calc(var(--size) + var(--margin) * 2);
+  height: var(--header-size);
   background-color: var(--color-primary);
   display: flex;
   justify-content: space-between;
@@ -31,13 +31,13 @@
   color: var(--color-text);
   transition: all 0.3s ease;
   text-align: center;
-  background-color: var(--color-primary);
+  background-color: transparent;
   border-radius: var(--border-radius);
   padding: var(--margin);
 }
 
 #header .links a:hover {
-  background-color: var(--color-background);
+  background-color: var(--color-primary);
   color: var(--color-active);
 }
 

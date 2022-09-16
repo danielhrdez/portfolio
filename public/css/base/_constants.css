@@ -7,4 +7,5 @@
   --size: 40px;
   --border-radius: 5px;
   --margin: 10px;
+  --header-size: calc(var(--size) + var(--margin) * 2);
 }
