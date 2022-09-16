@@ -3,27 +3,28 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 60px;
+  height: calc(var(--size) + var(--margin) * 2);
   background-color: var(--color-primary);
   display: flex;
   justify-content: space-between;
   z-index: 100;
+  padding: var(--margin);
+  box-sizing: border-box;
 }
 
 #header > * {
   width: var(--size);
   height: var(--size);
-  margin: 10px;
   background-color: var(--color-primary);
   border-radius: var(--border-radius);
 }
 
 #header .links {
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   display: flex;
-  gap: 20px;
   background-color: var(--color-primary);
+  width: 60%;
 }
 
 #header .links a {
@@ -31,8 +32,8 @@
   transition: all 0.3s ease;
   text-align: center;
   background-color: var(--color-primary);
-  padding: 10px;
   border-radius: var(--border-radius);
+  padding: var(--margin);
 }
 
 #header .links a:hover {
@@ -52,4 +53,10 @@
 
 #header .theme-btn #theme:hover {
   fill: var(--color-active);
+}
+
+@media (max-width: 768px) {
+  #header > * {
+    display: none;
+  }
 }

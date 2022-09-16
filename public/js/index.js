@@ -7,6 +7,25 @@ const active = (node) => {
 };
 
 const toggleTheme = () => {
-    const body = document.querySelector('body');
-    body.classList.toggle('dark');
+    const theme = localStorage.getItem("theme");
+    if (theme && theme == "dark") {
+        document.documentElement.setAttribute("data-theme", "light");
+    } else {
+        document.documentElement.setAttribute("data-theme", "dark");
+    }
+    console.log(theme);
 }
+
+const detectColorScheme = () => {
+    let theme = "light";
+    if (localStorage.getItem("theme")) {
+        theme = localStorage.getItem("theme");
+    } else if (!window.matchMedia) {
+        return false;
+    } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        theme = "dark";
+    }
+    console.log(theme);
+    localStorage.setItem("theme", theme);
+}
+detectColorScheme();
