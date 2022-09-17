@@ -1,107 +1,168 @@
+<!--
+  Author: Daniel Hernández de León
+  Email: alu0101331720@ull.edu.es
+  Date: 17-10-2022
+  Description: This is the main page of the website
+-->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daniel Hernández's Portfolio</title>
-  <link rel="stylesheet" href="css/main.css">
-  <script defer src="js/index.js"></script>
-</head>
-<body>
-  <header id="header">
-    <img class="image" src="assets/me.webp" alt="me">
-    
-    <nav class="links">
-      <a class="active" href="#main" onclick="active(this)">Home</a>
-      <a href="#about" onclick="active(this)">About</a>
-      <a href="#experiences" onclick="active(this)">Experiences</a>
-      <a href="#projects" onclick="active(this)">Projects</a>
-      <a href="#contact" onclick="active(this)">Contact</a>
-    </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daniel Hernández's Portfolio</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <script type="module" defer src="js/index.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <img class="image" src="assets/me.webp" alt="me" />
 
-    <svg class="theme-btn" onclick="toggleTheme()" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-      <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="theme" fill="var(--color-primary)" fill-rule="nonzero">
-          <path d="M12,22 C17.5228475,22 22,17.5228475 22,12 C22,6.4771525 17.5228475,2 12,2 C6.4771525,2 2,6.4771525 2,12 C2,17.5228475 6.4771525,22 12,22 Z M12,20.5 L12,3.5 C16.6944204,3.5 20.5,7.30557963 20.5,12 C20.5,16.6944204 16.6944204,20.5 12,20.5 Z" id="🎨-Color"></path>
+      <nav class="nav-link">
+        <a class="active" href="#main">Home</a>
+        <a href="#about">About</a>
+        <a href="#experiences">Experiences</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <svg
+        id="theme-btn"
+        viewBox="0 0 24 24"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+      >
+        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g id="theme" fill="var(--color-primary)" fill-rule="nonzero">
+            <path
+              d="M12,22 C17.5228475,22 22,17.5228475 22,12 C22,6.4771525 17.5228475,2 12,2 C6.4771525,2 2,6.4771525 2,12 C2,17.5228475 6.4771525,22 12,22 Z M12,20.5 L12,3.5 C16.6944204,3.5 20.5,7.30557963 20.5,12 C20.5,16.6944204 16.6944204,20.5 12,20.5 Z"
+              id="🎨-Color"
+            ></path>
+          </g>
         </g>
-      </g>
-    </svg>
-  </header>
+      </svg>
+    </header>
 
-  <main id="main">
-    <div id="title">
-      <h1>Daniel Hernández de León</h1>
-      <h2>Software Developer</h2>
-      <div class="underline"></div>
-    </div>
-
-    <div id="about" class="block-content">
-      <h1>About</h1>
-      <div class="about">
-        <h2>Education</h2>
-        <p>Currently working as a freelance software developer, I have worked on several projects, both web and mobile, using different technologies.</p>
-      </div>
-      <div class="about">
-        <h2>Skills</h2>
-        <p>Currently working as a freelance software developer, I have worked on several projects, both web and mobile, using different technologies.</p>
-      </div>
-      <div class="about">
-        <h2>Interests</h2>
-        <p>Currently working as a freelance software developer, I have worked on several projects, both web and mobile, using different technologies.</p>
-      </div>
-    </div>
-
-    <div id="experiences" class="block-content">
-      <h1>Experiences</h1>
-      <div class="experience">
+    <main id="main">
+      <div id="title">
+        <h1>Daniel Hernández de León</h1>
         <h2>Software Developer</h2>
-        <h3>Freelance</h3>
-        <p>Currently working as a freelance software developer, I have worked on several projects, both web and mobile, using different technologies.</p>
+        <div class="underline"></div>
       </div>
-      <div class="experience">
-        <h2>Software Developer</h2>
-        <h3>Freelance</h3>
-        <p>Currently working as a freelance software developer, I have worked on several projects, both web and mobile, using different technologies.</p>
-      </div>
-      <div class="experience">
-        <h2>Software Developer</h2>
-        <h3>Freelance</h3>
-        <p>Currently working as a freelance software developer, I have worked on several projects, both web and mobile, using different technologies.</p>
-      </div>
-    </div>
 
-    <div id="projects" class="block-content">
-      <h1>Projects</h1>
-      <div class="project">
-        <h2>Project 1</h2>
-        <p>Currently working as a freelance software developer, I have worked on several projects, both web and mobile, using different technologies.</p>
+      <div id="about" class="block-content">
+        <h1>About</h1>
+        <div class="about">
+          <h2>Education</h2>
+          <p>
+            Currently working as a freelance software developer, I have worked
+            on several projects, both web and mobile, using different
+            technologies.
+          </p>
+        </div>
+        <div class="about">
+          <h2>Skills</h2>
+          <p>
+            Currently working as a freelance software developer, I have worked
+            on several projects, both web and mobile, using different
+            technologies.
+          </p>
+        </div>
+        <div class="about">
+          <h2>Interests</h2>
+          <p>
+            Currently working as a freelance software developer, I have worked
+            on several projects, both web and mobile, using different
+            technologies.
+          </p>
+        </div>
       </div>
-      <div class="project">
-        <h2>Project 2</h2>
-        <p>Currently working as a freelance software developer, I have worked on several projects, both web and mobile, using different technologies.</p>
-      </div>
-      <div class="project">
-        <h2>Project 3</h2>
-        <p>Currently working as a freelance software developer, I have worked on several projects, both web and mobile, using different technologies.</p>
-      </div>
-    </div>
-  </main>
 
-  <footer id="contact">
-    <h1>Contact</h1>
-    <div class="contact">
-      <h2>Phone</h2>
-      <p>Currently working as a freelance software developer, I have worked on several projects, both web and mobile, using different technologies.</p>
-    </div>
-    <div class="contact">
-      <h2>Email</h2>
-      <p>Currently working as a freelance software developer, I have worked on several projects, both web and mobile, using different technologies.</p>
-    </div>
-    <div class="contact">
-      <h2>Address</h2>
-      <p>Currently working as a freelance software developer, I have worked on several projects, both web and mobile, using different technologies.</p>
-    </div>
-  </footer>
-</body>
+      <div id="experiences" class="block-content">
+        <h1>Experiences</h1>
+        <div class="experience">
+          <h2>Software Developer</h2>
+          <h3>Freelance</h3>
+          <p>
+            Currently working as a freelance software developer, I have worked
+            on several projects, both web and mobile, using different
+            technologies.
+          </p>
+        </div>
+        <div class="experience">
+          <h2>Software Developer</h2>
+          <h3>Freelance</h3>
+          <p>
+            Currently working as a freelance software developer, I have worked
+            on several projects, both web and mobile, using different
+            technologies.
+          </p>
+        </div>
+        <div class="experience">
+          <h2>Software Developer</h2>
+          <h3>Freelance</h3>
+          <p>
+            Currently working as a freelance software developer, I have worked
+            on several projects, both web and mobile, using different
+            technologies.
+          </p>
+        </div>
+      </div>
+
+      <div id="projects" class="block-content">
+        <h1>Projects</h1>
+        <div class="project">
+          <h2>Project 1</h2>
+          <p>
+            Currently working as a freelance software developer, I have worked
+            on several projects, both web and mobile, using different
+            technologies.
+          </p>
+        </div>
+        <div class="project">
+          <h2>Project 2</h2>
+          <p>
+            Currently working as a freelance software developer, I have worked
+            on several projects, both web and mobile, using different
+            technologies.
+          </p>
+        </div>
+        <div class="project">
+          <h2>Project 3</h2>
+          <p>
+            Currently working as a freelance software developer, I have worked
+            on several projects, both web and mobile, using different
+            technologies.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer id="contact">
+      <h1>Contact</h1>
+      <div class="contact">
+        <h2>Phone</h2>
+        <p>
+          Currently working as a freelance software developer, I have worked on
+          several projects, both web and mobile, using different technologies.
+        </p>
+      </div>
+      <div class="contact">
+        <h2>Email</h2>
+        <p>
+          Currently working as a freelance software developer, I have worked on
+          several projects, both web and mobile, using different technologies.
+        </p>
+      </div>
+      <div class="contact">
+        <h2>Address</h2>
+        <p>
+          Currently working as a freelance software developer, I have worked on
+          several projects, both web and mobile, using different technologies.
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>

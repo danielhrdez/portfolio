@@ -19,15 +19,15 @@
   border-radius: var(--border-radius);
 }
 
-#header .links {
+#header .nav-link {
   justify-content: space-between;
   align-items: center;
   display: flex;
   background-color: var(--color-primary);
-  width: 60%;
+  width: 50%;
 }
 
-#header .links a {
+#header .nav-link a {
   color: var(--color-text);
   transition: all 0.3s ease;
   text-align: center;
@@ -36,22 +36,22 @@
   padding: var(--margin);
 }
 
-#header .links a:hover {
+#header .nav-link a:hover {
   background-color: var(--color-primary);
   color: var(--color-active);
 }
 
-#header .links a.active {
+#header .nav-link a.active {
   background-color: var(--color-active);
   color: var(--color-primary);
 }
 
-#header .theme-btn #theme {
+#header #theme-btn #theme {
   transition: all 0.3s ease;
   fill: var(--color-text);
 }
 
-#header .theme-btn #theme:hover {
+#header #theme-btn #theme:hover {
   fill: var(--color-active);
 }
 
