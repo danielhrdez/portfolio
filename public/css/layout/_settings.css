@@ -1,0 +1,45 @@
+#settings {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  animation: blurAndColor .5s ease;
+}
+
+#settings.show {
+  display: block;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+@keyframes blurAndColor {
+  0% {
+    backdrop-filter: blur(0px);
+    background-color: transparent;
+  }
+  100% {
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+
+#settings-menu {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(var(--color-background));
+  width: 75%;
+  height: 75%;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  z-index: 1000;
+  overflow: hidden;
+}
+
+#settings-menu > * {
+  background-color: rgb(var(--color-background));
+}

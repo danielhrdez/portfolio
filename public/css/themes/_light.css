@@ -1,6 +1,6 @@
 [data-theme="light"] {
-  --color-primary: rgb(255, 255, 255);
-  --color-background: rgb(238, 238, 238);
-  --color-text: rgb(0, 0, 0);
-  --color-active: hsl(174, 75%, 40%);
+  --color-primary: 255, 255, 255;
+  --color-background: 238, 238, 238;
+  --color-text: 0, 0, 0;
+  --color-active: 25, 179, 163;
 }

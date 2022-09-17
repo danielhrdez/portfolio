@@ -1,6 +1,6 @@
 [data-theme="dark"] {
-  --color-primary: rgb(59, 59, 59);
-  --color-background: rgb(45, 45, 45);
-  --color-text: rgb(220, 220, 220);
-  --color-active: rgb(30, 209, 131);
+  --color-primary: 59, 59, 59;
+  --color-background: 45, 45, 45;
+  --color-text: 220, 220, 220;
+  --color-active: 30, 209, 131;
 }

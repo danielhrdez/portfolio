@@ -1,15 +1,14 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: var(--color-background);
+  background-color: rgb(var(--color-background));
   scroll-behavior: smooth;
   font-family: "Roboto", sans-serif;
-  color: var(--color-text);
+  color: rgb(var(--color-text));
 }
 
 a {
   text-decoration: none;
-  color: #000;
 }
 
 body.preload * {

@@ -4,6 +4,8 @@
  * @description This is the main function of the website
  */
 
+import {LocalItem, ThemeType} from './constants.js';
+
 /**
  * @desc This function is used to add the active class to the current link
  * @param {HTMLElement} link The link to add the active class
@@ -23,7 +25,7 @@ const active = (link) => {
  * @return {void} This function doesn't return anything
  */
 const addActiveEvents = () => {
-  const navLinks = document.querySelectorAll('.nav-link')[0];
+  const navLinks = document.getElementById('nav-links');
   navLinks.childNodes.forEach((link) => {
     link.addEventListener('click', () => {
       active(link);
@@ -31,29 +33,19 @@ const addActiveEvents = () => {
   });
 };
 
-const ThemeType = {
-  LIGHT: 'light',
-  DARK: 'dark',
-};
-
-const Items = {
-  THEME: 'theme',
-  LANGUAGE: 'language',
-};
-
 /**
  * @desc This function is used to change the theme of the website
  * @return {void} This function doesn't return anything
  */
 const toggleTheme = () => {
-  let theme = localStorage.getItem(Items.THEME);
+  let theme = localStorage.getItem(LocalItem.THEME);
   if (theme == ThemeType.DARK) {
     theme = ThemeType.LIGHT;
   } else {
     theme = ThemeType.DARK;
   }
   document.documentElement.setAttribute('data-theme', theme);
-  localStorage.setItem(Items.THEME, theme);
+  localStorage.setItem(LocalItem.THEME, theme);
 };
 
 /**
@@ -61,10 +53,31 @@ const toggleTheme = () => {
  * @return {void} This function doesn't return anything
  */
 const addThemeEvent = () => {
-  const themeButton = document.getElementById('theme-btn');
+  return;
+  const themeButton = document.getElementById('settings-btn');
   themeButton.addEventListener('click', () => {
     toggleTheme();
   });
+};
+
+const settingsExpand = () => {
+  const settings = document.getElementById('settings-btn');
+  const settingsMenu = document.getElementById('settings');
+  settings.addEventListener('click', () => {
+    settingsMenu.classList.add('show');
+    clicked = true;
+    disableScroll();
+  });
+};
+
+const disableScroll = () => {
+  const htmlBody = document.querySelector('html, body');
+  htmlBody.style.overflow = 'hidden';
+};
+
+const enableScroll = () => {
+  const htmlBody = document.querySelector('html, body');
+  htmlBody.style.overflow = 'auto';
 };
 
 /**
@@ -74,7 +87,7 @@ const addThemeEvent = () => {
  */
 const detectColorScheme = () => {
   let theme = ThemeType.DARK;
-  const localTheme = localStorage.getItem(Items.THEME);
+  const localTheme = localStorage.getItem(LocalItem.THEME);
   if (localTheme) {
     theme = localTheme;
   } else if (
@@ -83,7 +96,7 @@ const detectColorScheme = () => {
     theme = ThemeType.LIGHT;
   }
   document.documentElement.setAttribute('data-theme', theme);
-  localStorage.setItem(Items.THEME, theme);
+  localStorage.setItem(LocalItem.THEME, theme);
 };
 
 /**
@@ -94,6 +107,7 @@ const main = () => {
   addActiveEvents();
   detectColorScheme();
   addThemeEvent();
+  settingsExpand();
 };
 
 main();
