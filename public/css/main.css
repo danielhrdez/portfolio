@@ -3,9 +3,10 @@
 
 @import url("layout/_header.css");
 @import url("layout/_footer.css");
-@import url("layout/_main.css");
+@import url("layout/_content.css");
 @import url("layout/_block.css");
 @import url("layout/_settings.css");
+@import url("layout/_scrollbar.css");
 
 @import url("themes/_dark.css");
 @import url("themes/_light.css");

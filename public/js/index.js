@@ -65,8 +65,16 @@ const settingsExpand = () => {
   const settingsMenu = document.getElementById('settings');
   settings.addEventListener('click', () => {
     settingsMenu.classList.add('show');
-    clicked = true;
     disableScroll();
+  });
+};
+
+const settingsCollapse = () => {
+  const exit = document.getElementById('settings-exit');
+  const settingsMenu = document.getElementById('settings');
+  exit.addEventListener('click', () => {
+    settingsMenu.classList.remove('show');
+    enableScroll();
   });
 };
 
@@ -108,6 +116,7 @@ const main = () => {
   detectColorScheme();
   addThemeEvent();
   settingsExpand();
+  settingsCollapse();
 };
 
 main();
