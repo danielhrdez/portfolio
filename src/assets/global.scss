@@ -4,11 +4,8 @@
   background-color: rgb(var(--color-background));
   scroll-behavior: smooth;
   font-family: "Roboto", sans-serif;
-  color: rgb(var(--color-text));
-}
-
-a {
   text-decoration: none;
+  color: rgb(var(--color-text));
 }
 
 body.preload * {

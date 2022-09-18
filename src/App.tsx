@@ -1,24 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.sass';
+/**
+ * @author Daniel Hernández de León
+ * @file App.tsx
+ * @description This is the main App component
+ */
 
-function App() {
+import React from 'react';
+// import Settings from './components/Settings';
+import Header from './components/Header';
+// import Content from './components/Content';
+// import Footer from './components/Footer';
+
+/**
+ * @desc This is the main App component
+ * @returns {JSX.Element} The main App component
+ */
+function App(): JSX.Element {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <Settings /> */}
+      <Header />
+      {/* <Content /> */}
+      {/* <Footer /> */}
     </div>
   );
 }

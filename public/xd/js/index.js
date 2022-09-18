@@ -11,7 +11,7 @@ import {LocalItem, ThemeType} from './constants.js';
  * @param {HTMLElement} link The link to add the active class
  * @return {void} This function doesn't return anything
  */
-const active = (link) => {
+function active(link) {
   const activeString = 'active';
   const activeNode = link.parentNode.querySelector('.' + activeString);
   if (activeNode) {
@@ -24,7 +24,7 @@ const active = (link) => {
  * @desc This function is used to add the onclick event to the links
  * @return {void} This function doesn't return anything
  */
-const addActiveEvents = () => {
+function addActiveEvents() {
   const navLinks = document.getElementById('nav-links');
   navLinks.childNodes.forEach((link) => {
     link.addEventListener('click', () => {
@@ -37,9 +37,9 @@ const addActiveEvents = () => {
  * @desc This function is used to change the theme of the website
  * @return {void} This function doesn't return anything
  */
-const toggleTheme = () => {
+function toggleTheme() {
   let theme = localStorage.getItem(LocalItem.THEME);
-  if (theme == ThemeType.DARK) {
+  if (theme === ThemeType.DARK) {
     theme = ThemeType.LIGHT;
   } else {
     theme = ThemeType.DARK;
@@ -52,15 +52,14 @@ const toggleTheme = () => {
  * @desc This function is used to add the onclick event to the theme button
  * @return {void} This function doesn't return anything
  */
-const addThemeEvent = () => {
-  return;
+function addThemeEvent() {
   const themeButton = document.getElementById('settings-btn');
   themeButton.addEventListener('click', () => {
     toggleTheme();
   });
 };
 
-const settingsExpand = () => {
+function settingsExpand() {
   const settings = document.getElementById('settings-btn');
   const settingsMenu = document.getElementById('settings');
   settings.addEventListener('click', () => {
@@ -69,7 +68,7 @@ const settingsExpand = () => {
   });
 };
 
-const settingsCollapse = () => {
+function settingsCollapse() {
   const exit = document.getElementById('settings-exit');
   const settingsMenu = document.getElementById('settings');
   exit.addEventListener('click', () => {
@@ -78,12 +77,12 @@ const settingsCollapse = () => {
   });
 };
 
-const disableScroll = () => {
+function disableScroll() {
   const htmlBody = document.querySelector('html, body');
   htmlBody.style.overflow = 'hidden';
 };
 
-const enableScroll = () => {
+function enableScroll() {
   const htmlBody = document.querySelector('html, body');
   htmlBody.style.overflow = 'auto';
 };
@@ -93,7 +92,7 @@ const enableScroll = () => {
  * and set the theme of the website
  * @return {void} This function doesn't return anything
  */
-const detectColorScheme = () => {
+function detectColorScheme() {
   let theme = ThemeType.DARK;
   const localTheme = localStorage.getItem(LocalItem.THEME);
   if (localTheme) {
@@ -111,12 +110,13 @@ const detectColorScheme = () => {
  * @desc This function is the main function of the website
  * @return {void} This function doesn't return anything
  */
-const main = () => {
+function main() {
   addActiveEvents();
   detectColorScheme();
   addThemeEvent();
   settingsExpand();
   settingsCollapse();
+  document.addEventListener("DOMContentLoaded", () => document.body.className = "");
 };
 
 main();

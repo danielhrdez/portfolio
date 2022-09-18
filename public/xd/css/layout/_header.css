@@ -49,6 +49,7 @@
   background-color: rgb(var(--color-active));
   color: rgb(var(--color-primary));
 }
+
 #header #settings-btn {
   background-color: transparent;
   transition: all 0.3s ease;
