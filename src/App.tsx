@@ -5,10 +5,10 @@
  */
 
 import React from 'react';
-// import Settings from './components/Settings';
-import Header from './components/Header';
-// import Content from './components/Content';
-// import Footer from './components/Footer';
+import Settings from './layout/Settings';
+import Header from './layout/Header';
+import Content from './layout/Content';
+import Footer from './layout/Footer';
 
 /**
  * @desc This is the main App component
@@ -17,10 +17,10 @@ import Header from './components/Header';
 function App(): JSX.Element {
   return (
     <div>
-      {/* <Settings /> */}
+      <Settings />
       <Header />
-      {/* <Content /> */}
-      {/* <Footer /> */}
+      <Content />
+      <Footer />
     </div>
   );
 }

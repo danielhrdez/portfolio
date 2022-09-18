@@ -119,4 +119,4 @@ function main() {
   document.addEventListener("DOMContentLoaded", () => document.body.className = "");
 };
 
-main();
+export default main;

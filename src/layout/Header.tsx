@@ -7,17 +7,23 @@
 import React from 'react';
 import { ReactComponent as SettingsButton } from '../assets/settings-btn.svg';
 import './Header.scss';
+import me from '../assets/me.webp';
+import { disableScroll } from '../utils/scroll';
 
 /**
  * @desc This is the main Header component
  * @returns {JSX.Element} The main Header component
  */
 function Header(): JSX.Element {
+  const settingsExpand = (): void => {
+    document.getElementById('settings')?.classList.add('show');
+    disableScroll();
+  };
   return (
-    <header id="header">
-      <img className="image" src="assets/me.webp" alt="me" />
-      <nav id="nav-links">
-        <a className="active" href="#content">
+    <header className="header">
+      <img className="header__image" src={me} alt="me" />
+      <nav className="header__nav-links">
+        <a className="header__active" href="#content">
           Home
         </a>
         <a href="#about">About</a>
@@ -25,7 +31,10 @@ function Header(): JSX.Element {
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
-      <SettingsButton />
+      <SettingsButton
+        className='header__settings'
+        onClick={settingsExpand}
+      />
     </header>
   );
 }

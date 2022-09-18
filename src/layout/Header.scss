@@ -1,4 +1,4 @@
-#header {
+.header {
   position: fixed;
   top: 0;
   left: 0;
@@ -21,7 +21,7 @@
   }
 }
 
-#nav-links {
+.header__nav-links {
   align-items: center;
   display: flex;
   width: 50%;
@@ -43,14 +43,14 @@
       color: rgb(var(--color-active));
     }
 
-    &.active {
+    &.header__active {
       background-color: rgb(var(--color-active));
       color: rgb(var(--color-primary));
     }
   }
 }
 
-#settings-btn {
+.header__settings {
   background-color: transparent;
   transition: all 0.3s ease;
   fill: rgb(var(--color-text));
