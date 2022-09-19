@@ -16,11 +16,14 @@
   );
   animation: underline 10s infinite linear;
   background-size: 200% 100%;
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+  }
 }
 
 .title__underline {
   margin-top: var(--margin);
-  @include title;  
+  @include title;
 
   &::before {
     content: '';
