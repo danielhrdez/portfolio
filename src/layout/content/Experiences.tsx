@@ -12,7 +12,7 @@ import React from 'react';
 */
 function Experiences(): JSX.Element {
   return (
-    <div className="experiences block-content">
+    <div id="experiences" className="block-content">
       <h1>Experience</h1>
       <div className="experience">
         <h2>Software Developer</h2>

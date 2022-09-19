@@ -7,8 +7,8 @@
 import React from 'react';
 import { ReactComponent as SettingsExit } from '../assets/settings-exit.svg';
 import './Settings.scss';
-import {LocalItem, ThemeType} from '../data/constants';
-import { enableScroll } from '../utils/scroll';
+import { LocalItem, ThemeType } from '../data/constants';
+import { enableScroll } from '../utils/scrollFunctions';
 
 /**
  * @desc This is the main Settings component
@@ -20,7 +20,7 @@ function Settings(): JSX.Element {
     localStorage.setItem(LocalItem.THEME, theme);
   };
   const settingsCollapse = (): void => {
-    document.getElementById('settings')?.classList.remove('show');
+    document.querySelector('.settings')?.classList.remove('show');
     enableScroll();
   };
   return (

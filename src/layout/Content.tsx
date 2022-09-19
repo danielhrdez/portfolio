@@ -19,6 +19,7 @@ function Content(): JSX.Element {
   return (
     <main className="content">
       <Title />
+      Summary text about me
       <About />
       <Experiences />
       <Projects />

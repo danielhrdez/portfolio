@@ -12,7 +12,7 @@ import React from 'react';
  */
 function About(): JSX.Element {
   return (
-    <div className="about block-content">
+    <div id="about" className="block-content">
       <h1>About</h1>
       <div className="about__education">
         <h2>Education</h2>

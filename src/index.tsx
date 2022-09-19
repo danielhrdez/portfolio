@@ -8,11 +8,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './assets/global.scss';
 import App from './App';
-import main from './main';
+import { beforeLoad, afterLoad } from './utils/loadEvents';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
+beforeLoad();
 
 root.render(
   <React.StrictMode>
@@ -20,7 +22,7 @@ root.render(
   </React.StrictMode>
 );
 
-main();
+afterLoad();
 
 /*
 import reportWebVitals from './reportWebVitals'

@@ -13,7 +13,7 @@ import './Footer.scss';
  */
 function Footer(): JSX.Element {
   return (
-    <footer className="footer">
+    <footer id="footer">
       <h1>Contact</h1>
       <div className="footer__phone">
         <h2>Phone</h2>

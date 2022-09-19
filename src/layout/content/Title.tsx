@@ -5,6 +5,7 @@
  */
 
 import React from 'react';
+import './Title.scss';
 
 /**
  * @desc This is the Title component

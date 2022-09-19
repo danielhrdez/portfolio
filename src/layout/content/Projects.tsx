@@ -12,7 +12,7 @@ import React from 'react';
  */
 function Projects(): JSX.Element {
   return (
-    <div className="content__projects block-content">
+    <div id="projects" className="block-content">
       <h1>Projects</h1>
       <div className="project">
         <h2>Project 1</h2>
