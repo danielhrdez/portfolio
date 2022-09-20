@@ -17,7 +17,7 @@ import Projects from './content/Projects';
  */
 function Content(): JSX.Element {
   return (
-    <main className="content">
+    <main id="content">
       <Title />
       Summary text about me
       <About />

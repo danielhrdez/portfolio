@@ -5,31 +5,34 @@
  */
 
 import React, { useState } from 'react';
-import { ReactComponent as SettingsButton } from '../assets/settings-btn.svg';
+import { ReactComponent as SettingsButton } from '../assets/images/settings-btn.svg';
 import './Header.scss';
-import me from '../assets/me.webp';
-import { disableScroll } from '../utils/scrollFunctions';
+import me from '../assets/images/me.webp';
+import { disableScroll } from '../utils/scrollfunctions';
 import HeaderLink from '../components/HeaderLink';
+import LanguageJSON from '../data/language.json';
+import getLanguage from '../utils/getlanguage';
 
 /**
  * @desc This is the main Header component
  * @returns {JSX.Element} The main Header component
  */
 function Header(): JSX.Element {
+  const language = getLanguage();
   const settingsExpand = (): void => {
     document.querySelector('.settings')?.classList.add('show');
     disableScroll();
   };
-  const [activeLink, setActiveLink] = useState('Home');
+  const [activeLink, setActiveLink] = useState(LanguageJSON.Home[language]);
   const handleLinkClick = (link: string): void => {
     setActiveLink(link);
   };
   const links = [
-    { href: '#title', text: 'Home' },
-    { href: '#about', text: 'About' },
-    { href: '#experiences', text: 'Experiences' },
-    { href: '#projects', text: 'Projects' },
-    { href: '#footer', text: 'Contact' },
+    { href: '#content', text: LanguageJSON.Home[language] },
+    { href: '#about', text: LanguageJSON.About[language] },
+    { href: '#experiences', text: LanguageJSON.Experience[language] },
+    { href: '#projects', text: LanguageJSON.Projects[language] },
+    { href: '#footer', text: LanguageJSON.Contact[language] },
   ];
   return (
     <header className="header">

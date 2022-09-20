@@ -1,0 +1,78 @@
+{
+  "Software": {
+    "en": "Software Developer",
+    "es": "Desarrollador de Software"
+  },
+  "Home": {
+    "en": "Home",
+    "es": "Inicio"
+  },
+  "About": {
+    "en": "About",
+    "es": "Información"
+  },
+  "Experience": {
+    "en": "Experience",
+    "es": "Experiencia"
+  },
+  "Projects": {
+    "en": "Projects",
+    "es": "Proyectos"
+  },
+  "Contact": {
+    "en": "Contact",
+    "es": "Contacto"
+  },
+  "Education": {
+    "en": "Education",
+    "es": "Educación"
+  },
+  "Skills": {
+    "en": "Skills",
+    "es": "Habilidades"
+  },
+  "Interests": {
+    "en": "Interests",
+    "es": "Intereses"
+  },
+  "Languages": {
+    "en": "Languages",
+    "es": "Idiomas"
+  },
+  "Phone": {
+    "en": "Phone",
+    "es": "Teléfono"
+  },
+  "Email": {
+    "en": "Email",
+    "es": "Correo"
+  },
+  "Address": {
+    "en": "Address",
+    "es": "Dirección"
+  },
+  "Theme": {
+    "en": "Theme",
+    "es": "Tema"
+  },
+  "Light": {
+    "en": "Light",
+    "es": "Claro"
+  },
+  "Dark": {
+    "en": "Dark",
+    "es": "Oscuro"
+  },
+  "Language": {
+    "en": "Language",
+    "es": "Idioma"
+  },
+  "English": {
+    "en": "English",
+    "es": "Inglés"
+  },
+  "Spanish": {
+    "en": "Spanish",
+    "es": "Español"
+  }
+}

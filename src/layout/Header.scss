@@ -51,28 +51,25 @@
 }
 
 .header__settings {
-  background-color: transparent;
-  transition: all 0.3s ease;
-  fill: rgb(var(--color-text));
   width: calc(var(--size) * 0.75);
+  
+  > g {
+    transition: all 1s ease;
+    fill: rgb(var(--color-text));
+    cursor: pointer;
+    pointer-events: bounding-box;
+    transform-box: fill-box;
+    transform-origin: center;
 
-  &:hover {
-    fill: rgb(var(--color-active));
-    animation: rotate 1s ease;
-  }
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(180deg);
+    &:hover {
+      fill: rgb(var(--color-active));
+      rotate: 180deg;
+    }
   }
 }
 
 @media (max-width: 768px) {
-  #header > * {
+  .header > * {
     display: none;
   }
 }

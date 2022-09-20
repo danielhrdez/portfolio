@@ -28,7 +28,13 @@ export enum ThemeType {
   DARK = 'dark',
 };
 
+export enum Language {
+  ENGLISH = 'en',
+  SPANISH = 'es',
+};
+
 export default {
   LocalItem,
   ThemeType,
+  Language,
 };

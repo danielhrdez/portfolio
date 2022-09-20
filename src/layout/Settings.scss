@@ -1,35 +1,4 @@
-@mixin blurry {
-  backdrop-filter: blur(5px);
-  background-color: rgba(0, 0, 0, 0.25);
-}
-
-.settings {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 999;
-  animation: blurAndColor .5s ease;
-
-  &.show {
-    display: block;
-    @include blurry;
-  }
-}
-
-@keyframes blurAndColor {
-  0% {
-    backdrop-filter: blur(0px);
-    background-color: transparent;
-  }
-  100% {
-    @include blurry;
-  }
-}
-
-.settings__menu {
+@mixin menu_settings {
   position: fixed;
   left: 50%;
   top: 50%;
@@ -41,31 +10,122 @@
   box-shadow: var(--box-shadow);
   z-index: 1000;
   overflow: hidden;
-  animation: menu .25s ease;
+  padding: var(--margin);
 
   & > * {
     background-color: rgb(var(--color-background));
   }
 }
 
-@keyframes menu {
-  0% {
-    transform: translate(-50%, -50%) scale(0.75);
+.settings {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  transition: all 0.5s ease;
+  backdrop-filter: none;
+  background-color: transparent;
+
+  &.show {
+    display: block;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.25);
+    animation: settings 0.5s ease;
+
+    > .settings__menu {
+      @include menu_settings;
+      animation: menu_in 0.5s ease;
+    }
   }
-  100% {
-    transform: translate(-50%, -50%) scale(1);
+
+  &.hiding {
+    display: block;
+    backdrop-filter: none;
+    background-color: transparent;
+
+    > .settings__menu {
+      @include menu_settings;
+      animation: menu_out 0.501s ease;
+    }
+  }
+
+  @keyframes settings {
+    0% {
+      backdrop-filter: none;
+      background-color: transparent;
+    }
+    100% {
+      backdrop-filter: blur(5px);
+      background-color: rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  @keyframes menu_in {
+    0% {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0.75);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+
+  @keyframes menu_out {
+    0% {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0.75);
+    }
   }
 }
 
 .settings__exit {
   position: absolute;
+  padding: inherit;
   top: 0;
   right: 0;
-  width: 50px;
-  height: 50px;
-  background-color: transparent;
-  border: none;
-  outline: none;
+  width: var(--size);
+  height: var(--size);
   cursor: pointer;
-  transition: all 0.3s ease;
+  fill: rgb(var(--color-text));
+
+  &:active {
+    fill: rgb(var(--color-active));
+  }
+}
+
+.settings__item {
+  display: flex;
+  flex-direction: column;
+  padding: var(--margin);
+
+  > h2 {
+    padding: var(--margin);
+  }
+
+  // > button {
+  //   margin: var(--margin);
+  //   padding: var(--padding);
+  //   border: none;
+  //   border-radius: var(--border-radius);
+  //   background-color: rgb(var(--color-background));
+  //   box-shadow: var(--box-shadow);
+  //   color: rgb(var(--color-text));
+  //   font-size: 1rem;
+  //   font-weight: 500;
+  //   cursor: pointer;
+  //   transition: all 0.25s ease;
+
+  //   &:active {
+  //     background-color: rgb(var(--color-active));
+  //     color: rgb(var(--color-background));
+  //   }
+  // }
 }

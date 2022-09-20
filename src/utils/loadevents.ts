@@ -1,4 +1,4 @@
-import detectColorScheme from "./detectColorScheme";
+import detectColorScheme from "./detectcolorscheme";
 
 export function beforeLoad(): void {
   detectColorScheme();
