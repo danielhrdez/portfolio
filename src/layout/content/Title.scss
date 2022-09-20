@@ -41,3 +41,10 @@
     background-position: 1000% 0;
   }
 }
+
+@media (max-width: 600px) {
+  .title {
+  transform: translateX(0);
+  margin-left: 0;
+  }
+}
