@@ -16,12 +16,12 @@ import Footer from './layout/Footer';
  */
 function App(): JSX.Element {
   return (
-    <div>
+    <>
       <Settings />
       <Header />
       <Content />
       <Footer />
-    </div>
+    </>
   );
 }
 

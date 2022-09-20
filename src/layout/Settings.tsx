@@ -6,7 +6,7 @@
 
 import React from 'react';
 import { ReactComponent as SettingsExit } from '../assets/images/settings-exit.svg';
-import './Settings.scss';
+import './scss/Settings.scss';
 import { enableScroll } from '../utils/scrollfunctions';
 import LanguageSettings from './settings/LanguageSettings';
 import ThemeSettings from './settings/ThemeSettings';

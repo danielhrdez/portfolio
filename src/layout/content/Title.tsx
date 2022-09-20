@@ -5,7 +5,7 @@
  */
 
 import React from 'react';
-import './Title.scss';
+import './scss/Title.scss';
 import LanguageJSON from '../../data/language.json';
 import getLanguage from '../../utils/getlanguage';
 

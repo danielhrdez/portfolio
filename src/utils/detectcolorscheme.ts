@@ -1,8 +1,8 @@
 import { LocalItem, ThemeType } from '../data/constants';
 
-export function detectColorScheme(): void {
-  let theme = String(ThemeType.DARK);
-  const localTheme = localStorage.getItem(LocalItem.THEME);
+export function detectColorScheme(): ThemeType {
+  let theme = ThemeType.DARK;
+  const localTheme = localStorage.getItem(LocalItem.THEME) as ThemeType;
   if (localTheme !== null) {
     theme = localTheme;
   } else if (
@@ -12,6 +12,7 @@ export function detectColorScheme(): void {
   }
   document.documentElement.setAttribute('data-theme', theme);
   localStorage.setItem(LocalItem.THEME, theme);
+  return theme;
 };
 
 export default detectColorScheme;

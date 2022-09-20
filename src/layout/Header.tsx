@@ -6,7 +6,7 @@
 
 import React, { useState } from 'react';
 import { ReactComponent as SettingsButton } from '../assets/images/settings-btn.svg';
-import './Header.scss';
+import './scss/Header.scss';
 import me from '../assets/images/me.webp';
 import { disableScroll } from '../utils/scrollfunctions';
 import HeaderLink from '../components/HeaderLink';

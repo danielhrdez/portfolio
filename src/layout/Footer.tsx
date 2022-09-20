@@ -5,7 +5,7 @@
  */
 
 import React from 'react';
-import './Footer.scss';
+import './scss/Footer.scss';
 
 /**
  * @desc This is the main Footer component

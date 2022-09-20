@@ -5,7 +5,7 @@
  */
 
 import React from 'react';
-import './Content.scss';
+import './scss/Content.scss';
 import Title from './content/Title';
 import About from './content/About';
 import Experiences from './content/Experiences';

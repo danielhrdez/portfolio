@@ -9,6 +9,7 @@ import ReactDOM from 'react-dom/client';
 import './assets/scss/global.scss';
 import App from './App';
 import { beforeLoad, afterLoad } from './utils/loadevents';
+// import reportWebVitals from './reportWebVitals'
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -24,7 +25,4 @@ root.render(
 
 afterLoad();
 
-/*
-import reportWebVitals from './reportWebVitals'
-reportWebVitals(console.log)
-*/
+// reportWebVitals(beforeLoad).catch(console.error);

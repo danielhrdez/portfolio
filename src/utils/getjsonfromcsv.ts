@@ -8,8 +8,7 @@ export interface ICSV {
   [key: string]: ICSVRow;
 };
 
-export function getJSONFromCSV(csvFilename: string): ICSV {
-  const csv = fs.readFileSync(csvFilename, 'utf8');
+export function getJSONFromCSV(csv: string): ICSV {
   const lines = csv.split('\n');
   const result: ICSV = {};
   const headers = lines[0].split(',');

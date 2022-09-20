@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './ToggleSwitch.scss';
+import './scss/ToggleSwitch.scss';
 
 interface ToggleSwitchProps {
   checked?: boolean;
