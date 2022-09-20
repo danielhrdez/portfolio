@@ -6,6 +6,8 @@
 
 import React from 'react';
 import './Title.scss';
+import LanguageJSON from '../../data/language.json';
+import getLanguage from '../../utils/getlanguage';
 
 /**
  * @desc This is the Title component
@@ -15,7 +17,7 @@ function Title(): JSX.Element {
   return (
     <div className="title">
       <h1>Daniel Hernández de León</h1>
-      <h2>Software Developer</h2>
+      <h2>{LanguageJSON.Software[getLanguage()]}</h2>
       <div className="title__underline"></div>
     </div>
   );

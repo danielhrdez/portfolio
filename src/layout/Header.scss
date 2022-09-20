@@ -68,8 +68,19 @@
   }
 }
 
-@media (max-width: 768px) {
-  .header > * {
+@media (max-aspect-ratio: 1/1) {
+  .header > img {
     display: none;
+  }
+}
+
+@media (max-aspect-ratio: 2/3) {
+  .header {
+    & > img {
+      display: inline-block;
+    }
+    & > nav {
+      display: none;
+    }
   }
 }
