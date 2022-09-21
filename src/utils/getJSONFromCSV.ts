@@ -1,14 +1,25 @@
-import fs from 'fs';
-
-export interface ICSVRow {
+/**
+ * @desc Interface for the CSV Rows.
+ * @interface ICSVRow
+ */
+interface ICSVRow {
   [key: string]: string;
 }
 
-export interface ICSV {
+/**
+ * @desc Interface for the CSV.
+ * @interface ICSV
+ */
+interface ICSV {
   [key: string]: ICSVRow;
 };
 
-export function getJSONFromCSV(csv: string): ICSV {
+/**
+ * @desc This function returns the JSON from the CSV.
+ * @param {string} csv This is the CSV string.
+ * @returns {ICSV} This function returns the JSON from the CSV.
+ */
+function getJSONFromCSV(csv: string): ICSV {
   const lines = csv.split('\n');
   const result: ICSV = {};
   const headers = lines[0].split(',');

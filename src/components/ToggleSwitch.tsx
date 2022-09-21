@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import './scss/ToggleSwitch.scss';
 
+/**
+ * @desc This is the ToggleSwitch props interface
+ * @interface ToggleSwitchProps
+ */
 interface ToggleSwitchProps {
   checked?: boolean;
   onChange: (checked: boolean) => void;
@@ -8,6 +12,11 @@ interface ToggleSwitchProps {
   text2: string;
 }
 
+/**
+ * @desc This is the ToggleSwitch component
+ * @param {IToggleSwitchProps} props The ToggleSwitch props
+ * @returns {JSX.Element} The ToggleSwitch component
+ */
 function ToggleSwitch(props: ToggleSwitchProps): JSX.Element {
   const [checked, setChecked] = useState(props.checked ?? false);
   return (

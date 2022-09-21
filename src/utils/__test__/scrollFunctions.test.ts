@@ -1,4 +1,4 @@
-import { enableScroll, disableScroll } from "../scrollfunctions";
+import { enableScroll, disableScroll } from "../scrollFunctions";
 
 describe("scrollFunctions", () => {
   it("should return an object with enableScroll", () => {

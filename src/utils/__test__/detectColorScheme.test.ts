@@ -1,4 +1,4 @@
-import detectColorScheme from "../detectcolorscheme";
+import detectColorScheme from "../detectColorScheme";
 import { ThemeType } from "../../data/constants";
 
 describe("detectColorScheme", () => {

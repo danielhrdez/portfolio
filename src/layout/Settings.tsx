@@ -1,13 +1,7 @@
-/**
- * @author Daniel Hernández de León
- * @file Settings.tsx
- * @description This is the main Settings component
- */
-
 import React from 'react';
 import { ReactComponent as SettingsExit } from '../assets/images/settings-exit.svg';
 import './scss/Settings.scss';
-import { enableScroll } from '../utils/scrollfunctions';
+import { enableScroll } from '../utils/scrollFunctions';
 import LanguageSettings from './settings/LanguageSettings';
 import ThemeSettings from './settings/ThemeSettings';
 

@@ -1,4 +1,4 @@
-import getJSONFromCSV from "../getjsonfromcsv";
+import getJSONFromCSV from "../getJSONFromCSV";
 
 describe("getJSONFromCSV", () => {
   it("should return an array of objects", () => {

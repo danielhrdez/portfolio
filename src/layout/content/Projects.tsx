@@ -1,9 +1,3 @@
-/**
- * @author Daniel Hernández de León
- * @file Projects.tsx
- * @description This is the main Projects of the page
- */
-
 import React from 'react';
 
 /**

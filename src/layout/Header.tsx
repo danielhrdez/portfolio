@@ -1,17 +1,11 @@
-/**
- * @author Daniel Hernández de León
- * @file Header.tsx
- * @description This is the main Header component
- */
-
 import React, { useState } from 'react';
 import { ReactComponent as SettingsButton } from '../assets/images/settings-btn.svg';
 import './scss/Header.scss';
 import me from '../assets/images/me.webp';
-import { disableScroll } from '../utils/scrollfunctions';
+import { disableScroll } from '../utils/scrollFunctions';
 import HeaderLink from '../components/HeaderLink';
 import LanguageJSON from '../data/language.json';
-import getLanguage from '../utils/getlanguage';
+import getLanguage from '../utils/getLanguage';
 
 /**
  * @desc This is the main Header component

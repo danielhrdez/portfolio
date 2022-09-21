@@ -42,7 +42,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "language": "npx ts-node src/utils/makelanguagejson.ts",
+    "language": "npx ts-node scripts/makeLanguageJSON.ts",
     "start": "react-scripts start",
     "build": "npm run language ; react-scripts build",
     "test": "react-scripts test",

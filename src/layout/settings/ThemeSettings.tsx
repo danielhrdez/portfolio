@@ -1,16 +1,14 @@
-/**
- * @author Daniel Hernández de León
- * @file Settings.tsx
- * @description This is the main Settings component
- */
-
 import React from 'react';
 import { LocalItem, ThemeType } from '../../data/constants';
 import LanguageJSON from '../../data/language.json';
-import getLanguage from '../../utils/getlanguage';
+import getLanguage from '../../utils/getLanguage';
 import ToggleSwitch from '../../components/ToggleSwitch';
 
-interface LanguageSettingsProps {
+/**
+ * @desc This is the ThemeSettings props interface
+ * @interface IThemeSettingsProps
+ */
+interface ILanguageSettingsProps {
   className?: string;
 }
 
@@ -18,7 +16,7 @@ interface LanguageSettingsProps {
 * @desc This is the main Settings component
 * @returns {JSX.Element} The main Settings component
 */
-function ThemeSettings(props: LanguageSettingsProps): JSX.Element {
+function ThemeSettings(props: ILanguageSettingsProps): JSX.Element {
   const language = getLanguage();
   const setTheme = (theme: ThemeType = ThemeType.DARK): void => {
     document.documentElement.setAttribute('data-theme', theme);

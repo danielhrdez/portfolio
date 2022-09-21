@@ -1,6 +1,10 @@
 import fs from 'fs';
-import getJSONFromCSV from "./getjsonfromcsv";
+import getJSONFromCSV from "../src/utils/getJSONFromCSV";
 
+/**
+ * @desc This function generates the language.json file.
+ * @returns {void} This function returns nothing.
+ */
 function makeLanguageJSON(): void {
   const csv = fs.readFileSync('./src/data/language.csv', 'utf8');
   const data = getJSONFromCSV(csv);

@@ -1,4 +1,4 @@
-import getLanguage from "../getlanguage";
+import getLanguage from "../getLanguage";
 
 describe("getLanguage", () => {
   it("should return the language", () => {

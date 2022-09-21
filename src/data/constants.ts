@@ -1,10 +1,4 @@
 /**
- * @author Daniel Hernández de León
- * @file constants.ts
- * @description This is the file with the constants of the website
- */
-
-/**
  * @desc This enum is used to store the local storage items
  * @enum {string}
  * @readonly
@@ -28,6 +22,13 @@ export enum ThemeType {
   DARK = 'dark',
 };
 
+/**
+ * @desc This enum is used to store the languages
+ * @enum {string}
+ * @readonly
+ * @property {string} ENGLISH The English language
+ * @property {string} SPANISH The Spanish language
+ */
 export enum Language {
   ENGLISH = 'en',
   SPANISH = 'es',

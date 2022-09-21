@@ -1,6 +1,10 @@
 import { LocalItem, ThemeType } from '../data/constants';
 
-export function detectColorScheme(): ThemeType {
+/**
+ * @desc This function returns the color scheme of the page.
+ * @returns {ThemeType} This function returns the color scheme of the page.
+ */
+function detectColorScheme(): ThemeType {
   let theme = ThemeType.DARK;
   const localTheme = localStorage.getItem(LocalItem.THEME) as ThemeType;
   if (localTheme !== null) {

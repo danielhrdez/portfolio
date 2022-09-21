@@ -1,13 +1,7 @@
-/**
- * @author Daniel Hernández de León
- * @file Title.tsx
- * @description This is the main Title of the page
- */
-
 import React from 'react';
 import './scss/Title.scss';
 import LanguageJSON from '../../data/language.json';
-import getLanguage from '../../utils/getlanguage';
+import getLanguage from '../../utils/getLanguage';
 
 /**
  * @desc This is the Title component

@@ -1,4 +1,4 @@
-import { beforeLoad, afterLoad } from '../loadevents';
+import { beforeLoad, afterLoad } from '../loadEvents';
 
 describe('loadEvents', () => {
   it('should return an object with beforeLoad', () => {

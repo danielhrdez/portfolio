@@ -1,5 +1,9 @@
 import React from 'react';
 
+/**
+ * @desc This is the HeaderLink Props interface
+ * @interface HeaderLinkProps
+ */
 interface IHeaderLinkProps {
   href: string;
   text: string;
@@ -7,7 +11,12 @@ interface IHeaderLinkProps {
   onClick: (link: string) => void;
 }
 
-export function HeaderLink(props: IHeaderLinkProps): JSX.Element {
+/**
+ * @desc This is the HeaderLink component
+ * @param {IHeaderLinkProps} props The HeaderLink props
+ * @returns {JSX.Element} The HeaderLink component
+ */
+function HeaderLink(props: IHeaderLinkProps): JSX.Element {
   const handleClick = (linkID: string): void => {
     props.onClick(linkID);
   };

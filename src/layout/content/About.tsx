@@ -1,9 +1,3 @@
-/**
- * @author Daniel Hernández de León
- * @file About.tsx
- * @description This is the main About of the page
- */
-
 import React from 'react';
 
 /**

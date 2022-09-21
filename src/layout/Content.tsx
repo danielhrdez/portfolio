@@ -1,9 +1,3 @@
-/**
- * @author Daniel Hernández de León
- * @file Content.tsx
- * @description This is the main Content of the page
- */
-
 import React from 'react';
 import './scss/Content.scss';
 import Title from './content/Title';

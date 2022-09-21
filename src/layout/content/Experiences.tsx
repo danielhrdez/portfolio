@@ -1,9 +1,3 @@
-/**
- * @author Daniel Hernández de León
- * @file Experiences.tsx
- * @description This is the main Experiences of the page
- */
-
 import React from 'react';
 
 /**

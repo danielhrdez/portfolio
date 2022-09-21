@@ -1,9 +1,3 @@
-/**
- * @author Daniel Hernández de León
- * @file Footer.tsx
- * @description This is the main Footer component
- */
-
 import React from 'react';
 import './scss/Footer.scss';
 

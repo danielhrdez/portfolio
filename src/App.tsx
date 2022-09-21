@@ -1,9 +1,3 @@
-/**
- * @author Daniel Hernández de León
- * @file App.tsx
- * @description This is the main App component
- */
-
 import React from 'react';
 import Settings from './layout/Settings';
 import Header from './layout/Header';
