@@ -20,7 +20,7 @@ Portfolio with my experiences and projects.
 
     .
     ├── public          # static files and where index.html is.
-    ├── script          # script files.
+    ├── scripts         # script files.
     └── src             # main source files.
         ├── assets      # images and global scss.
         ├── components  # react global components.

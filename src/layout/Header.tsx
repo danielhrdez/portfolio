@@ -4,29 +4,27 @@ import './scss/Header.scss';
 import me from '../assets/images/me.webp';
 import { disableScroll } from '../utils/scrollFunctions';
 import HeaderLink from '../components/HeaderLink';
-import LanguageJSON from '../data/language.json';
-import getLanguage from '../utils/getLanguage';
+import language from '../utils/language';
 
 /**
  * @desc This is the main Header component
  * @returns {JSX.Element} The main Header component
  */
 function Header(): JSX.Element {
-  const language = getLanguage();
   const settingsExpand = (): void => {
     document.querySelector('.settings')?.classList.add('show');
     disableScroll();
   };
-  const [activeLink, setActiveLink] = useState(LanguageJSON.Home[language]);
+  const [activeLink, setActiveLink] = useState(language('Home'));
   const handleLinkClick = (link: string): void => {
     setActiveLink(link);
   };
   const links = [
-    { href: '#content', text: LanguageJSON.Home[language] },
-    { href: '#about', text: LanguageJSON.About[language] },
-    { href: '#experiences', text: LanguageJSON.Experience[language] },
-    { href: '#projects', text: LanguageJSON.Projects[language] },
-    { href: '#footer', text: LanguageJSON.Contact[language] },
+    { href: '#content', text: language('Home') },
+    { href: '#about', text: language('About') },
+    { href: '#experiences', text: language('Experience') },
+    { href: '#projects', text: language('Projects') },
+    { href: '#footer', text: language('Contact') },
   ];
   return (
     <header className="header">

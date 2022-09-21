@@ -1,7 +1,6 @@
 import React from 'react';
 import { LocalItem, Language } from '../../data/constants';
-import LanguageJSON from '../../data/language.json';
-import getLanguage from '../../utils/getLanguage';
+import language from '../../utils/language';
 import ToggleSwitch from '../../components/ToggleSwitch';
 
 /**
@@ -18,17 +17,16 @@ interface ILanguageSettingsProps {
  * @returns {JSX.Element} The main Settings component
  */
 function LanguageSettings(props: ILanguageSettingsProps): JSX.Element {
-  const language = getLanguage();
   const setLanguage = (language: Language = Language.ENGLISH): void => {
     localStorage.setItem(LocalItem.LANGUAGE, language);
     setTimeout(() => window.location.reload(), 300);
   };
   return (
     <li className={props.className}>
-      <h2>{LanguageJSON.Language[language]}</h2>
+      <h2>{language('Language')}</h2>
       <ToggleSwitch
-        text1={LanguageJSON.English[language]}
-        text2={LanguageJSON.Spanish[language]}
+        text1={language('English')}
+        text2={language('Spanish')}
         onChange={(checked: boolean) => {
           if (checked) {
             setLanguage(Language.SPANISH);

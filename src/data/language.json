@@ -74,5 +74,9 @@
   "Spanish": {
     "en": "Spanish",
     "es": "Español"
+  },
+  "Summary": {
+    "en": "Summary text about me",
+    "es": " Texto de resumen sobre mi"
   }
 }

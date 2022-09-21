@@ -22,5 +22,5 @@
   },
   "include": [
     "src"
-, "script/makeLanguageJSON.ts", "src/utils/getJSONFromCSV.ts", "src/utils/__test__/getJSONFromCSV.test.ts"  ]
+, "scripts/makeLanguageJSON.ts", "src/utils/getJSONFromCSV.ts", "src/utils/__test__/getJSONFromCSV.test.ts"  ]
 }

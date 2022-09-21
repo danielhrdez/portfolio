@@ -4,6 +4,7 @@ import Title from './content/Title';
 import About from './content/About';
 import Experiences from './content/Experiences';
 import Projects from './content/Projects';
+import language from '../utils/language';
 
 /**
  * @desc This is the Content component
@@ -13,7 +14,7 @@ function Content(): JSX.Element {
   return (
     <main id="content">
       <Title />
-      Summary text about me
+      {language('Summary')}
       <About />
       <Experiences />
       <Projects />
