@@ -3,6 +3,9 @@
 Portfolio with my experiences and projects.
 
 ![CI](https://github.com/DanielHrdez/portfolio/actions/workflows/ci.yml/badge.svg)
+
+## Technologies
+
 ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
