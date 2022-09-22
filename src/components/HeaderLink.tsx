@@ -4,7 +4,7 @@ import React from 'react';
  * @desc This is the HeaderLink Props interface
  * @interface HeaderLinkProps
  */
-interface IHeaderLinkProps {
+interface HeaderLinkProps {
   href: string;
   text: string;
   active: boolean;
@@ -13,10 +13,10 @@ interface IHeaderLinkProps {
 
 /**
  * @desc This is the HeaderLink component
- * @param {IHeaderLinkProps} props The HeaderLink props
+ * @param {HeaderLinkProps} props The HeaderLink props
  * @returns {JSX.Element} The HeaderLink component
  */
-function HeaderLink(props: IHeaderLinkProps): JSX.Element {
+function HeaderLink(props: HeaderLinkProps): JSX.Element {
   const handleClick = (linkID: string): void => {
     props.onClick(linkID);
   };

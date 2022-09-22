@@ -15,9 +15,11 @@ function main(): void {
   const input = './src/data/language.csv';
   const output = './src/data/language.json';
   makeLanguageJSON(input, output);
-  fs.watchFile(input, () => {
-    makeLanguageJSON(input, output);
-  });
+  if (process.argv[2] === '--watch') {
+    fs.watchFile(input, () => {
+      makeLanguageJSON(input, output);
+    });
+  }
 }
 
 main();

@@ -1,4 +1,5 @@
 import React from 'react';
+import Block from '../../components/Block';
 
 /**
  * @desc This is the Projects component
@@ -6,7 +7,7 @@ import React from 'react';
  */
 function Projects(): JSX.Element {
   return (
-    <div id="projects" className="block-content">
+    <Block id="projects">
       <h1>Projects</h1>
       <div className="project">
         <h2>Project 1</h2>
@@ -32,7 +33,7 @@ function Projects(): JSX.Element {
           technologies.
         </p>
       </div>
-    </div>
+    </Block>
   );
 }
  

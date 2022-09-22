@@ -1,12 +1,9 @@
 .title {
-  font-size: var(--font-size-large);
-  font-weight: 500;
-  margin-bottom: var(--margin);
-  transform: translateX(-50%);
-  margin-left: 50%;
+  margin-bottom: calc(var(--margin) * 2);
+  font-size: large;
 }
 
-@mixin title {
+@mixin title_underline {
   width: 100%;
   height: 2px;
   background: linear-gradient(
@@ -23,13 +20,13 @@
 
 .title__underline {
   margin-top: var(--margin);
-  @include title;
+  @include title_underline;
 
   &::before {
     content: '';
-    position: absolute;
+    display: block;
     filter: blur(5px);
-    @include title;
+    @include title_underline;
   }
 }
 
@@ -39,12 +36,5 @@
   }
   100% {
     background-position: 1000% 0;
-  }
-}
-
-@media (max-width: 600px) {
-  .title {
-  transform: translateX(0);
-  margin-left: 0;
   }
 }

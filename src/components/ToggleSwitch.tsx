@@ -14,7 +14,7 @@ interface ToggleSwitchProps {
 
 /**
  * @desc This is the ToggleSwitch component
- * @param {IToggleSwitchProps} props The ToggleSwitch props
+ * @param {ToggleSwitchProps} props The ToggleSwitch props
  * @returns {JSX.Element} The ToggleSwitch component
  */
 function ToggleSwitch(props: ToggleSwitchProps): JSX.Element {

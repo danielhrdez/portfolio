@@ -42,9 +42,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "language": "npx ts-node scripts/makeLanguageJSON.ts",
+    "lang": "npx ts-node scripts/makeLanguageJSON.ts",
+    "lang-watch": "npm run lang -- --watch",
     "start": "react-scripts start",
-    "build": "npm run language ; react-scripts build",
+    "build": "npm run lang ; react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint src/**/*.{js,ts,jsx,tsx}",

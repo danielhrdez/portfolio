@@ -10,7 +10,7 @@ function Title(): JSX.Element {
   return (
     <div className="title">
       <h1>Daniel Hernández de León</h1>
-      <h2>{language('Software')}</h2>
+      <h3>{language('Software')}</h3>
       <div className="title__underline"></div>
     </div>
   );

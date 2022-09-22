@@ -1,4 +1,7 @@
 #content {
-  padding: var(--margin);
-  padding-top: calc(var(--header-size) + var(--margin));
+  padding: calc(var(--header-size) + var(--margin));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--margin);
 }

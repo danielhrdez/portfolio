@@ -1,4 +1,5 @@
 import React from 'react';
+import Block from '../../components/Block';
 
 /**
 * @desc This is the Experiences component
@@ -6,7 +7,7 @@ import React from 'react';
 */
 function Experiences(): JSX.Element {
   return (
-    <div id="experiences" className="block-content">
+    <Block id="experiences">
       <h1>Experience</h1>
       <div className="experience">
         <h2>Software Developer</h2>
@@ -35,7 +36,7 @@ function Experiences(): JSX.Element {
           technologies.
         </p>
       </div>
-    </div>
+    </Block>
   );
 }
 
