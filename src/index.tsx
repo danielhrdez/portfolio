@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './assets/scss/global.scss';
 import App from './App';
 import { beforeLoad, afterLoad } from './utils/loadEvents';
+import './utils/i18n';
 // import reportWebVitals from './utils/reportWebVitals'
 
 const root = ReactDOM.createRoot(

@@ -1,7 +1,8 @@
 import React from 'react';
 import { LocalItem, Language } from '../../data/constants';
-import language from '../../utils/language';
 import ToggleSwitch from '../../components/ToggleSwitch';
+import { useTranslation } from 'react-i18next';
+import i18n from '../../utils/i18n';
 
 /**
  * @desc This is the LanguageSettings props interface
@@ -17,16 +18,19 @@ interface ILanguageSettingsProps {
  * @returns {JSX.Element} The main Settings component
  */
 function LanguageSettings(props: ILanguageSettingsProps): JSX.Element {
+  const { t } = useTranslation();
   const setLanguage = (language: Language = Language.ENGLISH): void => {
     localStorage.setItem(LocalItem.LANGUAGE, language);
-    setTimeout(() => window.location.reload(), 300);
+    i18n.changeLanguage(language).catch((error: Error) => {
+      console.error(error);
+    });
   };
   return (
     <li className={props.className}>
-      <h2>{language('Language')}</h2>
+      <h2>{t('Language')}</h2>
       <ToggleSwitch
-        text1={language('English')}
-        text2={language('Spanish')}
+        text1={t('English')}
+        text2={t('Spanish')}
         onChange={(checked: boolean) => {
           if (checked) {
             setLanguage(Language.SPANISH);

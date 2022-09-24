@@ -1,8 +1,9 @@
 import React from 'react';
-import language from '../../utils/language';
+import { useTranslation } from 'react-i18next';
 
 function Summary(): JSX.Element {
-  return <h4>{language('Summary')}</h4>;
+  const { t } = useTranslation();
+  return <h4>{t('Summary')}</h4>;
 }
 
 export default Summary;
