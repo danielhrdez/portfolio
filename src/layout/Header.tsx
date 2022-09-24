@@ -21,11 +21,11 @@ function Header(): JSX.Element {
     setActiveLink(link);
   };
   const links = [
-    { href: '#content', text: t('Home') },
-    { href: '#about', text: t('About') },
-    { href: '#experiences', text: t('Experience') },
-    { href: '#projects', text: t('Projects') },
-    { href: '#footer', text: t('Contact') },
+    { href: '#content', text: t('home') },
+    { href: '#about', text: t('about') },
+    { href: '#experiences', text: t('experience') },
+    { href: '#projects', text: t('projects') },
+    { href: '#footer', text: t('contact') },
   ];
   return (
     <header className="header">

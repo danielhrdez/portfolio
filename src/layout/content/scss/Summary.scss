@@ -1,0 +1,10 @@
+.summary {
+  max-width: 75rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.5;
+
+  @media (max-width: 622px) {
+    font-size: 5vw;
+  }
+}

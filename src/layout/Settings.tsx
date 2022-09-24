@@ -24,7 +24,7 @@ function Settings(): JSX.Element {
   return (
     <div className="settings">
       <div className="settings__menu">
-        <h1>{t('Settings')}</h1>
+        <h1>{t('settings')}</h1>
         <ul>
           <ThemeSettings className="settings__item" />
           <LanguageSettings className="settings__item" />

@@ -51,7 +51,7 @@
     "eject": "react-scripts eject",
     "lint": "eslint src/**/*.{js,ts,jsx,tsx}",
     "format": "npm run lint --fix ; npx prettier --write src/**/*.{js,jsx,ts,tsx}",
-    "commit": "npm run format ; git add . ; git commit -m",
+    "commit": "git add . ; git commit -m",
     "patch": "npm run commit",
     "postpatch": "npm version patch ; git push --follow-tags",
     "minor": "npm run commit",

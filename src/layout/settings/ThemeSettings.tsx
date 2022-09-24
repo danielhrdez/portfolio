@@ -23,10 +23,10 @@ function ThemeSettings(props: ILanguageSettingsProps): JSX.Element {
   };
   return (
     <li className={props.className}>
-      <h2>{t('Theme')}</h2>
+      <h2>{t('theme')}</h2>
       <ToggleSwitch
-        text1={t('Dark')}
-        text2={t('Light')}
+        text1={t('dark')}
+        text2={t('light')}
         onChange={(checked: boolean) => {
           if (checked) {
             setTheme(ThemeType.LIGHT);

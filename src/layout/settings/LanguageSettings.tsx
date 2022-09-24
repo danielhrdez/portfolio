@@ -27,10 +27,10 @@ function LanguageSettings(props: ILanguageSettingsProps): JSX.Element {
   };
   return (
     <li className={props.className}>
-      <h2>{t('Language')}</h2>
+      <h2>{t('language')}</h2>
       <ToggleSwitch
-        text1={t('English')}
-        text2={t('Spanish')}
+        text1={t('english')}
+        text2={t('spanish')}
         onChange={(checked: boolean) => {
           if (checked) {
             setLanguage(Language.SPANISH);

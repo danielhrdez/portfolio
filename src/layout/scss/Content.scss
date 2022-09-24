@@ -1,13 +1,9 @@
 #content {
-  padding: calc(var(--header-size) + var(--margin));
+  padding:
+    calc(var(--header-size) + var(--margin) * 2)
+    var(--margin) var(--margin);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--margin);
-}
-
-@media (max-width: 768px) {
-  #content {
-    padding: calc(var(--header-size) + var(--margin)) var(--margin);
-  }
+  gap: calc(var(--margin) * 2);
 }

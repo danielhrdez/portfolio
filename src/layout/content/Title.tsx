@@ -11,7 +11,7 @@ function Title(): JSX.Element {
   return (
     <div className="title">
       <h1>Daniel Hernández de León</h1>
-      <h3>{t('Software')}</h3>
+      <h3>{t('software')}</h3>
       <div className="title__underline"></div>
     </div>
   );
