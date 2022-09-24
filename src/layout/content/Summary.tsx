@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import language from '../../utils/language';
 
 function Summary(): JSX.Element {

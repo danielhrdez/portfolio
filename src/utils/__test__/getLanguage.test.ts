@@ -1,7 +1,7 @@
-import getLanguage from "../getLanguage";
+import getLanguage from '../getLanguage';
 
-describe("getLanguage", () => {
-  it("should return the language", () => {
-    expect(getLanguage()).toBe("en");
+describe('getLanguage', () => {
+  it('should return the language', () => {
+    expect(getLanguage()).toBe('en');
   });
 });

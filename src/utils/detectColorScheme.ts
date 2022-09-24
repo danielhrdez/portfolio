@@ -17,6 +17,6 @@ function detectColorScheme(): ThemeType {
   document.documentElement.setAttribute('data-theme', theme);
   localStorage.setItem(LocalItem.THEME, theme);
   return theme;
-};
+}
 
 export default detectColorScheme;

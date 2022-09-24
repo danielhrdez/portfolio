@@ -9,7 +9,7 @@ export function disableScroll(): void {
     throw new Error('The html or body tag is not found');
   }
   htmlBody.style.overflow = 'hidden';
-};
+}
 
 /**
  * @function enableScroll enables the scroll of the page.
@@ -22,7 +22,7 @@ export function enableScroll(): void {
     throw new Error('The html or body tag is not found');
   }
   htmlBody.style.overflow = 'auto';
-};
+}
 
 export default {
   disableScroll,

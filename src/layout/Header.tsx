@@ -40,10 +40,7 @@ function Header(): JSX.Element {
           />
         ))}
       </nav>
-      <SettingsButton
-        className='header__settings'
-        onClick={settingsExpand}
-      />
+      <SettingsButton className="header__settings" onClick={settingsExpand} />
     </header>
   );
 }

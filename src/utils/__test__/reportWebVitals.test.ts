@@ -1,7 +1,7 @@
-import reportWebVitals from "../reportWebVitals";
+import reportWebVitals from '../reportWebVitals';
 
-describe("reportWebVitals", () => {
-  it("should import web-vitals", async () => {
+describe('reportWebVitals', () => {
+  it('should import web-vitals', async () => {
     await reportWebVitals();
   });
 });

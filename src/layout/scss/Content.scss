@@ -5,3 +5,9 @@
   align-items: center;
   gap: var(--margin);
 }
+
+@media (max-width: 768px) {
+  #content {
+    padding: calc(var(--header-size) + var(--margin)) var(--margin);
+  }
+}

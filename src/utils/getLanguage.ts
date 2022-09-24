@@ -1,4 +1,4 @@
-import { Language } from "../data/constants";
+import { Language } from '../data/constants';
 
 /**
  * @desc This function returns the language of the page.
@@ -14,6 +14,6 @@ const getLanguage = (): Language => {
     return browserLanguage.substring(0, 2) as Language;
   }
   return Language.ENGLISH;
-}
+};
 
 export default getLanguage;

@@ -12,7 +12,7 @@ interface ICSVRow {
  */
 interface ICSV {
   [key: string]: ICSVRow;
-};
+}
 
 /**
  * @desc This function returns the JSON from the CSV.
@@ -35,8 +35,10 @@ function getJSONFromCSV(csv: string): ICSV {
 }
 
 function CSVtoArray(text: string): string[] {
-  const regexValid = /^\s*(?:'[^'\\]*(?:\\[\S\s][^'\\]*)*'|"[^"\\]*(?:\\[\S\s][^"\\]*)*"|[^,'"\s\\]*(?:\s+[^,'"\s\\]+)*)\s*(?:,\s*(?:'[^'\\]*(?:\\[\S\s][^'\\]*)*'|"[^"\\]*(?:\\[\S\s][^"\\]*)*"|[^,'"\s\\]*(?:\s+[^,'"\s\\]+)*)\s*)*$/;
-  const regexValue = /(?!\s*$)\s*(?:'([^'\\]*(?:\\[\S\s][^'\\]*)*)'|"([^"\\]*(?:\\[\S\s][^"\\]*)*)"|([^,'"\s\\]*(?:\s+[^,'"\s\\]+)*))\s*(?:,|$)/g;
+  const regexValid =
+    /^\s*(?:'[^'\\]*(?:\\[\S\s][^'\\]*)*'|"[^"\\]*(?:\\[\S\s][^"\\]*)*"|[^,'"\s\\]*(?:\s+[^,'"\s\\]+)*)\s*(?:,\s*(?:'[^'\\]*(?:\\[\S\s][^'\\]*)*'|"[^"\\]*(?:\\[\S\s][^"\\]*)*"|[^,'"\s\\]*(?:\s+[^,'"\s\\]+)*)\s*)*$/;
+  const regexValue =
+    /(?!\s*$)\s*(?:'([^'\\]*(?:\\[\S\s][^'\\]*)*)'|"([^"\\]*(?:\\[\S\s][^"\\]*)*)"|([^,'"\s\\]*(?:\s+[^,'"\s\\]+)*))\s*(?:,|$)/g;
   if (!regexValid.test(text)) throw new Error('Invalid CSV');
   const a = [];
   text.replace(regexValue, (_, m1, m2, m3) => {
@@ -47,6 +49,6 @@ function CSVtoArray(text: string): string[] {
   });
   if (/,\s*$/.test(text)) a.push('');
   return a;
-};
+}
 
 export default getJSONFromCSV;

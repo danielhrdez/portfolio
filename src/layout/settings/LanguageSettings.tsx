@@ -41,4 +41,3 @@ function LanguageSettings(props: ILanguageSettingsProps): JSX.Element {
 }
 
 export default LanguageSettings;
- 

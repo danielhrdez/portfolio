@@ -8,7 +8,7 @@
 export enum LocalItem {
   THEME = 'theme',
   LANGUAGE = 'language',
-};
+}
 
 /**
  * @desc This enum is used to store the theme types
@@ -20,7 +20,7 @@ export enum LocalItem {
 export enum ThemeType {
   LIGHT = 'light',
   DARK = 'dark',
-};
+}
 
 /**
  * @desc This enum is used to store the languages
@@ -32,7 +32,7 @@ export enum ThemeType {
 export enum Language {
   ENGLISH = 'en',
   SPANISH = 'es',
-};
+}
 
 export default {
   LocalItem,

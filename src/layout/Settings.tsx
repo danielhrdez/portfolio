@@ -4,6 +4,7 @@ import './scss/Settings.scss';
 import { enableScroll } from '../utils/scrollFunctions';
 import LanguageSettings from './settings/LanguageSettings';
 import ThemeSettings from './settings/ThemeSettings';
+import language from '../utils/language';
 
 /**
  * @desc This is the main Settings component
@@ -22,14 +23,12 @@ function Settings(): JSX.Element {
   return (
     <div className="settings">
       <div className="settings__menu">
+        <h1>{language('Settings')}</h1>
         <ul>
           <ThemeSettings className="settings__item" />
           <LanguageSettings className="settings__item" />
         </ul>
-        <SettingsExit
-          className="settings__exit"
-          onClick={settingsCollapse}
-        />
+        <SettingsExit className="settings__exit" onClick={settingsCollapse} />
       </div>
     </div>
   );

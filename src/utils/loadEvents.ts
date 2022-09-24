@@ -1,4 +1,4 @@
-import detectColorScheme from "./detectColorScheme";
+import detectColorScheme from './detectColorScheme';
 
 /**
  * @desc This function loads before the page is loaded.
@@ -13,7 +13,7 @@ export function beforeLoad(): void {
  * @returns {void} This function returns nothing.
  */
 export function afterLoad(): void {
-  document.body.className = "";
+  document.body.className = '';
 }
 
 export default {

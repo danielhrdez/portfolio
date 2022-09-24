@@ -1,11 +1,11 @@
-import { enableScroll, disableScroll } from "../scrollFunctions";
+import { enableScroll, disableScroll } from '../scrollFunctions';
 
-describe("scrollFunctions", () => {
-  it("should return an object with enableScroll", () => {
+describe('scrollFunctions', () => {
+  it('should return an object with enableScroll', () => {
     expect(enableScroll).toBeInstanceOf(Function);
   });
 
-  it("should return an object with disableScroll", () => {
+  it('should return an object with disableScroll', () => {
     expect(disableScroll).toBeInstanceOf(Function);
   });
 });

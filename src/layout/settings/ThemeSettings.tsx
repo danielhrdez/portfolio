@@ -12,9 +12,9 @@ interface ILanguageSettingsProps {
 }
 
 /**
-* @desc This is the main Settings component
-* @returns {JSX.Element} The main Settings component
-*/
+ * @desc This is the main Settings component
+ * @returns {JSX.Element} The main Settings component
+ */
 function ThemeSettings(props: ILanguageSettingsProps): JSX.Element {
   const setTheme = (theme: ThemeType = ThemeType.DARK): void => {
     document.documentElement.setAttribute('data-theme', theme);

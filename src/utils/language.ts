@@ -10,6 +10,6 @@ const lang = getLanguage();
  */
 function language(key: keyof typeof LanguageJSON): string {
   return LanguageJSON[key][lang];
-};
+}
 
 export default language;

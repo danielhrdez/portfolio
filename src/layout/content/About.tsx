@@ -12,25 +12,22 @@ function About(): JSX.Element {
       <div className="about__education">
         <h2>Education</h2>
         <p>
-          Currently working as a freelance software developer, I have worked
-          on several projects, both web and mobile, using different
-          technologies.
+          Currently working as a freelance software developer, I have worked on
+          several projects, both web and mobile, using different technologies.
         </p>
       </div>
       <div className="about__skills">
         <h2>Skills</h2>
         <p>
-          Currently working as a freelance software developer, I have worked
-          on several projects, both web and mobile, using different
-          technologies.
+          Currently working as a freelance software developer, I have worked on
+          several projects, both web and mobile, using different technologies.
         </p>
       </div>
       <div className="about__interests">
         <h2>Interests</h2>
         <p>
-          Currently working as a freelance software developer, I have worked
-          on several projects, both web and mobile, using different
-          technologies.
+          Currently working as a freelance software developer, I have worked on
+          several projects, both web and mobile, using different technologies.
         </p>
       </div>
     </Block>
@@ -38,4 +35,3 @@ function About(): JSX.Element {
 }
 
 export default About;
- 

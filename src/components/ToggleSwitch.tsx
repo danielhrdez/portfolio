@@ -21,13 +21,17 @@ function ToggleSwitch(props: ToggleSwitchProps): JSX.Element {
   const [checked, setChecked] = useState(props.checked ?? false);
   return (
     <label className="switch">
-      <input type="checkbox" checked={checked} onChange={() => {
-        setChecked(!checked);
-        props.onChange(!checked);
-      }} />
+      <input
+        type="checkbox"
+        checked={checked}
+        onChange={() => {
+          setChecked(!checked);
+          props.onChange(!checked);
+        }}
+      />
       <div className={`slider round ${checked ? 'checked' : ''}`}>
         <span className="on">{props.text2}</span>
-  	    <span className="off">{props.text1}</span>
+        <span className="off">{props.text1}</span>
       </div>
     </label>
   );
