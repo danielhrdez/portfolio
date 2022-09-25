@@ -1,0 +1,16 @@
+#footer {
+  background-color: rgb(var(--color-primary));
+  color: rgb(var(--color-text));
+  padding: 1rem;
+  text-align: center;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+
+  * {
+    background-color: transparent;
+  }
+}

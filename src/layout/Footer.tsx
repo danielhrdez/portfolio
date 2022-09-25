@@ -9,25 +9,22 @@ function Footer(): JSX.Element {
   return (
     <footer id="footer">
       <h1>Contact</h1>
-      <div className="footer__phone">
+      <div>
         <h2>Phone</h2>
         <p>
-          Currently working as a freelance software developer, I have worked on
-          several projects, both web and mobile, using different technologies.
+          +34 603 666 913  
         </p>
       </div>
-      <div className="footer_email">
+      <div>
         <h2>Email</h2>
         <p>
-          Currently working as a freelance software developer, I have worked on
-          several projects, both web and mobile, using different technologies.
+          danielhrdezdeleon@gmail.com  
         </p>
       </div>
-      <div className="footer_address">
+      <div>
         <h2>Address</h2>
         <p>
-          Currently working as a freelance software developer, I have worked on
-          several projects, both web and mobile, using different technologies.
+          La Laguna, Tenerife, Spain
         </p>
       </div>
     </footer>

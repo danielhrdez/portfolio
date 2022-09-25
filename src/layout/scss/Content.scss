@@ -1,9 +1,9 @@
 #content {
   padding:
-    calc(var(--header-size) + var(--margin) * 2)
-    var(--margin) var(--margin);
+    calc(var(--header-size) + var(--margin));
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: calc(var(--margin) * 2);
 }

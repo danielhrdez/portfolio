@@ -1,9 +1,6 @@
 .header {
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: var(--header-size);
   background-color: rgba(var(--color-primary), 0.8);
   display: flex;
   justify-content: space-between;
@@ -12,12 +9,23 @@
   box-sizing: border-box;
   backdrop-filter: blur(10px);
   box-shadow: var(--box-shadow);
+  height: var(--header-size);
 
   & > * {
     width: var(--size);
     height: var(--size);
     background-color: rgb(var(--color-primary));
     border-radius: var(--border-radius);
+    animation: iconsAnimation 0.75s ease-in-out forwards;
+    transform: translateY(-125%);
+    opacity: 0;
+  }
+
+  @keyframes iconsAnimation {
+    to {
+      transform: translateY(0%);
+      opacity: 1;
+    }
   }
 }
 
@@ -39,6 +47,7 @@
     height: 100%;
     width: 100%;
     background-color: transparent;
+    opacity: 0;
 
     &:hover {
       color: rgb(var(--color-active));
@@ -52,6 +61,19 @@
 
   @media (max-width: 768px) {
     display: none;
+  }
+
+  @for $i from 1 through 5 {
+    :nth-child(#{$i}) {
+      animation: navAnimation 0.75s ease-in-out #{$i * 0.2}s forwards;
+    }
+  }
+
+  @keyframes navAnimation {
+    to {
+      transform: translateY(0%);
+      opacity: 1;
+    }
   }
 }
 

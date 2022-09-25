@@ -4,10 +4,9 @@ import './scss/Summary.scss';
 
 function Summary(): JSX.Element {
   const { t } = useTranslation();
-  return <h4
-    className="summary"
-    dangerouslySetInnerHTML={{ __html: t('summary') }}
-  />;
+  const text = t('summary').split('\n');
+  const elements = text.map((line) => <li key={line}><p>{line}</p></li>);
+  return <ul className="summary">{elements}</ul>;
 }
 
 export default Summary;

@@ -9,12 +9,13 @@
     rgb(var(--color-primary)),
     rgb(var(--color-background)),
   );
+  // display: none;
   
-  & * {
+  * {
     background: none;
   }
 
-  & > h1::first-letter {
+  > h1::first-letter {
     color: rgb(var(--color-active));
     text-shadow: 0 0 4px rgb(var(--color-active));
   }
