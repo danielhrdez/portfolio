@@ -9,7 +9,7 @@
     rgb(var(--color-primary)),
     rgb(var(--color-background)),
   );
-  // display: none;
+  position: relative;
   
   * {
     background: none;
@@ -18,5 +18,13 @@
   > h1::first-letter {
     color: rgb(var(--color-active));
     text-shadow: 0 0 4px rgb(var(--color-active));
+  }
+
+  .block__canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 }
