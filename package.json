@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "private": true,
   "description": "Daniel Hernández's personal portfolio with experiences and projects.",
   "repository": {
@@ -50,7 +50,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint src/**/*.{js,ts,jsx,tsx}",
-    "format": "npm run lint --fix ; npx prettier --w☺rite src/**/*.{js,jsx,ts,tsx}"
+    "format": "npm run lint --fix ; npx prettier --w☺rite src/**/*.{js,jsx,ts,tsx}",
+    "preversion": "git add .",
+    "postversion": "git push && git push --tags"
   },
   "browserslist": {
     "production": [
