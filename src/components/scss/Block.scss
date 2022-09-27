@@ -6,28 +6,31 @@
   width: 100%;
   position: relative;
   overflow: hidden;
-  // background: linear-gradient(
-  //   135deg,
-  //   rgb(var(--color-primary)),
-  //   rgb(var(--color-background)),
-  // );
+  background: linear-gradient(
+    135deg,
+    rgb(var(--color-primary)),
+    rgb(var(--color-background)),
+  );
   
-  * {
-    background: none;
+  .block__content {
+    * {
+      background: none;
+      z-index: 2;
+    }
+
+    h1::first-letter {
+      color: rgb(var(--color-active));
+      text-shadow: 0 0 4px rgb(var(--color-active));
+      z-index: 10000;
+    }
   }
 
-  > h1::first-letter {
-    color: rgb(var(--color-active));
-    text-shadow: 0 0 4px rgb(var(--color-active));
-    z-index: 10000;
-  }
-
-  .block__particles {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    // z-index: -1;
-  }
+  // .block__particles {
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   // width: 100%;
+  //   // height: 100%;
+  //   z-index: -1;
+  // }
 }

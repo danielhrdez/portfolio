@@ -10,8 +10,8 @@ interface BlockProps {
 function Block(props: BlockProps): JSX.Element {
   return (
     <div id={props.id} className="block">
-      <HoverParticles className="block__particles" />
       {props.children}
+      <HoverParticles className="block__particles" />
     </div>
   );
 }
