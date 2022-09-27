@@ -2,8 +2,8 @@ import React from 'react';
 import './scss/Content.scss';
 import Title from './content/Title';
 import About from './content/About';
-import Experiences from './content/Experiences';
-import Projects from './content/Projects';
+// import Experiences from './content/Experiences';
+// import Projects from './content/Projects';
 import Summary from './content/Summary';
 
 /**
@@ -16,8 +16,8 @@ function Content(): JSX.Element {
       <Title />
       <Summary />
       <About />
-      <Experiences />
-      <Projects />
+      {/* <Experiences />
+      <Projects /> */}
     </main>
   );
 }
