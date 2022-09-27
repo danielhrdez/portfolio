@@ -11,4 +11,4 @@ function Canvas(props: CanvasProps): JSX.Element {
   return <canvas ref={canvasRef} {...rest}/>;
 }
 
-export default Canvas
+export default Canvas;

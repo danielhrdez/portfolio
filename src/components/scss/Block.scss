@@ -4,12 +4,13 @@
   box-shadow: var(--box-shadow);
   max-width: 90rem;
   width: 100%;
+  position: relative;
+  overflow: hidden;
   background: linear-gradient(
     135deg,
     rgb(var(--color-primary)),
     rgb(var(--color-background)),
   );
-  position: relative;
   
   * {
     background: none;

@@ -8,17 +8,24 @@ interface BlockProps {
 }
 
 function Block(props: BlockProps): JSX.Element {
-  const draw = (ctx: CanvasRenderingContext2D, frameCount: number): void => {
+  const background = (ctx: CanvasRenderingContext2D, frameCount: number): void => {
     ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+    console.log(ctx.canvas.width, ctx.canvas.height);
     ctx.fillStyle = '#000000';
     ctx.beginPath();
-    ctx.arc(50, 100, 20 * Math.sin(frameCount * 0.05) ** 2, 0, 2 * Math.PI);
+    ctx.arc(
+      ctx.canvas.width/2,
+      ctx.canvas.height/2,
+      20 * Math.sin(frameCount * 0.05) ** 2,
+      0,
+      2 * Math.PI,
+    );
     ctx.fill();
   };
   return (
     <div id={props.id} className="block">
       {props.children}
-      <Canvas draw={draw} className="block__canvas"/>
+      <Canvas draw={background} className="block__canvas" />
     </div>
   );
 }
