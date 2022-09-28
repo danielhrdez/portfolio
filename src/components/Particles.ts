@@ -1,14 +1,11 @@
 import Particle from "./Particle";
+import Point2D from "./Point2D";
 
 export default class Particles {
   private particles: Particle[] = [];
-
-  constructor(readonly max: number) {}
   
-  addParticle(x: number, y: number): void {
-    if (this.particles.length < this.max) {
-      this.particles.push(new Particle(x, y));
-    }
+  addParticle(point: Point2D): void {
+    this.particles.push(new Particle(point));
   }
 
   draw(ctx: CanvasRenderingContext2D): void {
