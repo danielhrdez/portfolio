@@ -5,8 +5,7 @@ export default class Particle {
   private radius: number = Math.random() * 20;
   readonly color: string = getCSSVariable("--color-active");
   private alpha: number = 1;
-  readonly speed: number = 0.005;
-
+  
   constructor(readonly point: Point2D) {}
 
   draw(ctx: CanvasRenderingContext2D): void {
@@ -17,12 +16,9 @@ export default class Particle {
     ctx.fill();
   }
 
-  update(newPoint: Point2D): void {
+  update(): void {
     this.alpha -= 0.01;
     this.radius += 0.01;
-    const direction = this.point.directionFrom(newPoint);
-    this.point.x += direction.x * this.speed;
-    this.point.y += direction.y * this.speed;
   }
 
   getAlpha(): number {
@@ -31,5 +27,9 @@ export default class Particle {
 
   getPoint(): Point2D {
     return this.point;
+  }
+
+  getRadius(): number {
+    return this.radius;
   }
 }
