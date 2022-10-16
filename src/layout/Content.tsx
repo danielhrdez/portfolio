@@ -1,9 +1,10 @@
+// import React, { useState, useEffect } from 'react';
 import React from 'react';
 import './scss/Content.scss';
 import Title from './content/Title';
 import About from './content/About';
-// import Experiences from './content/Experiences';
-// import Projects from './content/Projects';
+import Experiences from './content/Experiences';
+import Projects from './content/Projects';
 import Summary from './content/Summary';
 
 /**
@@ -11,13 +12,54 @@ import Summary from './content/Summary';
  * @returns {JSX.Element} The Content component
  */
 function Content(): JSX.Element {
+  // const [active, setActive] = useState(0);
+  // let prevOffset = 0;
+  // let prevActive = 0;
+  // let scrolling = false;
+  
+  // useEffect(() => {
+  //   const onScroll = (): void => {
+  //     if (scrolling) {
+  //       prevOffset = scrollY;
+  //       return;
+  //     }
+  //     scrolling = true;
+  //     const direction = scrollY > prevOffset ? 1 : -1;
+  //     const childs = document.getElementById('content')?.children;
+  //     if (childs === undefined) return;
+  //     const child = childs[prevActive + direction] as HTMLElement;
+  //     if (child === undefined) return;
+  //     window.scroll(0, child.offsetTop);
+  //     prevOffset = scrollY;
+  //     setActive(prevActive + direction);
+  //     prevActive += direction;
+  //     setTimeout(() => { scrolling = false }, 1000);
+  //   };
+  //   window.removeEventListener('scroll', onScroll);
+  //   window.addEventListener('scroll', onScroll, { passive: true });
+  //   return () => window.removeEventListener('scroll', onScroll);
+  // }, []);
+
+  // const checkActive = (n: number): string => {
+  //   return active === n ? 'active' : '';
+  // };
+
   return (
     <main id="content">
-      <Title />
-      <Summary />
+      {/* <div className={checkActive(0)}>
+        <Title />
+        <Summary />
+      </div>
+      <About className={checkActive(1)} />
+      <Experiences className={checkActive(2)} />
+      <Projects className={checkActive(3)} /> */}
+      <div>
+        <Title />
+        <Summary />
+      </div>
       <About />
-      {/* <Experiences />
-      <Projects /> */}
+      <Experiences />
+      <Projects />
     </main>
   );
 }

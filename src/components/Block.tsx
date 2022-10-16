@@ -1,25 +1,21 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './scss/Block.scss';
-import HoverParticles from './HoverParticles';
-import Point2D from './Point2D';
 
 interface BlockProps {
   id: string;
   children: React.ReactNode;
+  className?: string;
 }
 
 function Block(props: BlockProps): JSX.Element {
-  const [mouse, setMouse] = useState(new Point2D(0, 0));
-  const mouseMove = (event: React.MouseEvent): void => {
-    setMouse(new Point2D(
-      event.clientX - event.currentTarget.getBoundingClientRect().left,
-      event.clientY - event.currentTarget.getBoundingClientRect().top,
-    ));
-  };
+  const firstLetter = props.id[0].toUpperCase();
   return (
-    <div id={props.id} className="block" onMouseMove={mouseMove}>
+    <div id={props.id} className={"block " + (props.className ?? '')}>
+      <h1>
+        <div className="first-letter">{firstLetter}</div>
+        {props.id.slice(1)}
+      </h1>
       {props.children}
-      <HoverParticles className="block__particles" mouse={mouse} />
       <div className="block__background"></div>
     </div>
   );

@@ -11,7 +11,7 @@
   box-shadow: var(--box-shadow);
   height: var(--header-size);
 
-  & > * {
+  > * {
     width: var(--size);
     height: var(--size);
     background-color: rgb(var(--color-primary));
@@ -19,14 +19,15 @@
     animation: iconsAnimation 0.75s ease-in-out forwards;
     transform: translateY(-125%);
     opacity: 0;
-  }
 
-  @keyframes iconsAnimation {
-    to {
-      transform: translateY(0%);
-      opacity: 1;
+    @keyframes iconsAnimation {
+      to {
+        transform: translateY(0%);
+        opacity: 1;
+      }
     }
   }
+
 }
 
 .header__nav-links {

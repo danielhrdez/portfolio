@@ -5,10 +5,9 @@ import Block from '../../components/Block';
  * @desc This is the About component
  * @returns {JSX.Element} The About component
  */
-function About(): JSX.Element {
+function About(props: { className?: string }): JSX.Element {
   return (
-    <Block id="about">
-      <h1>About</h1>
+    <Block id="about" className={props.className}>
       <div className="about__education">
         <h2>Education</h2>
         <p>

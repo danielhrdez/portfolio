@@ -7,8 +7,14 @@
   color: rgb(var(--color-text));
 }
 
-html body {
+html, body {
   background-color: rgb(var(--color-background));
+  height: 100%;
+}
+
+#root {
+  min-height: 100%;
+  position: relative;
 }
 
 body.preload * {

@@ -6,10 +6,10 @@ import { useTranslation } from 'react-i18next';
  * @desc This is the Title component
  * @returns {JSX.Element} The Title component
  */
-function Title(): JSX.Element {
+function Title(props: { className?: string }): JSX.Element {
   const { t } = useTranslation();
   return (
-    <div className="title">
+    <div className={"title " + (props.className ?? '')}>
       <h1>Daniel Hernández de León</h1>
       <h3>{t('software')}</h3>
       <div className="title__underline"></div>

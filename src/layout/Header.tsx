@@ -16,7 +16,7 @@ function Header(): JSX.Element {
     document.querySelector('.settings')?.classList.add('show');
     disableScroll();
   };
-  const [activeLink, setActiveLink] = useState('#content');
+  const [activeLink, setActiveLink] = useState<string>(t('home'));
   const handleLinkClick = (link: string): void => {
     setActiveLink(link);
   };
@@ -36,7 +36,7 @@ function Header(): JSX.Element {
             key={link.href}
             href={link.href}
             text={link.text}
-            active={link.href === activeLink}
+            active={link.text === activeLink}
             onClick={handleLinkClick}
           />
         ))}
