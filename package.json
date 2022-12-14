@@ -14,7 +14,7 @@
   "bugs": {
     "url": "https://github.com/DanielHrdez/portfolio/issues"
   },
-  "homepage": "https://danielhrdez.github.io/portfolio/",
+  "homepage": "https://danielhrdez.dev",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.40.0",
     "eslint": "^8.25.0",
@@ -51,7 +51,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint src/**/*.{js,ts,jsx,tsx}",
-    "format": "npm run lint --fix ; npx prettier --w☺rite src/**/*.{js,jsx,ts,tsx}",
+    "format": "npm run lint --fix ; npx prettier --write src/**/*.{js,jsx,ts,tsx}",
     "preversion": "git add .",
     "postversion": "git push && git push --tags"
   },
