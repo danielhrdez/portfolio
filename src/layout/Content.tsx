@@ -1,11 +1,10 @@
 // import React, { useState, useEffect } from 'react';
 import React from 'react';
 import './scss/Content.scss';
-import Title from './content/Title';
+import Description from './content/Description';
 import About from './content/About';
 import Experiences from './content/Experiences';
 import Projects from './content/Projects';
-import Summary from './content/Summary';
 
 /**
  * @desc This is the Content component
@@ -53,10 +52,7 @@ function Content(): JSX.Element {
       <About className={checkActive(1)} />
       <Experiences className={checkActive(2)} />
       <Projects className={checkActive(3)} /> */}
-      <div>
-        <Title />
-        <Summary />
-      </div>
+      <Description />
       <About />
       <Experiences />
       <Projects />

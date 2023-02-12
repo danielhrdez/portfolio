@@ -7,7 +7,7 @@ import Block from '../../components/Block';
  */
 function Projects(props: { className?: string }): JSX.Element {
   return (
-    <Block id="projects" className={props.className}>
+    <Block title="Projects" className={props.className}>
       <div className="project">
         <h2>Project 1</h2>
         <p>

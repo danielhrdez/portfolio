@@ -13,13 +13,12 @@
     rgb(var(--color-background)),
   );
 
-  .first-letter {
-    display: inline-block;
-    color: rgb(var(--color-active));
-    text-shadow: 0 0 4px rgb(var(--color-active));
-  }
-
-  &:hover {
-    scale: 1.025;
+  .block__title {
+    margin-bottom: calc(var(--margin) * 2);
+    font-size: 1.5rem;
+  
+    @media (max-width: 622px) {
+      font-size: 3.6vw;
+    }
   }
 }

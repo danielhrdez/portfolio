@@ -1,14 +1,4 @@
-.title {
-  margin-bottom: calc(var(--margin) * 2);
-  font-size: 1.5rem;
-
-  @media (max-width: 622px) {
-      font-size: 3.6vw;
-  }
-}
-
-
-@mixin title_underline {
+@mixin line_animation {
   width: 100%;
   height: 2px;
   background: linear-gradient(
@@ -23,15 +13,15 @@
   }
 }
 
-.title__underline {
+.line_animation {
   margin-top: var(--margin);
-  @include title_underline;
+  @include line_animation;
 
   &::before {
     content: '';
     display: block;
     filter: blur(5px);
-    @include title_underline;
+    @include line_animation;
   }
 }
 

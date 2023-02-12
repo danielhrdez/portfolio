@@ -6,11 +6,10 @@ import me from '../assets/images/me.webp';
 import { disableScroll } from '../utils/scrollFunctions';
 import HeaderLink from '../components/HeaderLink';
 import { useTranslation } from 'react-i18next';
-import Title from './content/Title';
+import Description from './content/Description';
 import About from './content/About';
 import Experiences from './content/Experiences';
 import Projects from './content/Projects';
-import Summary from './content/Summary';
 
 /**
  * @desc This is the main Header component
@@ -88,10 +87,7 @@ function HeaderContent(): JSX.Element {
         <SettingsButton className="header__settings" onClick={settingsExpand} />
       </header>
       <main id="content">
-        <div className={checkActive(0)}>
-          <Title />
-          <Summary />
-        </div>
+        <Description className={checkActive(0)} />
         <About className={checkActive(1)} />
         <Experiences className={checkActive(2)} />
         <Projects className={checkActive(3)} />
