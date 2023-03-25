@@ -1,12 +1,13 @@
 #content {
-  padding: calc(var(--header-size) + var(--margin));
-  padding-top: 35vh;
+  // padding: calc(var(--header-size) + var(--margin));
+  // padding: 0;
+  // padding-top: 35vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   // gap: calc(100vh - var(--header-size) * 2);
-  gap: 50vh;
+  // gap: 50vh;
 
   // > * {
   //   opacity: 0;

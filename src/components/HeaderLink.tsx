@@ -25,6 +25,7 @@ function HeaderLink(props: HeaderLinkProps): JSX.Element {
       className={props.active ? 'header__active' : ''}
       href={props.href}
       onClick={() => handleClick(props.text)}
+      data-three-first-letters={props.text.substring(0, 3)}
     >
       {props.text}
     </a>

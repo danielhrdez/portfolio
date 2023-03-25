@@ -39,7 +39,7 @@ function HeaderContent(): JSX.Element {
   const [active, setActive] = useState(0);
   let prevOffset = 0;
   let prevActive = 0;
-  
+
   const onScroll = (): void => {
     if (scrolling) {
       prevOffset = scrollY;
@@ -56,7 +56,9 @@ function HeaderContent(): JSX.Element {
     prevOffset = scrollY;
     setActive(prevActive + direction);
     prevActive += direction;
-    setTimeout(() => { scrolling = false }, 1000);
+    setTimeout(() => {
+      scrolling = false;
+    }, 1000);
   };
 
   useEffect(() => {

@@ -21,7 +21,7 @@ function Header(): JSX.Element {
     setActiveLink(link);
   };
   const links = [
-    { href: '#content', text: t('home') },
+    { href: '#home', text: t('home') },
     { href: '#about', text: t('about') },
     { href: '#experiences', text: t('experience') },
     { href: '#projects', text: t('projects') },

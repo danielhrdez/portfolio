@@ -7,14 +7,14 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  gap: 1rem;
-  bottom: 0;
   height: var(--header-size);
   position: absolute;
   left: 0;
-  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: var(--header-size);
 
   * {
-    background-color: transparent;
+    font-size: 0.8rem;
   }
 }

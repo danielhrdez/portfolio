@@ -8,24 +8,22 @@ import './scss/Footer.scss';
 function Footer(): JSX.Element {
   return (
     <footer id="footer">
-      <h1>Contact</h1>
       <div>
-        <h2>Phone</h2>
-        <p>
-          +34 603 666 913  
-        </p>
+        <p>+34 603 66 69 13</p>
       </div>
       <div>
-        <h2>Email</h2>
-        <p>
-          danielhrdezdeleon@gmail.com  
-        </p>
+        <a href="mailto:daniel@danielhrdez.dev?subject=Hello%20Daniel!">
+          <p>daniel@danielhrdez.dev</p>
+        </a>
       </div>
       <div>
-        <h2>Address</h2>
-        <p>
-          La Laguna, Tenerife, Spain
-        </p>
+        <a
+          href="https://www.linkedin.com/in/danielhrdez/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <p>Linkedin</p>
+        </a>
       </div>
     </footer>
   );

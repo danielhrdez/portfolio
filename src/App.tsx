@@ -2,7 +2,6 @@ import React from 'react';
 import Settings from './layout/Settings';
 import Header from './layout/Header';
 import Content from './layout/Content';
-// import HeaderContent from './layout/HeaderContent';
 import Footer from './layout/Footer';
 
 /**
@@ -15,7 +14,6 @@ function App(): JSX.Element {
       <Settings />
       <Header />
       <Content />
-      {/* <HeaderContent /> */}
       <Footer />
     </>
   );

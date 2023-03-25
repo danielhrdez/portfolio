@@ -2,9 +2,9 @@
 import React from 'react';
 import './scss/Content.scss';
 import Description from './content/Description';
-import About from './content/About';
-import Experiences from './content/Experiences';
-import Projects from './content/Projects';
+// import About from './content/About';
+// import Experiences from './content/Experiences';
+// import Projects from './content/Projects';
 
 /**
  * @desc This is the Content component
@@ -15,7 +15,7 @@ function Content(): JSX.Element {
   // let prevOffset = 0;
   // let prevActive = 0;
   // let scrolling = false;
-  
+
   // useEffect(() => {
   //   const onScroll = (): void => {
   //     if (scrolling) {
@@ -53,9 +53,9 @@ function Content(): JSX.Element {
       <Experiences className={checkActive(2)} />
       <Projects className={checkActive(3)} /> */}
       <Description />
-      <About />
-      <Experiences />
-      <Projects />
+      {/* <About /> */}
+      {/* <Experiences /> */}
+      {/* <Projects /> */}
     </main>
   );
 }
