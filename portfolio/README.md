@@ -1,3 +1,22 @@
+# Daniel Hernández Portfolio
+
+Portfolio with my experiences and projects using Svelte + Typescript and SASS + Tailwind
+
+![CI](https://github.com/DanielHrdez/portfolio/actions/workflows/ci.yml/badge.svg)
+
+## Getting Started
+
+The web site can be visited with two options:
+  
+1. [danielhrdez.dev](https://danielhrdez.dev)
+2. Clone the repository and run `npm i ; npm start` or `yarn install ; yarn start` in the root directory.
+
+## Contact
+
+- Email: daniel@danielhrdez.dev
+- [LinkedIn](https://www.linkedin.com/in/danihrdez/)
+
+
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).

@@ -1,25 +1,20 @@
 <script lang="ts">
-  let count = 0;
-  let numbers = '';
-  let sum = 0;
-
-  function increment() {
-    count += 1;
-    numbers += count + ' + ';
-    sum += count;
-  }
+  import Block from '$lib/components/Block.svelte';
+  
+  const text1 = "Computer Engineer with experience in Artificial Intelligence with neural networks and data analysis.";
+  const text2 = "Time Series, Images, Text and Audio with frameworks such as TensorFlow and PyTorch.";
 </script>
 
-<h1>Welcome to SvelteKit {count}</h1>
-<p>
-  Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation
-</p>
-<button on:click={increment}>Click me</button>
-
-{#if count > 10}
-  <p>Count is high!</p>
-{/if}
-
-<p>
-  {numbers.slice(0, -3)} = {sum}
-</p>
+<Block
+  title="Daniel Hernández de León"
+  subtitle="Software"
+  className="home"
+>
+  <ul class="description__summary">
+    {#each [text1, text2] as line}
+      <li>
+        <p>{line}</p>
+      </li>
+    {/each}
+  </ul>
+</Block>
