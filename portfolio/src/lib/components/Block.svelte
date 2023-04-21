@@ -3,15 +3,15 @@
 
   export let title: string;
   export let subtitle: string = '';
-  export let className: string = '';
-
-  if (className === '') {
-    className = title.toLowerCase().replace(' ', '-');
-  }
 </script>
 
-<div id="{title.toLowerCase().replace(' ', '-')}" class="block__{className}">
-  <h1 class="block__title">{title}</h1>
-  <MaskedText>{subtitle}</MaskedText>
-  <slot />
+<div class="flex justify-center items-center h-full">
+  <div class="bg-gray-200 p-4 rounded-2xl drop-shadow-xl">
+    <h1 class="text-3xl font-bold">
+      {title}
+    </h1>
+    <MaskedText>{subtitle}</MaskedText>
+    <br>
+    <slot />
+  </div>
 </div>

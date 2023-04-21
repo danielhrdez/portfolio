@@ -1,17 +1,13 @@
 <script lang="ts">
   export let title: string;
-  export let subtitle: string;
-  export let className: string = '';
-
-  if (className === '') {
-    className = title.toLowerCase().replace(' ', '-');
-  }
+  export let subtitle: string = '';
 </script>
 
-<div id="{title.toLowerCase().replace(' ', '-')}" class="subblock__{className}">
-  <h2 class="subblock__title">{title}</h2>
-  <h3 class="subblock__title">{subtitle}</h3>
-  <p>
+<div>
+  <h2 class="text-2xl">{title}</h2>
+  <h3 class="text-xl">{subtitle}</h3>
+  <p class="flex px-4">
     <slot />
   </p>
+  <br>
 </div>

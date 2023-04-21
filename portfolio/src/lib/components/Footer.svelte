@@ -1,4 +1,4 @@
-<footer id="footer">
+<footer class="flex h-10 justify-around items-center">
   <div>
     <p>+34 603 66 69 13</p>
   </div>
@@ -17,22 +17,3 @@
     </a>
   </div>
 </footer>
-
-<style>
-  #footer {
-    background-color: rgb(var(--color-primary));
-    color: rgb(var(--color-text));
-    text-align: center;
-    box-shadow: var(--box-shadow);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    height: var(--header-size);
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: var(--header-size);
-  }
-</style>

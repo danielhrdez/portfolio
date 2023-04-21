@@ -3,17 +3,9 @@
   import SubBlock from '$lib/components/SubBlock.svelte';
 </script>
 
-<Block title="Experiences">
-  <SubBlock title="Software Developer" subtitle="Freelance">
-    Currently working as a freelance software developer, I have worked on
-    several projects, both web and mobile, using different technologies.
-  </SubBlock>
-  <SubBlock title="Software Developer" subtitle="Freelance">
-    Currently working as a freelance software developer, I have worked on
-    several projects, both web and mobile, using different technologies.
-  </SubBlock>
-  <SubBlock title="Software Developer" subtitle="Freelance">
-    Currently working as a freelance software developer, I have worked on
-    several projects, both web and mobile, using different technologies.
+<Block title="Experience">
+  <SubBlock title="Machine Learning Specialist" subtitle="Intern (3 months)">
+    Hablar de toda la mierda que hacemos ahí y quizá poner un link a la página de la empresa
+    o proyecto.
   </SubBlock>
 </Block>

@@ -1,11 +1,7 @@
 <script lang="ts">
   import danielPng from '$lib/images/daniel.png';
+  import settingsIcon from '$lib/images/settings-btn.svg';
 
-  /**
-   * @function disableScroll disables the scroll of the page.
-   * @description This function disables the scroll.
-   * @returns {void} This function returns nothing.
-   */
   function disableScroll(): void {
     const htmlBody = document.querySelector('html, body') as HTMLElement;
     if (htmlBody === null) {
@@ -20,54 +16,16 @@
   };
 </script>
 
-<nav>
-  <img src={danielPng} alt="daniel" />
-  <a href="/">Home</a>
-  <a href="/about">About</a>
-  <a href="/experience">Experience</a>
-  <a href="/projects">Projects</a>
+<header class="flex justify-around p-1">
+  <img src={danielPng} alt="daniel" class="w-10" />
+  <nav class="flex justify-around items-center container">
+    <a href="/">Home</a>
+    <a href="/tech">Technologies</a>
+    <a href="/experience">Experience</a>
+    <a href="/academic">Academic</a>
+    <a href="/projects">Projects</a>
+  </nav>
   <button on:click={settingsExpand}>
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-      <path d="M3 13h18v-2h-18v2zm0 5h18v-2h-18v2zm0-10h18v-2h-18v2zm0-7v2h18v-2h-18z" />
-    </svg>
+    <img src={settingsIcon} alt="settings" class="w-6" />
   </button>
-</nav>
-
-<style>
-  nav {
-    background-color: rgb(var(--color-primary));
-    color: rgb(var(--color-text));
-    text-align: center;
-    box-shadow: var(--box-shadow);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    height: var(--header-size);
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: var(--header-size);
-  }
-
-  nav a {
-    color: rgb(var(--color-text));
-    text-decoration: none;
-    font-size: 1.5rem;
-  }
-
-  nav a:hover {
-    color: rgb(var(--color-text-hover));
-  }
-
-  nav a:active {
-    color: rgb(var(--color-text-active));
-  }
-
-  nav img {
-    height: 3rem;
-    width: 3rem;
-    border-radius: 50%;
-    margin: 0.5rem;
-  }
-</style>
+</header>
