@@ -14,7 +14,9 @@
 <Settings bind:show={showSettings} />
 <div class="h-screen flex flex-col">
   <Header on:settings={toggleSettings} />
-  <main class="bg-neutral-200 dark:bg-neutral-800 h-screen overflow-auto">
+  <main
+    class="bg-neutral-200 dark:bg-neutral-800 h-screen overflow-auto"
+  >
     <slot />
   </main>
   <Footer />

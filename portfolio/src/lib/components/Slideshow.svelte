@@ -11,7 +11,7 @@
         class="relative"
         src={image.src}
         alt={image.name}
-      >
+      />
     {/each}
   </div>
 </div>

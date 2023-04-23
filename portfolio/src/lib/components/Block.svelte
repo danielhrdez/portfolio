@@ -9,7 +9,9 @@
 </script>
 
 <div class="flex justify-center items-center h-full {bgClass}">
-  <div class="bg-neutral-100 dark:bg-neutral-600 p-4 rounded-2xl drop-shadow-xl">
+  <div
+    class="bg-neutral-100 dark:bg-neutral-600 p-4 rounded-2xl drop-shadow-xl"
+  >
     <h1 class="text-3xl font-bold">
       {title}
     </h1>
