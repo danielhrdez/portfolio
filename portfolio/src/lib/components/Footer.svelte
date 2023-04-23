@@ -17,3 +17,10 @@
     </a>
   </div>
 </footer>
+
+<style>
+  a {
+    text-decoration: none;
+    color: var(--neutral-900);
+  }
+</style>

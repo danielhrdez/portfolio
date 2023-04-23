@@ -5,12 +5,11 @@
 </script>
 
 <div class="overflow-hidden rounded-md">
-  <div class="flex max-w-md slide-image">
+  <div class="flex max-w-sm slide-image">
     {#each images as image}
       <img
         class="relative"
         src={image.src}
-        style="width:50%"
         alt={image.name}
       >
     {/each}
@@ -19,7 +18,7 @@
 
 <style lang="scss">
   .slide-image {
-    animation: slide 12s infinite;
+    animation: slide 20s infinite;
     animation-timing-function: linear;
   }
 

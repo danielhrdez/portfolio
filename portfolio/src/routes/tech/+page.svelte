@@ -9,6 +9,8 @@
     'pytorch': 'https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white',
     'react': 'https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB',
     'svelte': 'https://img.shields.io/badge/svelte-%23f1413d.svg?style=for-the-badge&logo=svelte&logoColor=white',
+    'tailwind': 'https://img.shields.io/badge/tailwind-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white',
+    'sass': 'https://img.shields.io/badge/Sass-%23CC6699.svg?style=for-the-badge&logo=sass&logoColor=white',
     'flask': 'https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white',
   };
   
@@ -64,20 +66,25 @@
   ];
 </script>
 
-<Block title="Frameworks by Field">
-  <SubBlock title="Deep Learning">
-    <img src={frameworks.tensorflow} alt="TensorFlow">
-    <img src={frameworks.pytorch} alt="PyTorch">
-  </SubBlock>
-  <SubBlock title="Frontend">
-    <img src={frameworks.react} alt="React">
-    <img src={frameworks.svelte} alt="Svelte">
-  </SubBlock>
-  <SubBlock title="Backend">
-    <img src={frameworks.flask} alt="Flask">
-  </SubBlock>
-</Block>
-
-<Block title="Programming Languages">
-  <Slideshow images={programmingLanguages} />
+<Block title="Tech Stack">
+  <Block title="" subtitle="Programming Languages">
+    <Slideshow images={programmingLanguages} />
+  </Block>
+  <br>
+  <br>
+  <Block title="" subtitle="Frameworks by Field">
+    <SubBlock title="Deep Learning">
+      <img src={frameworks.tensorflow} alt="TensorFlow">
+      <img src={frameworks.pytorch} alt="PyTorch">
+    </SubBlock>
+    <SubBlock title="Frontend">
+      <img src={frameworks.react} alt="React">
+      <img src={frameworks.svelte} alt="Svelte">
+      <img src={frameworks.tailwind} alt="Tailwind">
+      <img src={frameworks.sass} alt="Sass">
+    </SubBlock>
+    <SubBlock title="Backend">
+      <img src={frameworks.flask} alt="Flask">
+    </SubBlock>
+  </Block>
 </Block>
