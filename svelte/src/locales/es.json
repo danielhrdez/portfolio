@@ -3,7 +3,7 @@
     "home": {
       "title": "Inicio",
       "job": "Ingeniero de Software",
-      "description": "Ingeniero de Software con {age} años.<br>Graduado en la <a href=\"https://www.ull.es/\">ULL</a> en 2023.<br>Encatado con la Inteligencia Artificial y el Desarrollo Web."
+      "description": "Ingeniero de Software con {age} años.<br>Graduado en la <a href=\"https://www.ull.es/\">ULL</a> en 2023.<br>Encantado con la Inteligencia Artificial y el Desarrollo Web."
     },
     "tech": {
       "title": "Tecnologías",
