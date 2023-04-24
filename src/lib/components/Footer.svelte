@@ -30,7 +30,6 @@
 	}
 
 	div {
-		@apply bg-transparent;
-		@apply dark:bg-transparent;
+		@apply bg-transparent dark:bg-transparent;
 	}
 </style>

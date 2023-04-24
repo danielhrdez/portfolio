@@ -2,7 +2,7 @@
 	<slot />
 </div>
 
-<style lang="scss">
+<style>
 	.mask {
 		background: linear-gradient(90deg, #00ff80, #00a2ff);
 		background-clip: text;
