@@ -6,8 +6,8 @@
       "description": "Ingeniero de Software con {age} años.<br>Graduado en la <a href=\"https://www.ull.es/\">ULL</a> en 2023.<br>Encatado con la Inteligencia Artificial y el Desarrollo Web."
     },
     "tech": {
-      "title": "Technologias",
-      "langs": "Lenguajes de Programmación",
+      "title": "Tecnologías",
+      "langs": "Lenguajes de Programación",
       "frameworks": "Frameworks por Categoría"
     },
     "experience": {

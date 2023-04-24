@@ -1,4 +1,11 @@
-<footer class="flex h-10 justify-around items-center">
+<footer class="
+  flex
+  h-10
+  justify-around
+  items-center
+  bg-neutral-100
+  dark:bg-neutral-600
+">
   <div>
     <p>+34 603 66 69 13</p>
   </div>
@@ -18,9 +25,14 @@
   </div>
 </footer>
 
-<style>
+<style lang="scss">
   a {
     text-decoration: none;
     color: var(--neutral-900);
+  }
+
+  div {
+    background-color: transparent;
+    @apply dark:bg-transparent;
   }
 </style>

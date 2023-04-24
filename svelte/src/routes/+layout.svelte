@@ -3,7 +3,7 @@
   import Footer from '$lib/components/Footer.svelte';
   import Settings from '$lib/components/Settings.svelte';
   import "../app.css";
-  import "../i18n.ts";
+  import "../lib/i18n";
   import { isLoading } from 'svelte-i18n';
 
   let showSettings = false;
@@ -20,7 +20,7 @@
   <div class="h-screen flex flex-col">
     <Header on:settings={toggleSettings} />
     <main
-      class="bg-neutral-200 dark:bg-neutral-800 h-screen overflow-auto"
+      class="h-screen overflow-auto"
     >
       <slot />
     </main>

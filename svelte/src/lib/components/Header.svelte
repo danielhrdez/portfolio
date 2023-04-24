@@ -11,7 +11,14 @@
   }
 </script>
 
-<header class="flex justify-around p-1">
+<header class="
+  flex
+  justify-around
+  p-1
+  bg-neutral-100
+  dark:bg-neutral-600
+  drop-shadow-sm
+">
   <img src={danielPng} alt="daniel" class="w-10" />
   <nav class="flex justify-around items-center container">
     <a href="/">
