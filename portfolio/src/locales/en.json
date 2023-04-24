@@ -1,0 +1,62 @@
+{
+  "page": {
+    "home": {
+      "title": "Home",
+      "job": "Software Engineer",
+      "description": "Software Engineer with {age} years old.<br>Graduated from the <a href=\"https://www.ull.es/\">ULL</a> in 2023.<br>In love with the Artificial Intelligence and Web Development."
+    },
+    "tech": {
+      "title": "Technologies",
+      "langs": "Programming Languages",
+      "frameworks": "Frameworks by Field"
+    },
+    "experience": {
+      "title": "Experience",
+      "titsa": {
+        "title": "Machine Learning Specialist",
+        "type": "Internship (3 months)",
+        "description": "Hablar de toda la mierda que hacemos ahí y quizá poner un link a la página de la empresa o proyecto."
+      }
+    },
+    "academic": {
+      "title": "Academic",
+      "bachelor": {
+        "title": "Computer Science",
+        "type": "Bachelor's Degree",
+        "description": "Describir la ull y rollos que he dado en la carrera."
+      }
+    },
+    "projects": {
+      "title": "Projects",
+      "tfg": {
+        "title": "ML in AWS",
+        "type": "Final Degree Project",
+        "description": "Describir el proyecto y poner un link a la página del proyecto."
+      },
+      "website": {
+        "title": "Personal Website",
+        "type": "Personal Project",
+        "description": "Describir el proyecto y poner un link a la página del proyecto."
+      },
+      "fitness": {
+        "title": "ElyteOlympus",
+        "type": "Fitness App",
+        "description": "Describir el proyecto y poner un link a la página del proyecto."
+      },
+      "bot": {
+        "title": "ChatBot",
+        "type": "Own AI",
+        "description": "Describir el proyecto y poner un link a la página del proyecto."
+      }
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "mode": "Mode",
+    "light": "Light",
+    "dark": "Dark",
+    "lang": "Language",
+    "en": "English",
+    "es": "Spanish"
+  }
+}

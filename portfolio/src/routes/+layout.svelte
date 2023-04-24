@@ -3,6 +3,8 @@
   import Footer from '$lib/components/Footer.svelte';
   import Settings from '$lib/components/Settings.svelte';
   import "../app.css";
+  import "../i18n.ts";
+  import { isLoading } from 'svelte-i18n';
 
   let showSettings = false;
   
@@ -11,13 +13,17 @@
   }
 </script>
 
-<Settings bind:show={showSettings} />
-<div class="h-screen flex flex-col">
-  <Header on:settings={toggleSettings} />
-  <main
-    class="bg-neutral-200 dark:bg-neutral-800 h-screen overflow-auto"
-  >
-    <slot />
-  </main>
-  <Footer />
-</div>
+{#if $isLoading}
+  Please wait...
+{:else}
+  <Settings bind:show={showSettings} />
+  <div class="h-screen flex flex-col">
+    <Header on:settings={toggleSettings} />
+    <main
+      class="bg-neutral-200 dark:bg-neutral-800 h-screen overflow-auto"
+    >
+      <slot />
+    </main>
+    <Footer />
+  </div>
+{/if}

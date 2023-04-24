@@ -1,0 +1,62 @@
+{
+  "page": {
+    "home": {
+      "title": "Inicio",
+      "job": "Ingeniero de Software",
+      "description": "Ingeniero de Software con {age} años.<br>Graduado en la <a href=\"https://www.ull.es/\">ULL</a> en 2023.<br>Encatado con la Inteligencia Artificial y el Desarrollo Web."
+    },
+    "tech": {
+      "title": "Technologias",
+      "langs": "Lenguajes de Programmación",
+      "frameworks": "Frameworks por Categoría"
+    },
+    "experience": {
+      "title": "Experiencia",
+      "titsa": {
+        "title": "Especialista en Machine Learning",
+        "type": "Prácticas (3 meses)",
+        "description": "Hablar de toda la mierda que hacemos ahí y quizá poner un link a la página de la empresa o proyecto."
+      }
+    },
+    "academic": {
+      "title": "Estudios",
+      "bachelor": {
+        "title": "Ingeniería Informática",
+        "type": "Grado Universitario",
+        "description": "Describir la ull y rollos que he dado en la carrera."
+      }
+    },
+    "projects": {
+      "title": "Projectos",
+      "tfg": {
+        "title": "ML en AWS",
+        "type": "Trabajo Final de Grado",
+        "description": "Describir el proyecto y poner un link a la página del proyecto."
+      },
+      "website": {
+        "title": "Personal Website",
+        "type": "Personal Project",
+        "description": "Describir el proyecto y poner un link a la página del proyecto."
+      },
+      "fitness": {
+        "title": "ElyteOlympus",
+        "type": "Fitness App",
+        "description": "Describir el proyecto y poner un link a la página del proyecto."
+      },
+      "bot": {
+        "title": "ChatBot",
+        "type": "Own AI",
+        "description": "Describir el proyecto y poner un link a la página del proyecto."
+      }
+    }
+  },
+  "settings": {
+    "title": "Configuración",
+    "mode": "Modo",
+    "light": "Claro",
+    "dark": "Oscuro",
+    "lang": "Lenguaje",
+    "en": "Inglés",
+    "es": "Español"
+  }
+}

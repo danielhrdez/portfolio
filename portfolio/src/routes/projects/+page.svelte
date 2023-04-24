@@ -17,4 +17,7 @@
     I decided to migrate it to SvelteKit because
     I wanted to learn a new framework.
   </SubBlock>
+  <SubBlock title="ChatBot" subtitle="Own AI">
+    Intentar algo.
+  </SubBlock>
 </Block>

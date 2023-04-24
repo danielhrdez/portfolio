@@ -9,7 +9,7 @@
   let checked: boolean = false;
 
   function toggle() {
-    dispatch('toggle');
+    dispatch('toggle', checked);
   }
 </script>
 

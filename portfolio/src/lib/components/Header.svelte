@@ -2,6 +2,7 @@
   import danielPng from '$lib/images/daniel.png';
   import settingsIcon from '$lib/images/settings-btn.svg';
   import { createEventDispatcher } from 'svelte';
+  import { t } from 'svelte-i18n';
 
   const dispatch = createEventDispatcher();
 
@@ -13,11 +14,21 @@
 <header class="flex justify-around p-1">
   <img src={danielPng} alt="daniel" class="w-10" />
   <nav class="flex justify-around items-center container">
-    <a href="/">Home</a>
-    <a href="/tech">Technologies</a>
-    <a href="/experience">Experience</a>
-    <a href="/academic">Academic</a>
-    <a href="/projects">Projects</a>
+    <a href="/">
+      {$t('page.home.title')}
+    </a>
+    <a href="/tech">
+      {$t('page.tech.title')}
+    </a>
+    <a href="/experience">
+      {$t('page.experience.title')}
+    </a>
+    <a href="/academic">
+      {$t('page.academic.title')}
+    </a>
+    <a href="/projects">
+      {$t('page.projects.title')}
+    </a>
   </nav>
   <button on:click={toggleSettings}>
     <img src={settingsIcon} alt="settings" class="w-6" />
