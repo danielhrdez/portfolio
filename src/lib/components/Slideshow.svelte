@@ -12,7 +12,7 @@
 	</div>
 </div>
 
-<style lang="scss">
+<style>
 	.slide-image {
 		animation: slide 20s infinite;
 		animation-timing-function: linear;
