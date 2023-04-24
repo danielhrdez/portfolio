@@ -5,6 +5,7 @@
 	import '../app.css';
 	import '../lib/i18n';
 	import { isLoading } from 'svelte-i18n';
+	export const prerender = true;
 
 	let showSettings = false;
 
