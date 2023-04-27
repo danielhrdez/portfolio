@@ -50,6 +50,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@vercel/analytics": "^1.0.0",
 		"svelte-i18n": "^3.6.0",
 		"svelte-local-storage-store": "^0.4.0"
 	},
