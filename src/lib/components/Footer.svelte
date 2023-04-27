@@ -30,7 +30,7 @@
 		dark:bg-neutral-600
 	"
 >
-	<a href="tel:{phone.replace(/\s/g, '')}">
+	<a href="tel:+34 603 66 69 13">
 		{#if width > 640}
 			<p>{phone}</p>
 		{:else}
