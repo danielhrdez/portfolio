@@ -20,7 +20,7 @@
 		bg-transparent
 		dark:bg-transparent
 		items-center
-		w-96
+		w-full
   	"
 >
 	<h2 class="text-xl">
@@ -35,6 +35,8 @@
 				dark:bg-neutral-700/75
 				cursor-pointer
 				rounded-xl
+				h-6
+				relative
 			"
 		>
 			<p
@@ -43,7 +45,10 @@
 					dark:bg-[#39a372]
 					px-2
 					rounded-full
-					{checked ? 'ml-auto' : 'mr-auto'}
+					absolute
+					{checked ? 'left-full -translate-x-full' : 'left-0'}
+					hover-scale
+					hover:drop-shadow-md
 				"
 			>
 				{checked ? right : left}

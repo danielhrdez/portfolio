@@ -16,54 +16,84 @@
 	function toggleMenu() {
 		navDisplayed = !navDisplayed;
 	}
+
+	const links = [
+		{
+			href: '/',
+			text: $t('page.home.title')
+		},
+		{
+			href: '/tech',
+			text: $t('page.tech.title')
+		},
+		{
+			href: '/experience',
+			text: $t('page.experience.title')
+		},
+		{
+			href: '/academic',
+			text: $t('page.academic.title')
+		},
+		{
+			href: '/projects',
+			text: $t('page.projects.title')
+		}
+	];
 </script>
 
 <header
 	class="
 		flex
 		justify-between
-		p-1
-		bg-neutral-100
-		dark:bg-neutral-600
+		py-1
+		px-2
 		drop-shadow-sm
+		z-20
 	"
 >
-	<button on:click={toggleMenu} class="sm:hidden">
+	<button on:click={toggleMenu} class="sm:hidden dark:invert">
 		<img src={menuIcon} alt="menu" class="w-10" />
 	</button>
 	<img src={danielPng} alt="daniel" class="w-10" />
 	<nav
 		class="
-			sm:flex
+			flex
+			absolute sm:relative
+			flex-col sm:flex-row
 			justify-around
-			items-center
+			items-start sm:items-center
+			{navDisplayed ? 'top-12' : '-top-20'}
+			sm:top-0
 			container
-			{navDisplayed ? 'flex' : 'hidden'}
-			bg-neutral-100
-			dark:bg-neutral-600
-			top-0
+			bg-neutral-100 dark:bg-neutral-600
+			pl-4 sm:pl-0
+			pb-2 sm:pb-0
 			left-0
+			rounded-b-xl sm:rounded-none
+			{navDisplayed ? 'drop-shadow-md' : ''} sm:drop-shadow-none
+			-z-10 sm:z-10
 		"
 	>
-		<a href="/">
-			{$t('page.home.title')}
-		</a>
-		<a href="/tech">
-			{$t('page.tech.title')}
-		</a>
-		<a href="/experience">
-			{$t('page.experience.title')}
-		</a>
-		<a href="/academic">
-			{$t('page.academic.title')}
-		</a>
-		<a href="/projects">
-			{$t('page.projects.title')}
-		</a>
+		{#each links as link}
+			<a href={link.href}>
+				{link.text}
+			</a>
+		{/each}
 	</nav>
 	<button on:click={toggleSettings}>
-		<img src={settingsIcon} alt="settings" class="w-8" />
+		<img src={settingsIcon} alt="settings" class="w-7 dark:invert hover:rotate-90 hover-scale" />
 	</button>
+	<div
+		class="
+			bg-neutral-100
+			dark:bg-neutral-600
+	 		w-full
+			h-full
+			absolute
+			inset-0
+			-z-10
+		"
+	/>
 </header>
 
 <style>

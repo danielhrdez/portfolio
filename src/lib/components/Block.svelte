@@ -25,7 +25,7 @@
       drop-shadow-xl
     "
 	>
-		<h1 class="text-3xl font-bold">
+		<h1 class="text-3xl font-bold mr-12">
 			{title}
 		</h1>
 		<MaskedText>{subtitle}</MaskedText>
