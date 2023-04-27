@@ -52,5 +52,6 @@
 	"dependencies": {
 		"svelte-i18n": "^3.6.0",
 		"svelte-local-storage-store": "^0.4.0"
-	}
+	},
+	"prepare": "svelte-kit sync"
 }
