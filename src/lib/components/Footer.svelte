@@ -4,18 +4,9 @@
 	import linkedinIcon from '$lib/images/linkedin.svg';
 
 	let width = 0;
-	let phone = phoneIcon;
-	let email = emailIcon;
-	let linkedin = linkedinIcon;
-	$: if (width > 640) {
-		phone = '+34 603 66 69 13';
-		email = 'daniel@danielhrdez.dev';
-		linkedin = 'Linkedin';
-	} else {
-		phone = phoneIcon;
-		email = emailIcon;
-		linkedin = linkedinIcon;
-	}
+	let phone = '+34 603 66 69 13';
+	let email = 'daniel@danielhrdez.dev';
+	let linkedin = 'Linkedin';
 </script>
 
 <svelte:window bind:innerWidth={width} />
@@ -30,25 +21,25 @@
 		dark:bg-neutral-600
 	"
 >
-	<a href="tel:+34 603 66 69 13">
+	<a href="tel:{phone}">
 		{#if width > 640}
 			<p>{phone}</p>
 		{:else}
-			<img src={phone} alt="Phone icon" class="h-6 dark:invert" />
+			<img src={phoneIcon} alt="Phone icon" class="h-6 dark:invert" />
 		{/if}
 	</a>
-	<a href="mailto:daniel@danielhrdez.dev?subject=Hello%20Daniel!">
+	<a href="mailto:{email}?subject=Hello%20Daniel!">
 		{#if width > 640}
 			<p>{email}</p>
 		{:else}
-			<img src={email} alt="Email icon" class="h-6 dark:invert" />
+			<img src={emailIcon} alt="Email icon" class="h-6 dark:invert" />
 		{/if}
 	</a>
 	<a href="https://www.linkedin.com/in/danihrdez/" target="_blank" rel="noreferrer">
 		{#if width > 640}
 			<p>{linkedin}</p>
 		{:else}
-			<img src={linkedin} alt="Linkedin icon" class="h-6 dark:invert" />
+			<img src={linkedinIcon} alt="Linkedin icon" class="h-6 dark:invert" />
 		{/if}
 	</a>
 </footer>
