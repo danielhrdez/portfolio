@@ -1,5 +1,4 @@
 <script lang="ts">
-	export const prerender = true;
 	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import Settings from '$lib/components/Settings.svelte';
