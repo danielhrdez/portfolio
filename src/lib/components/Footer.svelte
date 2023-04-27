@@ -30,7 +30,7 @@
 		dark:bg-neutral-600
 	"
 >
-	<a href="tel:{phone}">
+	<a href="tel:{phone.replace(/\s/g, '')}">
 		{#if width > 640}
 			<p>{phone}</p>
 		{:else}
@@ -44,7 +44,7 @@
 			<img src={email} alt="Email icon" class="h-6 dark:invert" />
 		{/if}
 	</a>
-	<a href="https://www.linkedin.com/in/danielhrdez/" target="_blank" rel="noreferrer">
+	<a href="https://www.linkedin.com/in/danihrdez/" target="_blank" rel="noreferrer">
 		{#if width > 640}
 			<p>{linkedin}</p>
 		{:else}
