@@ -5,6 +5,10 @@
 	import '../app.css';
 	import '../lib/i18n';
 	import { isLoading } from 'svelte-i18n';
+	import { dev } from '$app/environment';
+	import { inject } from '@vercel/analytics';
+
+	inject({ mode: dev ? 'development' : 'production' });
 
 	let showSettings = false;
 
