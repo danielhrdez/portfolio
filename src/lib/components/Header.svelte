@@ -1,10 +1,10 @@
 <script lang="ts">
-	import danielPng from '$lib/images/daniel.png';
-	import settingsIcon from '$lib/images/settings-btn.svg';
-	import menuIcon from '$lib/images/menu-icon.svg';
+	import danielPng from '$lib/assets/daniel.png';
+	import settingsIcon from '$lib/assets/settings-btn.svg';
+	import menuIcon from '$lib/assets/menu-icon.svg';
 	import { createEventDispatcher } from 'svelte';
 	import { t } from 'svelte-i18n';
-
+	
 	const dispatch = createEventDispatcher();
 
 	let navDisplayed = false;
@@ -17,7 +17,7 @@
 		navDisplayed = !navDisplayed;
 	}
 
-	const links = [
+	$: links = [
 		{
 			href: '/',
 			text: $t('page.home.title')
@@ -52,7 +52,7 @@
 	"
 >
 	<button on:click={toggleMenu} class="sm:hidden dark:invert">
-		<img src={menuIcon} alt="menu" class="w-10" />
+		<img src={menuIcon} alt="menu" class="w-8" />
 	</button>
 	<img src={danielPng} alt="daniel" class="w-10" />
 	<nav
@@ -81,7 +81,7 @@
 		{/each}
 	</nav>
 	<button on:click={toggleSettings}>
-		<img src={settingsIcon} alt="settings" class="w-7 dark:invert hover:rotate-90 hover-scale" />
+		<img src={settingsIcon} alt="settings" class="w-8 dark:invert hover:rotate-90 hover-scale" />
 	</button>
 	<div
 		class="

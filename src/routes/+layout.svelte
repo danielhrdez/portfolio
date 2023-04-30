@@ -1,9 +1,9 @@
 <script lang="ts">
-	import Header from '$lib/components/Header.svelte';
-	import Footer from '$lib/components/Footer.svelte';
-	import Settings from '$lib/components/Settings.svelte';
+	import Header from '$components/Header.svelte';
+	import Footer from '$components/Footer.svelte';
+	import Settings from '$components/Settings.svelte';
 	import '../app.css';
-	import '../lib/i18n';
+	import '$utils/i18n';
 	import { isLoading } from 'svelte-i18n';
 	import { dev } from '$app/environment';
 	import { inject } from '@vercel/analytics';
@@ -23,7 +23,7 @@
 	<Settings bind:show={showSettings} />
 	<div class="h-screen flex flex-col">
 		<Header on:settings={toggleSettings} />
-		<main class="h-screen overflow-auto">
+		<main class="h-full overflow-auto">
 			<slot />
 		</main>
 		<Footer />

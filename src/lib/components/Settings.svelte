@@ -3,12 +3,12 @@
 	import Switch from './Switch.svelte';
 	import { t, locale } from 'svelte-i18n';
 	import { get } from 'svelte/store';
-	import { preferences } from '../storage';
+	import { preferences } from '$utils/storage';
 	import { onMount } from 'svelte';
-	import settingsExit from '$lib/images/settings-exit.svg';
+	import settingsExit from '$lib/assets/settings-exit.svg';
+	import Modal from './Modal.svelte';
 
-	export let show: boolean;
-	$: showClass = show ? 'block' : 'hidden';
+	export let show = false;
 
 	let dark = get(preferences).theme === 'dark';
 	let lang = get(preferences).lang;
@@ -37,21 +37,7 @@
 	}
 </script>
 
-<div
-	class="
-    {showClass}
-    absolute
-    bg-opacity-50
-    dark:bg-opacity-50
-    backdrop-blur-sm
-    h-screen
-    w-screen
-    flex
-    justify-center
-    items-center
-    z-10
-  "
->
+<Modal show={show}>
 	<Block title={$t('settings.title')}>
 		<img
 			src={settingsExit}
@@ -78,4 +64,4 @@
 			on:toggle={toggleLanguage}
 		/>
 	</Block>
-</div>
+</Modal>

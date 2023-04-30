@@ -1,6 +1,5 @@
 <script lang="ts">
-	import type { BadgeLink } from '$lib/types';
-	export let images: BadgeLink[] = [];
+	export let images: { name: string; src: string }[] = [];
 	images.push(...images);
 </script>
 
