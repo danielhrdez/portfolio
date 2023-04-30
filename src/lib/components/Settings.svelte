@@ -2,21 +2,13 @@
 	import Block from './Block.svelte';
 	import Switch from './Switch.svelte';
 	import { t, locale } from 'svelte-i18n';
-	import { get } from 'svelte/store';
-	import { preferences } from '$utils/storage';
-	import { onMount } from 'svelte';
 	import settingsExit from '$lib/assets/settings-exit.svg';
+	import { preferences } from '$utils/storage';
 	import Modal from './Modal.svelte';
 
 	export let show = false;
-
-	let dark = get(preferences).theme === 'dark';
-	let lang = get(preferences).lang;
-
-	onMount(() => {
-		document.documentElement.classList.toggle('dark', dark);
-		locale.set(lang);
-	});
+	export let dark = false;
+	export let lang = 'en';
 
 	function toggleMode() {
 		dark = !dark;
@@ -60,7 +52,7 @@
 			title={$t('settings.lang')}
 			left={$t('settings.en')}
 			right={$t('settings.es')}
-			checked={lang === 'es'}
+			checked={lang.startsWith('es')}
 			on:toggle={toggleLanguage}
 		/>
 	</Block>

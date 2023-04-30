@@ -3,9 +3,7 @@
 	import { t } from 'svelte-i18n';
 
 	let year = new Date().getFullYear();
-	let birthYear = 2001;
-	let age = year - birthYear;
-	$: description = $t('page.home.description', { values: { age } });
+	$: description = $t('page.home.description', { values: { age: year - 2001 } });
 </script>
 
 <Block title="Daniel Hernández de León" subtitle={$t('page.home.job')}>
