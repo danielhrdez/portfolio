@@ -4,5 +4,5 @@
 </script>
 
 <Block title="Academic Background">
-	<SubBlock title="Computer Science">Describir la ull y rollos que he dado en la carrera</SubBlock>
+	<SubBlock title="Computer Science">...</SubBlock>
 </Block>
