@@ -52,7 +52,7 @@
 	"
 >
 	<button on:click={toggleMenu} class="sm:hidden dark:invert">
-		<img src={menuIcon} alt="menu" class="w-8" />
+		<img src={menuIcon} alt="menu" class="w-8 h-8" />
 	</button>
 	<img src={danielWebp} alt="me" class="w-10 h-10" />
 	<nav
@@ -81,7 +81,11 @@
 		{/each}
 	</nav>
 	<button on:click={toggleSettings}>
-		<img src={settingsIcon} alt="settings" class="w-8 dark:invert hover:rotate-90 hover-scale" />
+		<img
+			src={settingsIcon}
+			alt="settings"
+			class="w-8 h-8 dark:invert hover:rotate-90 hover-scale"
+		/>
 	</button>
 	<div
 		class="
