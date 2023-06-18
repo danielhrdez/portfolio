@@ -1,6 +1,5 @@
 <script lang="ts">
 	import danielWebp from '$lib/assets/daniel.webp';
-	import Image from './Image.svelte';
 	import settingsIcon from '$lib/assets/settings-btn.svg';
 	import menuIcon from '$lib/assets/menu-icon.svg';
 	import { createEventDispatcher } from 'svelte';
@@ -55,7 +54,7 @@
 	<button on:click={toggleMenu} class="sm:hidden dark:invert">
 		<img src={menuIcon} alt="menu" class="w-8" />
 	</button>
-	<Image src={danielWebp} alt="daniel" class="w-10 h-10" multipliers={[0.5, 1, 2, 4]} />
+	<img src={danielWebp} alt="me" class="w-10 h-10" />
 	<nav
 		class="
 			flex

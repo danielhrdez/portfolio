@@ -27,7 +27,6 @@
 	onMount(async () => {
 		dark = get(preferences).theme === 'dark';
 		lang = get(preferences).lang;
-		console.log(lang)
 		document.documentElement.classList.toggle('dark', dark);
 		locale.set(lang);
 		await isLoading;
