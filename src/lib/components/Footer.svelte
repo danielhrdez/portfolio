@@ -5,7 +5,7 @@
 
 	let width = 0;
 	let phone = '+34 603 66 69 13';
-	let email = 'daniel@danielhrdez.dev';
+	let email = 'contact@danielhrdez.dev';
 	let linkedin = 'Linkedin';
 </script>
 
@@ -25,21 +25,21 @@
 		{#if width > 640}
 			<p>{phone}</p>
 		{:else}
-			<img src={phoneIcon} alt="Phone icon" class="h-6 dark:invert" />
+			<img src={phoneIcon} alt="Phone icon" class="w-6 h-6 dark:invert" />
 		{/if}
 	</a>
 	<a href="mailto:{email}?subject=Hello%20Daniel!">
 		{#if width > 640}
 			<p>{email}</p>
 		{:else}
-			<img src={emailIcon} alt="Email icon" class="h-6 dark:invert" />
+			<img src={emailIcon} alt="Email icon" class="w-6 h-6 dark:invert" />
 		{/if}
 	</a>
 	<a href="https://www.linkedin.com/in/danihrdez/" target="_blank" rel="noreferrer">
 		{#if width > 640}
 			<p>{linkedin}</p>
 		{:else}
-			<img src={linkedinIcon} alt="Linkedin icon" class="h-6 dark:invert" />
+			<img src={linkedinIcon} alt="Linkedin icon" class="w-6 h-6 dark:invert" />
 		{/if}
 	</a>
 </footer>

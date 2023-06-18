@@ -29,12 +29,12 @@
 	}
 </script>
 
-<Modal show={show}>
+<Modal {show}>
 	<Block title={$t('settings.title')}>
 		<img
 			src={settingsExit}
 			alt="settings"
-			class="absolute top-0 right-0 w-5 m-6 cursor-pointer dark:invert hover-scale"
+			class="absolute top-0 right-0 w-5 h-5 m-6 cursor-pointer dark:invert hover-scale"
 			on:click={() => (show = false)}
 			on:keypress={(e) => {
 				if (e.key === 'Enter') show = false;
