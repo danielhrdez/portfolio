@@ -2,9 +2,9 @@
 	import Block from './Block.svelte';
 	import Switch from './Switch.svelte';
 	import { t, locale } from 'svelte-i18n';
-	import settingsExit from '$lib/assets/settings-exit.svg';
 	import { preferences } from '$utils/storage';
 	import Modal from './Modal.svelte';
+	import settingsExit from '$lib/assets/settings-exit.svg';
 
 	export let show = false;
 	export let dark = false;
@@ -32,6 +32,7 @@
 <Modal {show}>
 	<Block title={$t('settings.title')}>
 		<img
+			loading="lazy"
 			src={settingsExit}
 			alt="settings"
 			class="absolute top-0 right-0 w-5 h-5 m-6 cursor-pointer dark:invert hover-scale"

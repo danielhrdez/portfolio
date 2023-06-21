@@ -52,7 +52,7 @@
 	"
 >
 	<button on:click={toggleMenu} class="sm:hidden dark:invert">
-		<img src={menuIcon} alt="menu" class="w-8 h-8" />
+		<img loading="lazy" src={menuIcon} alt="menu" class="w-8 h-8" />
 	</button>
 	<img src={danielWebp} alt="me" class="w-10 h-10" />
 	<nav
