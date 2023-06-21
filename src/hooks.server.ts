@@ -5,11 +5,6 @@ export const handle: Handle = async ({ event, resolve }) => {
 		transformPageChunk: ({ html }) => minifyHTML(html)
 	});
 	return response;
-	// if (response.headers.get('content-type') === 'text/html' && response.body) {
-	// 	console.log(response);
-	// 	response.body!.source = minifyHTML(response.body!.source);
-	// }
-	// return response;
 };
 
 function minifyHTML(html: string) {
