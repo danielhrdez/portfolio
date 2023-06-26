@@ -3,6 +3,7 @@
 
 	export let title: string;
 	export let subtitle: string = '';
+	export let id: string;
 </script>
 
 <div
@@ -10,10 +11,10 @@
     flex
     justify-center
     items-center
-    h-full
     bg-transparent
     dark:bg-transparent
   "
+  id={id}
 >
 	<div
 		class="
@@ -23,6 +24,7 @@
       p-4
       rounded-2xl
       drop-shadow-xl
+      h-full w-full
     "
 	>
 		<h1 class="text-3xl font-bold mr-12">

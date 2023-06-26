@@ -3,19 +3,14 @@
     "home": {
       "title": "Inicio",
       "job": "Ingeniero de Software",
-      "description": "Ingeniero de Software con {age} años.<br>Graduado en la <a href=\"https://www.ull.es/\">ULL</a> en 2023.<br>Encantado con la Inteligencia Artificial y el Desarrollo Web."
-    },
-    "tech": {
-      "title": "Tecnologías",
-      "langs": "Lenguajes de Programación",
-      "frameworks": "Frameworks por Categoría"
+      "description": "Desarrollador de Web Apps Full Stack.<br>Especialista en Machine Learning."
     },
     "experience": {
       "title": "Experiencia",
       "titsa": {
         "title": "Especialista en Machine Learning",
-        "type": "Prácticas (3 meses)",
-        "description": "Hablar de lo que hacemos ahí y quizá poner un link a la página de la empresa o proyecto."
+        "type": "Prácticas",
+        "description": "Desarrollé modelos de aprendizaje automático en PyTorch para predecir el número de clientes, implementé algoritmos de vanguardia para resolver el Problema de Enrutamiento de Vehículos Abierto, creé una aplicación web de pila completa en React.JS y Flask para visualizar los algoritmos, y realicé análisis y automatización de datos utilizando SQL Server, lo que resultó en modelos que alcanzaron más del 95% de confianza y cumplimiento de las mejores prácticas de ingeniería basadas en metodologías ágiles."
       }
     },
     "academic": {

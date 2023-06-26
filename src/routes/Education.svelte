@@ -3,6 +3,6 @@
 	import SubBlock from '$lib/components/SubBlock.svelte';
 </script>
 
-<Block title="Academic Background">
+<Block title="Education" id="education">
 	<SubBlock title="Computer Science">...</SubBlock>
 </Block>

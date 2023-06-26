@@ -19,19 +19,15 @@
 
 	$: links = [
 		{
-			href: '/',
+			href: '/#home',
 			text: $t('page.home.title')
 		},
 		{
-			href: '/tech',
-			text: $t('page.tech.title')
-		},
-		{
-			href: '/experience',
+			href: '/#experience',
 			text: $t('page.experience.title')
 		},
 		{
-			href: '/academic',
+			href: '/#education',
 			text: $t('page.academic.title')
 		},
 		{

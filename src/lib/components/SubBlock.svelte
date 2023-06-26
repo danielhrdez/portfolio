@@ -3,7 +3,7 @@
 	export let subtitle: string = '';
 </script>
 
-<div class="flex flex-col">
+<div class="flex flex-col bg-transparent dark:bg-transparent">
 	<h2 class="text-2xl">{title}</h2>
 	<h3 class="text-xl">{subtitle}</h3>
 	<p class="flex px-4">

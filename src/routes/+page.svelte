@@ -1,14 +1,15 @@
 <script lang="ts">
-	import Block from '$components/Block.svelte';
-	import { t } from 'svelte-i18n';
-
-	let year = new Date().getFullYear();
-	$: description = $t('page.home.description', { values: { age: year - 2001 } });
+	import Description from './Description.svelte';
+	import Experiences from './Experiences.svelte';
+	import Education from './Education.svelte';
 </script>
 
-<Block title="Daniel Hernández de León" subtitle={$t('page.home.job')}>
-	<warning class="text-center text-red-500 text-2xl"> THIS PAGE IS UNDER CONSTRUCTION </warning>
-	<br />
-	<br />
-	{@html description}
-</Block>
+<div class="flex flex-col gap-4 m-4 justify-center items-center h-full">
+	<div class="flex md:flex-row flex-col gap-4">
+		<div class="flex flex-col gap-4">
+			<Description />
+			<Education />
+		</div>
+		<Experiences />
+	</div>
+</div>

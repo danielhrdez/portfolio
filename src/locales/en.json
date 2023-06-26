@@ -3,19 +3,17 @@
     "home": {
       "title": "Home",
       "job": "Software Engineer",
-      "description": "Software Engineer with {age} years old.<br>Graduated from the <a href=\"https://www.ull.es/\">ULL</a> in 2023.<br>In love with the Artificial Intelligence and Web Development."
-    },
-    "tech": {
-      "title": "Technologies",
-      "langs": "Programming Languages",
-      "frameworks": "Frameworks by Field"
+      "description": "Full Stack Web Apps Developer.<br>Machine Learning Specialist."
     },
     "experience": {
       "title": "Experience",
       "titsa": {
+        "company": "TITSA",
         "title": "Machine Learning Specialist",
-        "type": "Internship (3 months)",
-        "description": "Hablar de lo que hacemos ahí y quizá poner un link a la página de la empresa o proyecto."
+        "type": "Internship",
+        "from": "February 2023",
+        "to": "May 2023",
+        "description": "Developed machine learning models in PyTorch for customer prediction, implemented state-of-the-art algorithms to solve the Open Vehicle Routing Problem, created a full-stack web app in React.JS and Flask for algorithm visualization, and performed data analysis and automation using SQL Server, resulting in models achieving over 95% confidence and adherence to engineering best practices based on Agile methodologies."
       }
     },
     "academic": {
