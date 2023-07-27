@@ -7,39 +7,43 @@
 		},
 		"experience": {
 			"title": "Experience",
-			"titsa": {
-				"entity": "TITSA",
-				"url": "https://www.titsa.com/",
-				"title": "Machine Learning Specialist",
-				"from": "02/2023",
-				"to": "05/2023",
-				"description": [
-					"Developed machine learning models in PyTorch for customer prediction.",
-					"Implemented state-of-the-art algorithms to solve the Open Vehicle Routing Problem.",
-					"Created a full-stack web app in React.JS and Flask for algorithm.",
-					"Performed data analysis and automation using SQL Server.",
-					"Models achieving over 95% confidence and adherence to engineering best practices based on Agile methodologies."
-				]
-			}
+			"companies": [
+				{
+					"entity": "TITSA",
+					"url": "https://www.titsa.com/",
+					"title": "Machine Learning Specialist",
+					"from": "02/2023",
+					"to": "05/2023",
+					"description": [
+						"Developed machine learning models in PyTorch for customer prediction.",
+						"Implemented state-of-the-art algorithms to solve the Open Vehicle Routing Problem.",
+						"Created a full-stack web app in React.JS and Flask for algorithm.",
+						"Performed data analysis and automation using SQL Server.",
+						"Models achieving over 95% confidence and adherence to engineering best practices based on Agile methodologies."
+					]
+				}
+			]
 		},
 		"education": {
 			"title": "Education",
-			"bach": {
-				"entity": "ULL",
-				"url": "https://www.ull.es/",
-				"from": "09/2019",
-				"to": "07/2023",
-				"title": "Computer Science",
-				"description": [
-					"Agent bot for shooter games in C#/Unity.",
-					"A programming language, making an interpreter and compiler in JS.",
-					"Hand gesture recognizer. Python",
-					"Text classification software. Python",
-					"Frontend websites using JS/TS",
-					"Build websockets in C/C++",
-					"SQL Databases."
-				]
-			}
+			"degrees": [
+				{
+					"entity": "ULL",
+					"url": "https://www.ull.es/",
+					"from": "09/2019",
+					"to": "07/2023",
+					"title": "Computer Science",
+					"description": [
+						"Agent bot for shooter games in C#/Unity.",
+						"A programming language, making an interpreter and compiler in JS.",
+						"Hand gesture recognizer. Python",
+						"Text classification software. Python",
+						"Frontend websites using JS/TS",
+						"Build websockets in C/C++",
+						"SQL Databases."
+					]
+				}
+			]
 		},
 		"projects": {
 			"title": "Projects",
