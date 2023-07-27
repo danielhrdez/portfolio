@@ -2,25 +2,26 @@
 	import Block from './Block.svelte';
 	import Switch from './Switch.svelte';
 	import { t, locale } from 'svelte-i18n';
-	import { preferences } from '$utils/storage';
+	import { Theme, preferences } from '$utils/storage';
 	import Modal from './Modal.svelte';
 	import settingsExit from '$lib/assets/settings-exit.svg';
+	import { Lang } from '$utils/i18n';
 
 	export let show = false;
 	export let dark = false;
-	export let lang = 'en';
+	export let lang = Lang.ENGLISH as Lang;
 
 	function toggleMode() {
 		dark = !dark;
 		preferences.update((prefs) => {
-			prefs.theme = dark ? 'dark' : 'light';
+			prefs.theme = dark ? Theme.DARK : Theme.LIGHT;
 			return prefs;
 		});
 		document.documentElement.classList.toggle('dark');
 	}
 
 	function toggleLanguage(e: CustomEvent<any>) {
-		lang = e.detail.checked ? 'es' : 'en';
+		lang = e.detail.checked ? Lang.SPANISH : Lang.ENGLISH;
 		preferences.update((prefs) => {
 			prefs.lang = lang;
 			return prefs;
@@ -30,7 +31,7 @@
 </script>
 
 <Modal {show}>
-	<Block title={$t('settings.title')}>
+	<Block title={$t('settings.title')} id="settings">
 		<img
 			loading="lazy"
 			src={settingsExit}

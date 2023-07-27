@@ -1,4 +1,4 @@
-<div class="mask font-serif text-xl italic">
+<div class="mask font-serif text-md italic">
 	<slot />
 </div>
 

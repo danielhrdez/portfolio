@@ -28,7 +28,7 @@
 		},
 		{
 			href: '/#education',
-			text: $t('page.academic.title')
+			text: $t('page.education.title')
 		},
 		{
 			href: '/projects',

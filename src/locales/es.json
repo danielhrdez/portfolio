@@ -1,57 +1,80 @@
 {
-  "page": {
-    "home": {
-      "title": "Inicio",
-      "job": "Ingeniero de Software",
-      "description": "Desarrollador de Web Apps Full Stack.<br>Especialista en Machine Learning."
-    },
-    "experience": {
-      "title": "Experiencia",
-      "titsa": {
-        "title": "Especialista en Machine Learning",
-        "type": "Prácticas",
-        "description": "Desarrollé modelos de aprendizaje automático en PyTorch para predecir el número de clientes, implementé algoritmos de vanguardia para resolver el Problema de Enrutamiento de Vehículos Abierto, creé una aplicación web de pila completa en React.JS y Flask para visualizar los algoritmos, y realicé análisis y automatización de datos utilizando SQL Server, lo que resultó en modelos que alcanzaron más del 95% de confianza y cumplimiento de las mejores prácticas de ingeniería basadas en metodologías ágiles."
-      }
-    },
-    "academic": {
-      "title": "Estudios",
-      "bachelor": {
-        "title": "Ingeniería Informática",
-        "type": "Grado Universitario",
-        "description": "Describir la ull y rollos que he dado en la carrera."
-      }
-    },
-    "projects": {
-      "title": "Projectos",
-      "tfg": {
-        "title": "ML en AWS",
-        "type": "Trabajo Final de Grado",
-        "description": "Describir el proyecto y poner un link a la página del proyecto."
-      },
-      "website": {
-        "title": "Personal Website",
-        "type": "Personal Project",
-        "description": "Describir el proyecto y poner un link a la página del proyecto."
-      },
-      "fitness": {
-        "title": "ElyteOlympus",
-        "type": "Fitness App",
-        "description": "Describir el proyecto y poner un link a la página del proyecto."
-      },
-      "bot": {
-        "title": "ChatBot",
-        "type": "Own AI",
-        "description": "Describir el proyecto y poner un link a la página del proyecto."
-      }
-    }
-  },
-  "settings": {
-    "title": "Configuración",
-    "mode": "Modo",
-    "light": "Claro",
-    "dark": "Oscuro",
-    "lang": "Lenguaje",
-    "en": "Inglés",
-    "es": "Español"
-  }
+	"page": {
+		"home": {
+			"title": "Inicio",
+			"job": "Ingeniero de Software",
+			"description": [
+				"Desarrollador de Apps Full Stack.",
+				"Ingeniero en Inteligencia Artificial."
+			]
+		},
+		"experience": {
+			"title": "Experiencia",
+			"titsa": {
+				"title": "Especialista en Machine Learning",
+				"entity": "TITSA",
+				"url": "https://www.titsa.com/",
+				"from": "02/2023",
+				"to": "05/2023",
+				"description": [
+					"Desarrollé modelos de aprendizaje automático en PyTorch para predecir el número de clientes.",
+					"Implemente algoritmos de vanguardia para resolver el Problema de Enrutamiento de Vehículos Abierto.",
+					"Creé una aplicación web completa en React.JS y Flask para visualizar los algoritmos.",
+					"Realicé análisis y automatización de datos utilizando SQL Server.",
+					"Los modelos alcanzaron más del 95% de confianza y cumplimiento de las mejores prácticas de ingeniería basadas en metodologías ágiles."
+				]
+			}
+		},
+		"education": {
+			"title": "Estudios",
+			"bach": {
+				"entity": "ULL",
+				"url": "https://www.ull.es/",
+				"from": "09/2019",
+				"to": "07/2023",
+				"title": "Ingeniería Informática",
+				"description": [
+					"Bot agente para juegos de disparos en C#/Unity.",
+					"Lenguaje de programación, haciendo un intérprete y compilador en JS.",
+					"Reconocedor de gestos de mano. Python",
+					"Software de clasificación de texto. Python",
+					"Websites frontend usando JS/TS",
+					"Construir websockets en C/C++",
+					"Bases de datos SQL."
+				]
+			}
+		},
+		"projects": {
+			"title": "Projectos",
+			"tfg": {
+				"title": "ML en AWS",
+				"type": "Trabajo Final de Grado",
+				"description": "Describir el proyecto y poner un link a la página del proyecto."
+			},
+			"website": {
+				"title": "Personal Website",
+				"type": "Personal Project",
+				"description": "Describir el proyecto y poner un link a la página del proyecto."
+			},
+			"fitness": {
+				"title": "ElyteOlympus",
+				"type": "Fitness App",
+				"description": "Describir el proyecto y poner un link a la página del proyecto."
+			},
+			"bot": {
+				"title": "ChatBot",
+				"type": "Own AI",
+				"description": "Describir el proyecto y poner un link a la página del proyecto."
+			}
+		}
+	},
+	"settings": {
+		"title": "Configuración",
+		"mode": "Modo",
+		"light": "Claro",
+		"dark": "Oscuro",
+		"lang": "Lenguaje",
+		"en": "Inglés",
+		"es": "Español"
+	}
 }

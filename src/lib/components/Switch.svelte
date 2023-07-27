@@ -46,7 +46,12 @@
 					px-2
 					rounded-full
 					absolute
-					{checked ? 'left-full -translate-x-full' : 'left-0'}
+					w-20
+					{checked
+						? 'left-[calc(100%-5rem)]'
+						: 'left-0'
+					}
+					text-center
 					hover-scale
 					hover:drop-shadow-md
 				"

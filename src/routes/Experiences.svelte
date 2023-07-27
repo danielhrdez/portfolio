@@ -1,25 +1,25 @@
 <script lang="ts">
 	import Block from '$lib/components/Block.svelte';
-	import Experience from '$lib/components/Experience.svelte';
+	import SubBlock from '$components/SubBlock.svelte';
 	import { t } from 'svelte-i18n';
 
+	const textUrl = 'page.experience.';
 	$: titsa = {
-		title: $t('page.experience.titsa.title'),
-		company: $t('page.experience.titsa.company'),
-		type: $t('page.experience.titsa.type'),
-		description: $t('page.experience.titsa.description'),
-		from: $t('page.experience.titsa.from'),
-		to: $t('page.experience.titsa.to')
+		title: $t(textUrl + 'titsa.title'),
+		entity: $t(textUrl + 'titsa.entity'),
+		description: $t(textUrl + 'titsa.description') as unknown as string[],
+		from: $t(textUrl + 'titsa.from'),
+		to: $t(textUrl + 'titsa.to'),
+		url: $t(textUrl + 'titsa.url')
 	};
 </script>
 
 <Block title={$t('page.experience.title')} id="experience">
-	<Experience
+	<SubBlock
 		title={titsa.title}
-		type={titsa.type}
-		company={titsa.company}
+		entity={titsa.entity}
 		interval={[titsa.from, titsa.to]}
-	>
-		{titsa.description}
-	</Experience>
+		url={titsa.url}
+		description={titsa.description}
+	/>
 </Block>

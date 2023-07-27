@@ -1,9 +1,16 @@
-import { register, init, getLocaleFromNavigator } from 'svelte-i18n';
+import { register, init } from 'svelte-i18n';
+import { preferences } from '$utils/storage';
+import { get } from 'svelte/store';
 
-register('en', () => import('$locales/en.json'));
-register('es', () => import('$locales/es.json'));
+export enum Lang {
+	ENGLISH = 'en',
+	SPANISH = 'es'
+}
+
+register(Lang.ENGLISH, () => import('$locales/en.json'));
+register(Lang.SPANISH, () => import('$locales/es.json'));
 
 init({
-	fallbackLocale: 'en',
-	initialLocale: getLocaleFromNavigator()
+	fallbackLocale: Lang.ENGLISH,
+	initialLocale: get(preferences).lang
 });

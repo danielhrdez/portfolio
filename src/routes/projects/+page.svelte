@@ -3,7 +3,7 @@
 	import SubBlock from '$lib/components/SubBlock.svelte';
 </script>
 
-<Block title="Projects">
+<!-- <Block title="Projects">
 	<SubBlock title="ML in AWS Services" subtitle="Final Grade Project">
 		...
 	</SubBlock>
@@ -14,4 +14,4 @@
 		...
 	</SubBlock>
 	<SubBlock title="ChatBot" subtitle="Own AI">Intentar algo.</SubBlock>
-</Block>
+</Block> -->
