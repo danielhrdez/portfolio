@@ -39,14 +39,14 @@
 						"Reconocedor de gestos de mano. Python",
 						"Software de clasificación de texto. Python",
 						"Websites frontend usando JS/TS",
-						"Construir websockets en C/C++",
+						"Construir web-sockets en C/C++",
 						"Bases de datos SQL."
 					]
 				}
 			]
 		},
 		"projects": {
-			"title": "Projectos",
+			"title": "Proyectos",
 			"tfg": {
 				"title": "ML en AWS",
 				"type": "Trabajo Final de Grado",
@@ -58,7 +58,7 @@
 				"description": "Describir el proyecto y poner un link a la página del proyecto."
 			},
 			"fitness": {
-				"title": "ElyteOlympus",
+				"title": "EliteOlympus",
 				"type": "Fitness App",
 				"description": "Describir el proyecto y poner un link a la página del proyecto."
 			},
@@ -77,5 +77,10 @@
 		"lang": "Lenguaje",
 		"en": "Inglés",
 		"es": "Español"
+	},
+	"error": {
+		"notFound": "Página no encontrada",
+		"notFoundDescription": "La página que estás buscando no existe.",
+		"notFoundButton": "Volver al inicio"
 	}
 }

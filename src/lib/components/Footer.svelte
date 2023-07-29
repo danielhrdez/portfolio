@@ -1,7 +1,7 @@
 <script lang="ts">
-	import phoneIcon from '$lib/assets/phone.svg';
-	import emailIcon from '$lib/assets/email.svg';
-	import linkedinIcon from '$lib/assets/linkedin.svg';
+	import phoneIcon from '$assets/phone.svg';
+	import emailIcon from '$assets/email.svg';
+	import linkedinIcon from '$assets/linkedin.svg';
 
 	let width = 0;
 	let phone = '+34 603 66 69 13';

@@ -50,7 +50,7 @@
 	<div class="h-screen flex flex-col">
 		<Header on:settings={toggleSettings} />
 		<main class="h-full overflow-auto mb-10">
-			<div class="md:flex gap-4 justify-center items-center h-full">
+			<div class="flex gap-4 justify-center items-center h-full flex-wrap">
 				<div class="flex md:flex-row flex-col gap-4 p-4">
 					<slot />
 				</div>

@@ -1,7 +1,7 @@
 <script lang="ts">
-	import danielWebp from '$lib/assets/daniel.webp';
-	import settingsIcon from '$lib/assets/settings-btn.svg';
-	import menuIcon from '$lib/assets/menu-icon.svg';
+	import danielWebp from '$assets/daniel.webp';
+	import settingsIcon from '$assets/settings-btn.svg';
+	import menuIcon from '$assets/menu-icon.svg';
 	import { createEventDispatcher } from 'svelte';
 	import { t } from 'svelte-i18n';
 
@@ -42,7 +42,7 @@
 		flex
 		justify-between
 		py-1
-		px-2
+		px-3
 		drop-shadow-sm
 		z-20
 	"

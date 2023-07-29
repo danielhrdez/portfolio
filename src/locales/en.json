@@ -39,7 +39,7 @@
 						"Hand gesture recognizer. Python",
 						"Text classification software. Python",
 						"Frontend websites using JS/TS",
-						"Build websockets in C/C++",
+						"Build web-sockets in C/C++",
 						"SQL Databases."
 					]
 				}
@@ -58,7 +58,7 @@
 				"description": "Describir el proyecto y poner un link a la página del proyecto."
 			},
 			"fitness": {
-				"title": "ElyteOlympus",
+				"title": "EliteOlympus",
 				"type": "Fitness App",
 				"description": "Describir el proyecto y poner un link a la página del proyecto."
 			},
@@ -77,5 +77,10 @@
 		"lang": "Language",
 		"en": "English",
 		"es": "Spanish"
+	},
+	"error": {
+		"notFound": "Page not found",
+		"notFoundDescription": "The page you are looking for does not exist.",
+		"notFoundButton": "Go home"
 	}
 }
