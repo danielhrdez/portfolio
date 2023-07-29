@@ -1,12 +1,34 @@
 <script lang="ts">
 	import phoneIcon from '$assets/phone.svg';
 	import emailIcon from '$assets/email.svg';
-	import linkedinIcon from '$assets/linkedin.svg';
+	import linkedInIcon from '$assets/linked-in.svg';
 
 	let width = 0;
 	let phone = '+34 603 66 69 13';
 	let email = 'contact@danielhrdez.dev';
-	let linkedin = 'Linkedin';
+	let linkedIn = 'LinkedIn';
+	const maxWidth = 640;
+
+	const aList = [
+		{
+			href: `tel:${phone}`,
+			text: phone,
+			src: phoneIcon,
+			alt: 'Phone Icon'
+		},
+		{
+			href: `mailto:${email}?subject=Hello%20Daniel!`,
+			text: email,
+			src: emailIcon,
+			alt: 'Email Icon'
+		},
+		{
+			href: `https://www.linkedin.com/in/danihrdez/`,
+			text: linkedIn,
+			src: linkedInIcon,
+			alt: 'LinkedIn Icon'
+		}
+	];
 </script>
 
 <svelte:window bind:innerWidth={width} />
@@ -19,30 +41,18 @@
 			justify-around
 			items-center
 			bg-neutral-100
-			dark:bg-neutral-600
+			dark:bg-neutral-700
 		"
 	>
-		<a href="tel:{phone}">
-			{#if width > 640}
-				<p>{phone}</p>
-			{:else}
-				<img loading="lazy" src={phoneIcon} alt="Phone icon" class="w-6 h-6 dark:invert" />
-			{/if}
-		</a>
-		<a href="mailto:{email}?subject=Hello%20Daniel!">
-			{#if width > 640}
-				<p>{email}</p>
-			{:else}
-				<img loading="lazy" src={emailIcon} alt="Email icon" class="w-6 h-6 dark:invert" />
-			{/if}
-		</a>
-		<a href="https://www.linkedin.com/in/danihrdez/" target="_blank" rel="noreferrer">
-			{#if width > 640}
-				<p>{linkedin}</p>
-			{:else}
-				<img loading="lazy" src={linkedinIcon} alt="Linkedin icon" class="w-6 h-6 dark:invert" />
-			{/if}
-		</a>
+		{#each aList as aObject}
+			<a href={aObject.href} class="dark:text-white">
+				{#if width > maxWidth}
+					<p>{aObject.text}</p>
+				{:else}
+					<img loading="lazy" src={aObject.src} alt={aObject.alt} class="w-6 h-6 dark:invert" />
+				{/if}
+			</a>
+		{/each}
 	</div>
 </footer>
 

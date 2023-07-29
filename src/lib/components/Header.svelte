@@ -61,7 +61,7 @@
 			{navDisplayed ? 'top-12' : '-top-20'}
 			sm:top-0
 			container
-			bg-neutral-100 dark:bg-neutral-600
+			bg-neutral-100 dark:bg-neutral-700
 			pl-4 sm:pl-0
 			pb-2 sm:pb-0
 			left-0
@@ -71,7 +71,7 @@
 		"
 	>
 		{#each links as link}
-			<a href={link.href}>
+			<a href={link.href} class="dark:text-white">
 				{link.text}
 			</a>
 		{/each}
@@ -86,7 +86,7 @@
 	<div
 		class="
 			bg-neutral-100
-			dark:bg-neutral-600
+			dark:bg-neutral-700
 	 		w-full
 			h-full
 			absolute

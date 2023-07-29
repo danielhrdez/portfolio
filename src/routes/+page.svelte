@@ -1,17 +1,21 @@
 <script lang="ts">
 	import Description from './Description.svelte';
-	import Experiences from './Experiences.svelte';
+	import Experience from './Experience.svelte';
 	import Education from './Education.svelte';
+
+	let width = 0;
 </script>
 
-{#if window.innerWidth < 768}
+<svelte:window bind:innerWidth={width} />
+
+{#if width < 768}
 	<Description />
-	<Experiences />
+	<Experience />
 	<Education />
 {:else}
 	<div class="flex flex-col gap-4">
 		<Description />
 		<Education />
 	</div>
-	<Experiences />
+	<Experience />
 {/if}

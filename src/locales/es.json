@@ -16,10 +16,11 @@
 					"to": "05/2023",
 					"description": [
 						"Desarrollé modelos de aprendizaje automático en PyTorch para predecir el número de clientes.",
-						"Implemente algoritmos de vanguardia para resolver el Problema de Enrutamiento de Vehículos Abierto.",
+						"Implemente algoritmos del estado del arte para resolver el Problema de Enrutamiento de Vehículos Abierto.",
 						"Creé una aplicación web completa en React.JS y Flask para visualizar los algoritmos.",
 						"Realicé análisis y automatización de datos utilizando SQL Server.",
-						"Los modelos alcanzaron más del 95% de confianza y cumplimiento de las mejores prácticas de ingeniería basadas en metodologías ágiles."
+						"Modelos con 95% de confianza",
+						"Cumplimiento de prácticas basadas en metodologías ágiles."
 					]
 				}
 			]

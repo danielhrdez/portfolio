@@ -20,13 +20,11 @@
 		class="
       bg-gradient-to-r
       from-neutral-100/75
-      dark:from-neutral-600/50
+      dark:from-neutral-700/50
       p-4
       rounded-2xl
       drop-shadow-md
       h-full w-full
-      hover:from-neutral-50/90
-      hover:dark:from-neutral-300/10
       transition-all
       min-w-[255px]
     "
@@ -38,7 +36,7 @@
 			<MaskedText>
 				{subtitle}
 			</MaskedText>
-      <br />
+			<br />
 		{/if}
 		<slot />
 	</div>

@@ -17,7 +17,7 @@
 			</a>
 		</h2>
 	</div>
-	<h3 class="text-sm">{interval[0]} - {interval[1]}</h3>
+	<h3 class="text-sm text-neutral-600 dark:text-[#D6D6D6]">{interval[0]} - {interval[1]}</h3>
 	<ul class="px-6">
 		{#each description as line}
 			<li class="list-disc text-md">

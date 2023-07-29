@@ -8,7 +8,7 @@
 	import { inject } from '@vercel/analytics';
 	import { onMount } from 'svelte';
 	import { get } from 'svelte/store';
-	import { locale } from 'svelte-i18n';
+	import { locale, isLoading } from 'svelte-i18n';
 	import { Theme, preferences } from '$utils/storage';
 	import { Lang } from '$utils/i18n';
 
@@ -43,7 +43,7 @@
 	});
 </script>
 
-{#if !isLoaded}
+{#if !isLoaded || $isLoading}
 	<Loader />
 {:else}
 	<Settings bind:show={showSettings} {dark} {lang} />

@@ -1,22 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat'); */
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 a {
-	@apply text-blue-500 hover:text-green-400 focus:text-green-400;
+	@apply
+		text-[#0522FF]
+		dark:hover:text-[#0AFFFB]
+		hover:text-[#7400C2]
+		dark:text-green-400
+		focus:text-[#7400C2]
+		dark:focus:text-green-400;
 }
 
 div {
-	@apply dark:bg-neutral-700 bg-neutral-200 dark:text-white text-black;
+	@apply dark:bg-neutral-800 bg-neutral-200 dark:text-white text-black;
 }
 
-* {
+body * {
 	@apply transition-all;
-	font-family: 'Montserrat', serif;
 }
 
 .hover-scale {
 	@apply hover:scale-110;
+}
+
+@font-face {
+	font-family: 'Montserrat', sans-serif;
+	src: url('$fonts/Montserrat.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
 }

@@ -41,8 +41,8 @@
 		>
 			<p
 				class="
-					bg-[#48d794]
-					dark:bg-[#39a372]
+					bg-[#b7a6e6]
+					dark:bg-[#0bb88d]
 					px-2
 					rounded-full
 					absolute
