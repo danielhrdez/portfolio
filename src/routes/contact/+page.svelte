@@ -5,4 +5,4 @@
 </script>
 
 <TitlePage text={$t('page.contact.title')} />
-<PageSelector prevHref="/projects" nextSelected={false} />
+<PageSelector prevHref="/projects" nextActive={false} />

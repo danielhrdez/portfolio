@@ -27,4 +27,4 @@
 	</div>
 {/if}
 
-<PageSelector nextHref="/projects" prevSelected={false} />
+<PageSelector nextHref="/projects" prevActive={false} />

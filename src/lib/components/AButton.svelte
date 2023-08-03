@@ -1,6 +1,6 @@
 <script lang="ts">
 	export let href = '';
-	export let selected = true;
+	export let active = true;
 </script>
 
 <a
@@ -10,7 +10,7 @@
         bg-slate-300
         dark:bg-slate-600
         w-full
-        {selected ? 'hover:scale-105': ''}
+        {active ? 'hover:scale-105' : ''}
         drop-shadow-md
         flex
         justify-between
@@ -18,9 +18,9 @@
         dark:text-white
         hover:text-black
         hover:dark:text-white
-        opacity-[{selected ? '1' : '0.5'}]
     "
-	href={selected ? href : ''}
+	href={active ? href : ''}
+    style="opacity: {active ? '1' : '.5'}"
 >
 	<slot />
 </a>
