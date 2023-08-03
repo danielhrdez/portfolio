@@ -3,7 +3,7 @@
 	import settingsIcon from '$assets/settings-btn.svg';
 	import menuIcon from '$assets/menu-icon.svg';
 	import { createEventDispatcher } from 'svelte';
-	import { t } from 'svelte-i18n';
+	import { t, isLoading } from 'svelte-i18n';
 
 	const dispatch = createEventDispatcher();
 
@@ -19,20 +19,16 @@
 
 	$: links = [
 		{
-			href: '/#home',
-			text: $t('page.home.title')
-		},
-		{
-			href: '/#experience',
-			text: $t('page.experience.title')
-		},
-		{
-			href: '/#education',
-			text: $t('page.education.title')
+			href: '/',
+			text: $t('page.about.title')
 		},
 		{
 			href: '/projects',
 			text: $t('page.projects.title')
+		},
+		{
+			href: '/contact',
+			text: $t('page.contact.title')
 		}
 	];
 </script>
@@ -50,7 +46,7 @@
 	<button on:click={toggleMenu} class="sm:hidden dark:invert">
 		<img loading="lazy" src={menuIcon} alt="menu" class="w-8 h-8" />
 	</button>
-	<img src={danielWebp} alt="me" class="w-10 h-10" />
+	<img src={danielWebp} alt="me" class="w-10 h-10 rounded-md" />
 	<nav
 		class="
 			flex

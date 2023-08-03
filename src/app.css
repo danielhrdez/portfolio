@@ -14,7 +14,7 @@ a {
 		dark:focus:text-green-400;
 }
 
-div {
+.div-color {
 	@apply dark:bg-neutral-800 bg-neutral-200 dark:text-white text-black;
 }
 

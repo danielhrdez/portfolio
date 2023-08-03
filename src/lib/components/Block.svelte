@@ -8,26 +8,25 @@
 
 <div
 	class="
-    flex
-    justify-center
-    items-center
-    bg-transparent
-    dark:bg-transparent
-  "
+		flex
+		justify-center
+		items-center
+	"
 	{id}
 >
 	<div
 		class="
-      bg-gradient-to-r
-      from-neutral-100/75
-      dark:from-neutral-700/50
-      p-4
-      rounded-2xl
-      drop-shadow-md
-      h-full w-full
-      transition-all
-      min-w-[255px]
-    "
+			div-color
+			bg-gradient-to-r
+			from-neutral-100/75
+			dark:from-neutral-700/50
+			p-4
+			rounded-2xl
+			drop-shadow-md
+			h-full w-full
+			transition-all
+			min-w-[255px]
+		"
 	>
 		<h1 class="text-xl font-bold mr-12">
 			{title}

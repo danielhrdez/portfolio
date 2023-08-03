@@ -7,9 +7,9 @@
 
 	let typeString = '';
 	if (type === 'education') {
-		typeString = 'page.education';
+		typeString = 'page.about.education';
 	} else if (type === 'experience') {
-		typeString = 'page.experience';
+		typeString = 'page.about.experience';
 	}
 
 	type Entity = {

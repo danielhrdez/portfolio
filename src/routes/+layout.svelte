@@ -1,6 +1,5 @@
 <script lang="ts">
 	import Header from '$components/Header.svelte';
-	import Footer from '$components/Footer.svelte';
 	import Settings from '$components/Settings.svelte';
 	import Loader from '$components/Loader.svelte';
 	import '../app.css';
@@ -18,6 +17,7 @@
 	let dark = false;
 	let lang = Lang.ENGLISH;
 	let isLoaded = false;
+	$: useSkeleton = !isLoaded || $isLoading;
 
 	function toggleSettings() {
 		showSettings = !showSettings;
@@ -43,19 +43,18 @@
 	});
 </script>
 
-{#if !isLoaded || $isLoading}
+{#if useSkeleton}
 	<Loader />
 {:else}
 	<Settings bind:show={showSettings} {dark} {lang} />
-	<div class="h-screen flex flex-col">
+	<div class="h-screen flex flex-col div-color">
 		<Header on:settings={toggleSettings} />
-		<main class="h-full overflow-auto mb-10">
+		<main class="h-full overflow-auto">
 			<div class="flex gap-4 justify-center items-center h-full flex-wrap">
-				<div class="flex md:flex-row flex-col gap-4 p-4">
+				<div class="flex flex-col gap-4 p-4 relative">
 					<slot />
 				</div>
 			</div>
 		</main>
-		<Footer />
 	</div>
 {/if}
