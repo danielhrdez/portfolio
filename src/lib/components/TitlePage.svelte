@@ -28,5 +28,5 @@
 	<h1 class="text-3xl font-bold font-mono">
 		{resultText}
 	</h1>
-	<div class="bg-neutral-500 h-[1] w-[1px] bg-opacity-[{+showCursor}]" />
+	<div class="bg-neutral-500 h-[1] w-[1px]" style="opacity: {+showCursor}" />
 </div>
