@@ -1,7 +1,7 @@
 <script lang="ts">
-	import Description from './Description.svelte';
-	import Experience from './Experience.svelte';
-	import Education from './Education.svelte';
+	import Description from '../lib/components/Description.svelte';
+	import Experience from '$components/Experience.svelte';
+	import Education from '$components/Education.svelte';
 	import TitlePage from '$components/TitlePage.svelte';
 	import { t } from 'svelte-i18n';
 	import PageSelector from '$components/PageSelector.svelte';
