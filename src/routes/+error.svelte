@@ -2,7 +2,7 @@
 	import simpson404 from '$assets/404-simpson.webm';
 	import { t } from 'svelte-i18n';
 	import AButton from '$components/AButton.svelte';
-	import ArrowDown from '$components/ArrowDown.svelte';
+	import ArrowDown from '$components/icons/ArrowDown.svelte';
 </script>
 
 <div class="flex w-full justify-center items-center">

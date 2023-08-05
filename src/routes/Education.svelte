@@ -1,5 +1,5 @@
 <script lang="ts">
-	import HomeBlock from '$components/HomeBlock.svelte';
+	import HomeBlock from './HomeBlock.svelte';
 </script>
 
 <HomeBlock type="education" />

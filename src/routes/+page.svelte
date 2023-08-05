@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Description from '../lib/components/Description.svelte';
+	import Description from './Description.svelte';
 	import Experience from '$components/Experience.svelte';
 	import Education from '$components/Education.svelte';
 	import { t } from 'svelte-i18n';

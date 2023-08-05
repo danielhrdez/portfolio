@@ -1,8 +1,8 @@
 <script lang="ts">
 	import type { HrefLabel } from './AButton';
 	import AButton from './AButton.svelte';
-	import ArrowLeft from './ArrowLeft.svelte';
-	import ArrowRight from './ArrowRight.svelte';
+	import ArrowLeft from './icons/ArrowLeft.svelte';
+	import ArrowRight from './icons/ArrowRight.svelte';
 
 	export let prevHrefLabel: HrefLabel | undefined = undefined;
 	export let nextHrefLabel: HrefLabel | undefined = undefined;
