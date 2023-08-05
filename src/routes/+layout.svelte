@@ -48,13 +48,13 @@
 {:else}
 	<Settings bind:show={showSettings} {dark} {lang} />
 	<div class="h-screen flex flex-col div-color">
-		<Header on:settings={toggleSettings} />
-		<main class="h-full overflow-auto">
+	<Header on:settings={toggleSettings} />
+		<div class="h-full overflow-auto">
 			<div class="flex gap-4 justify-center items-center h-full flex-wrap">
-				<div class="flex flex-col gap-4 p-4 relative">
+				<main class="flex flex-col gap-4 p-4 relative">
 					<slot />
-				</div>
+				</main>
 			</div>
-		</main>
+		</div>
 	</div>
 {/if}

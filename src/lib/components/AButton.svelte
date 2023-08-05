@@ -1,26 +1,14 @@
 <script lang="ts">
-	export let href = '';
-	export let active = true;
+	import type { HrefLabel } from './AButton';
+	export let hrefLabel: HrefLabel | undefined = undefined;
 </script>
 
-<a
-	class="
-        p-4
-        rounded-xl
-        bg-slate-300
-        dark:bg-slate-600
-        w-full
-        {active ? 'hover:scale-105' : ''}
-        drop-shadow-md
-        flex
-        justify-between
-        text-black
-        dark:text-white
-        hover:text-black
-        hover:dark:text-white
-    "
-	href={active ? href : ''}
-    style="opacity: {active ? '1' : '.5'}"
->
-	<slot />
-</a>
+{#if hrefLabel}
+	<a class="abutton" href={hrefLabel.href} style="opacity: 1" aria-label={hrefLabel.label}>
+		<slot />
+	</a>
+{:else}
+	<div class="abutton hover:scale-100" style="opacity: .5">
+		<slot />
+	</div>
+{/if}

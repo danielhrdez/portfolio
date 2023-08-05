@@ -14,7 +14,7 @@
 	"
 	{id}
 >
-	<div
+	<article
 		class="
 			div-color
 			bg-gradient-to-r
@@ -28,9 +28,9 @@
 			min-w-[255px]
 		"
 	>
-		<h1 class="text-xl font-bold mr-12">
+		<h2 class="text-xl font-bold mr-12">
 			{title}
-		</h1>
+		</h2>
 		{#if subtitle}
 			<MaskedText>
 				{subtitle}
@@ -38,5 +38,5 @@
 			<br />
 		{/if}
 		<slot />
-	</div>
+	</article>
 </div>

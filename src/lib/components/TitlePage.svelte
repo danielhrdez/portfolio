@@ -1,5 +1,5 @@
 <script lang="ts">
-	export let text: string = '';
+	export let title: string = '';
 
 	let resultText = '';
 	let showCursor = true;
@@ -17,7 +17,7 @@
 		}
 	}
 
-	$: animateText(text);
+	$: animateText(title);
 	
 	setInterval(() => {
 		showCursor = !showCursor;

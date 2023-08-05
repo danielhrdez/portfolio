@@ -1,16 +1,16 @@
 <script lang="ts">
-	import TitlePage from '$components/TitlePage.svelte';
-	import PageSelector from '$components/PageSelector.svelte';
-	import Block from '$components/Block.svelte';
+	import Page from '../Page.svelte';
 	import { t } from 'svelte-i18n';
 </script>
 
-<TitlePage text={$t('page.projects.title')} />
-
-<!-- <Block id="cloudml" title="ML in AWS Services" /> -->
-
-
-<!-- <Block id="eliteolympus" title="EliteOlympus" /> -->
-<!-- <Block id="chatbot" title="ChatBot" /> -->
-
-<PageSelector prevHref="/" nextHref="/contact" />
+<Page
+	title={$t('page.projects.title')}
+	prevHrefLabel={{
+		href: '/',
+		label: $t('page.about.title')
+	}}
+	nextHrefLabel={{
+		href: '/contact',
+		label: $t('page.contact.title')
+	}}
+/>

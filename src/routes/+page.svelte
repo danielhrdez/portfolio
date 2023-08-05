@@ -2,29 +2,32 @@
 	import Description from '../lib/components/Description.svelte';
 	import Experience from '$components/Experience.svelte';
 	import Education from '$components/Education.svelte';
-	import TitlePage from '$components/TitlePage.svelte';
 	import { t } from 'svelte-i18n';
-	import PageSelector from '$components/PageSelector.svelte';
+	import Page from './Page.svelte';
 
 	let width = 0;
 </script>
 
 <svelte:window bind:innerWidth={width} />
 
-<TitlePage text={$t('page.about.title')} />
-
-{#if width < 768}
-	<Description />
-	<Experience />
-	<Education />
-{:else}
-	<div class="flex flex-row gap-4">
-		<div class="flex flex-col gap-4">
-			<Description />
-			<Education />
-		</div>
+<Page
+	title={$t('page.about.title')}
+	nextHrefLabel={{
+		href: '/projects',
+		label: $t('page.projects.title')
+	}}
+>
+	{#if width < 768}
+		<Description />
 		<Experience />
-	</div>
-{/if}
-
-<PageSelector nextHref="/projects" prevActive={false} />
+		<Education />
+	{:else}
+		<div class="flex flex-row gap-4">
+			<div class="flex flex-col gap-4">
+				<Description />
+				<Education />
+			</div>
+			<Experience />
+		</div>
+	{/if}
+</Page>

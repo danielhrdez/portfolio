@@ -1,4 +1,4 @@
-<p class="font-serif text-md italic bg-transparent dark:bg-transparent">
+<h3 class="font-serif text-md italic bg-transparent dark:bg-transparent">
 	<span
 		class="
 			bg-clip-text
@@ -12,4 +12,4 @@
 	>
 		<slot />
 	</span>
-</p>
+</h3>
