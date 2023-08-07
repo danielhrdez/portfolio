@@ -1,10 +1,10 @@
 <script lang="ts">
     export let show: boolean;
-	$: showClass = show ? 'block' : 'hidden';
+    $: showClass = show ? 'block' : 'hidden';
 </script>
 
 <div
-	class="
+    class="
         {showClass}
         absolute
         bg-opacity-20
