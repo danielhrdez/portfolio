@@ -52,6 +52,9 @@
 			<input
 				type="reset"
 				value={$t('page.contact.reset')}
+				on:click={() => {
+					subject = message = '';
+				}}
 				class="cursor-pointer hover:text-red-500"
 			/>
 		</form>

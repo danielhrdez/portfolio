@@ -62,19 +62,16 @@
 		setTimeout(() => {
 			navBar.style.setProperty('--_left', newPosition);
 			navBar.style.setProperty('--_width', newWidth + '');
-		}, 200);
+		}, 100);
 	}
 
-	let navBar: HTMLElement | null;
+	let navBar: HTMLElement;
 
 	onMount(() => {
-		navBar = document.getElementById('nav-bar');
-		if (navBar !== null) {
-			setTimeout(() => {
-				navBar!.style.setProperty('--_opacity', '1');
-				navBar!.style.setProperty('--_duration', '.5s');
-			}, 500);
-		}
+		setTimeout(() => {
+			navBar.style.setProperty('--_opacity', '1');
+			navBar.style.setProperty('--_duration', '.5s');
+		}, 500);
 	});
 
 	let newTab = writable<HTMLElement | null>(null);
@@ -110,7 +107,7 @@
 	</button>
 	<img src={danielWebp} alt="me" class="w-10 h-10 rounded-md" />
 	<nav
-		id="nav-bar"
+		bind:this={navBar}
 		class="
             flex
             absolute sm:relative
