@@ -1,9 +1,10 @@
 <script lang="ts">
     import MaskedText from '$lib/components/MaskedText.svelte';
 
-    export let title: string;
+    export let title: string = '';
     export let subtitle: string = '';
     export let id: string;
+    export let minWidth = 255;
 </script>
 
 <div
@@ -25,7 +26,7 @@
             drop-shadow-md
             h-full w-full
             transition-all
-            min-w-[255px]
+            min-w-[{minWidth}px]
         "
     >
         <h2 class="text-xl font-bold mr-12">
