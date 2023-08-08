@@ -16,7 +16,7 @@
 	}
 </script>
 
-<Block title={$t('page.contact.mail')} id="mail">
+<Block title={$t('page.contact.mail')}>
 	<form action="" enctype="text/plain">
 		{$t('page.contact.subject')}:<br />
 		<input

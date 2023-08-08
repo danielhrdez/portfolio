@@ -3,6 +3,7 @@
 	import ContactLinks from './ContactLinks.svelte';
 	import Page from '../Page.svelte';
 	import { t } from 'svelte-i18n';
+	import FadeIn from '$components/FadeIn.svelte';
 
 	const email = 'contact@danielhrdez.dev';
 	const linkedIn = 'https://www.linkedin.com/in/danihrdez/';
@@ -20,7 +21,11 @@
 	}}
 >
 	<div class="flex flex-col sm:flex-row gap-4">
-		<MailForm {email} {subjectPlaceholder} {messagePlaceholder} />
-		<ContactLinks {email} {github} {linkedIn} />
+		<FadeIn durationMillis={500}>
+			<MailForm {email} {subjectPlaceholder} {messagePlaceholder} />
+		</FadeIn>
+		<FadeIn durationMillis={750}>
+			<ContactLinks {email} {github} {linkedIn} />
+		</FadeIn>
 	</div>
 </Page>

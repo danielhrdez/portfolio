@@ -10,7 +10,7 @@
 	export let github: string;
 </script>
 
-<Block id="contact-links" minWidth={0} >
+<Block>
 	<div
 		class="
 			flex

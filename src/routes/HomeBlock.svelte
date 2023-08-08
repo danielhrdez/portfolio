@@ -30,7 +30,7 @@
     $: title = $t(`${typeString}.title`);
 </script>
 
-<Block {title} id="education">
+<Block {title}>
     {#if $isLoading}
         <p>Loading...</p>
     {:else if entities.length === 0}

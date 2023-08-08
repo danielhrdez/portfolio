@@ -31,31 +31,33 @@
 </script>
 
 <Modal {show}>
-    <Block title={$t('settings.title')} id="settings">
-        <img
-            loading="lazy"
-            src={settingsExit}
-            alt="settings"
-            class="absolute top-0 right-0 w-5 h-5 m-6 cursor-pointer dark:invert hover-scale"
-            on:click={() => (show = false)}
-            on:keypress={(e) => {
-                if (e.key === 'Enter') show = false;
-            }}
-        />
-        <Switch
-            title={$t('settings.mode')}
-            left={$t('settings.light')}
-            right={$t('settings.dark')}
-            checked={dark}
-            on:toggle={toggleMode}
-        />
-        <br />
-        <Switch
-            title={$t('settings.lang')}
-            left={$t('settings.en')}
-            right={$t('settings.es')}
-            checked={lang.startsWith('es')}
-            on:toggle={toggleLanguage}
-        />
-    </Block>
+    <div class="min-w-[255px]">
+        <Block title={$t('settings.title')}>
+            <img
+                loading="lazy"
+                src={settingsExit}
+                alt="settings"
+                class="absolute top-0 right-0 w-5 h-5 m-6 cursor-pointer dark:invert hover-scale"
+                on:click={() => (show = false)}
+                on:keypress={(e) => {
+                    if (e.key === 'Enter') show = false;
+                }}
+            />
+            <Switch
+                title={$t('settings.mode')}
+                left={$t('settings.light')}
+                right={$t('settings.dark')}
+                checked={dark}
+                on:toggle={toggleMode}
+            />
+            <br />
+            <Switch
+                title={$t('settings.lang')}
+                left={$t('settings.en')}
+                right={$t('settings.es')}
+                checked={lang.startsWith('es')}
+                on:toggle={toggleLanguage}
+            />
+        </Block>
+    </div>
 </Modal>

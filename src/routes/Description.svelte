@@ -5,7 +5,7 @@
     $: description = $json('page.about.me.description') as string[];
 </script>
 
-<Block title="Daniel Hernández de León" subtitle={$t('page.about.me.job')} id="home">
+<Block title="Daniel Hernández de León" subtitle={$t('page.about.me.job')}>
     {#if $isLoading}
         <p>Loading...</p>
     {:else if description.length === 0}
