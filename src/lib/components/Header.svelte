@@ -6,6 +6,7 @@
 	import { t } from 'svelte-i18n';
 	import { page } from '$app/stores';
 	import { writable, get } from 'svelte/store';
+	import Icon from './Icon.svelte';
 
 	const dispatch = createEventDispatcher();
 
@@ -95,15 +96,15 @@
 	class="
         flex
         justify-between
-		gap-[15vw]
+				gap-[15vw]
         py-1
         px-3
         drop-shadow-sm
         z-20
     "
 >
-	<button on:click={toggleMenu} class="sm:hidden dark:invert">
-		<img loading="lazy" src={menuIcon} alt="menu" class="w-8 h-8" />
+	<button on:click={toggleMenu} class="sm:hidden">
+		<Icon src={menuIcon} alt="menu" />
 	</button>
 	<img src={danielWebp} alt="me" class="w-10 h-10 rounded-md" />
 	<nav
@@ -144,21 +145,21 @@
 		{/each}
 	</nav>
 	<button on:click={toggleSettings}>
-		<img
+		<Icon
 			src={settingsIcon}
 			alt="settings"
-			class="w-8 h-8 dark:invert hover:rotate-90 hover-scale"
+			className="hover:rotate-90 hover-scale"
 		/>
 	</button>
 	<div
 		class="
-            bg-neutral-100
-            dark:bg-neutral-700
-             w-full
-            h-full
-            absolute
-            inset-0
-            -z-10
-        "
+			bg-neutral-100
+			dark:bg-neutral-700
+			w-full
+			h-full
+			absolute
+			inset-0
+			-z-10
+		"
 	/>
 </header>

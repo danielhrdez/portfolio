@@ -5,6 +5,9 @@
 	import { t } from 'svelte-i18n';
 
 	const email = 'contact@danielhrdez.dev';
+	const linkedIn = 'https://www.linkedin.com/in/danihrdez/';
+	const github = 'https://www.github.com/DanielHrdez';
+
 	$: subjectPlaceholder = $t('page.contact.subjectPlaceholder');
 	$: messagePlaceholder = $t('page.contact.messagePlaceholder');
 </script>
@@ -18,6 +21,6 @@
 >
 	<div class="flex flex-col sm:flex-row gap-4">
 		<MailForm {email} {subjectPlaceholder} {messagePlaceholder} />
-		<ContactLinks />
+		<ContactLinks {email} {github} {linkedIn} />
 	</div>
 </Page>

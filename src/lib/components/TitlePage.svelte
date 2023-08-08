@@ -15,6 +15,9 @@
                 }, 10);
             }, 75 * i);
         }
+        setTimeout(() => {
+            resultText = text;
+        }, 75 * text.length);
     }
 
     $: animateText(title);
