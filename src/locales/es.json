@@ -53,26 +53,7 @@
         },
         "projects": {
             "title": "Proyectos",
-            "tfg": {
-                "title": "ML en AWS",
-                "type": "Trabajo Final de Grado",
-                "description": "Describir el proyecto y poner un link a la página del proyecto."
-            },
-            "website": {
-                "title": "Personal Website",
-                "type": "Personal Project",
-                "description": "Describir el proyecto y poner un link a la página del proyecto."
-            },
-            "fitness": {
-                "title": "EliteOlympus",
-                "type": "Fitness App",
-                "description": "Describir el proyecto y poner un link a la página del proyecto."
-            },
-            "bot": {
-                "title": "ChatBot",
-                "type": "Own AI",
-                "description": "Describir el proyecto y poner un link a la página del proyecto."
-            }
+            "description": "Descripción"
         },
         "contact": {
             "title": "Contacto",

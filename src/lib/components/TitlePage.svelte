@@ -4,7 +4,11 @@
     let resultText = '';
     let showCursor = true;
 
-    function animateText(text: string) {
+    function animateText(
+        text: string,
+        delay: number = 0,
+        pctFalseKeys: number = 0.1
+    ) {
         resultText = '';
         for (let i = 0; i < text.length; i++) {
             setTimeout(() => {
@@ -12,15 +16,15 @@
                 setTimeout(() => {
                     resultText = resultText.slice(0, resultText.length - 1);
                     resultText += text[i];
-                }, 10);
-            }, 75 * i);
+                }, delay * pctFalseKeys);
+            }, delay * i);
         }
         setTimeout(() => {
             resultText = text;
-        }, 75 * text.length);
+        }, delay * text.length);
     }
 
-    $: animateText(title);
+    $: animateText(title, 75, 0.1);
     
     setInterval(() => {
         showCursor = !showCursor;
