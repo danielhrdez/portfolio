@@ -30,7 +30,7 @@
       z-30
       bg-gradient-to-t
       from-white/0
-      to-white/25
+      to-white/15
     "
   >
     <div class="relative w-full h-full">
@@ -49,14 +49,14 @@
       w-full h-10
       bg-gradient-to-b
       from-black/0
-      to-black/50
+      to-black/25
       p-2
     ">
       {#if !clickedDescription}
         <div class="relative">
           <div class="absolute flex gap-2 right-0">
             {#each techStack as { src, alt }}
-              <img {src} {alt} class="w-8 h-8 grayscale hover:grayscale-0"/>
+              <img {src} {alt} class="h-8 grayscale hover:grayscale-0"/>
             {/each}
           </div>
         </div>
@@ -66,7 +66,7 @@
       class="
         flex
         w-full
-        bg-black/50
+        bg-black/25
         p-2
         justify-between
       "
@@ -80,7 +80,7 @@
       </div>
     </button>
     {#if clickedDescription}
-      <p class="bg-black/50 p-2">
+      <p class="bg-black/25 p-2">
         {description}
       </p>
     {/if}
