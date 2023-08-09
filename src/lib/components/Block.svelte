@@ -7,7 +7,7 @@
 
 <article
     class="
-        div-color
+        div-bg-color
         bg-gradient-to-r
         from-neutral-100/50
         to-neutral-100/0
@@ -22,6 +22,7 @@
         drop-shadow-md
         h-full w-full
         transition-all
+        backdrop-blur-xl
     "
 >
     <h2 class="text-xl font-bold mr-12">

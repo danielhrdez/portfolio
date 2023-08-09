@@ -10,6 +10,7 @@
     import { locale, isLoading } from 'svelte-i18n';
     import { Theme, preferences, Lang } from '$utils/storage';
     import '$utils/i18n';
+	import WavesCanvas from '$components/WavesCanvas.svelte';
 
     inject({ mode: dev ? 'development' : 'production' });
 
@@ -46,9 +47,9 @@
 {#if useSkeleton}
     <Loader />
 {:else}
-    <Settings bind:show={showSettings} {dark} {lang} />
     <div class="h-screen flex flex-col div-color">
-    <Header on:settings={toggleSettings} />
+        <Settings bind:show={showSettings} {dark} {lang} />
+        <Header on:settings={toggleSettings} />
         <div class="h-full overflow-auto">
             <div class="flex gap-4 justify-center items-center h-full flex-wrap">
                 <main class="flex flex-col gap-4 p-4 relative">
@@ -56,5 +57,7 @@
                 </main>
             </div>
         </div>
+        <WavesCanvas />
+        <div class="absolute -z-20 div-bg-color w-screen h-screen" />
     </div>
 {/if}

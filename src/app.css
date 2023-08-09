@@ -14,7 +14,11 @@ a {
 }
 
 .div-color {
-	@apply dark:bg-neutral-800 bg-neutral-200 dark:text-white text-black;
+	@apply dark:text-white text-black;
+}
+
+.div-bg-color {
+    @apply dark:bg-neutral-800 bg-neutral-200;
 }
 
 body * {
