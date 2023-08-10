@@ -7,22 +7,20 @@
 
 <article
     class="
-        div-bg-color
         bg-gradient-to-r
-        from-neutral-100/50
-        to-neutral-100/0
-        dark:from-neutral-700/50
-        dark:to-neutral-700/0
-        hover:from-neutral-100/75
-        hover:to-neutral-100/0
-        dark:hover:from-neutral-700/75
-        dark:hover:to-neutral-700/0
+        from-neutral-100/90
+        to-neutral-100/75
+        dark:from-neutral-700/90
+        dark:to-neutral-700/75
+        hover:from-neutral-100/90
+        hover:to-neutral-100/90
+        dark:hover:from-neutral-700/90
+        dark:hover:to-neutral-700/90
         p-4
         rounded-2xl
         drop-shadow-md
         h-full w-full
         transition-all
-        backdrop-blur-xl
     "
 >
     <h2 class="text-xl font-bold mr-12">

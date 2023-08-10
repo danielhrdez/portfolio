@@ -23,7 +23,7 @@ export class Wave {
     context.fillRect(0, 0, canvas.width, canvas.height);
     const middleHeight = canvas.height / 2;
     context.moveTo(0, middleHeight);
-    for (let i = 0; i < canvas.width; i += 10) {
+    for (let i = 0; i < canvas.width; i += 1) {
       const y = middleHeight + Math.sin(i / this.length + this.increment) * this.amplitude;
       context.lineTo(i, y);
     }
@@ -35,39 +35,33 @@ export class Wave {
 }
 
 export class Waves {
-  canvas: HTMLCanvasElement;
-  ctx: CanvasRenderingContext2D;
   waves: Wave[];
 
-  constructor(canvas: HTMLCanvasElement, n = 1, bgOpacity = 0.1) {
-    this.canvas = canvas;
-    const ctx = this.canvas.getContext('2d');
-    if (!ctx) {
-      throw new Error('Canvas context is null');
-    }
-    this.ctx = ctx;
+  constructor(n = 1) {
     this.waves = [];
     for (let i = 0; i < n; i += 1) {
       const maxAmplitude = Math.random() * 100 + 50;
       const length = Math.random() * 100 + 50;
-      const frequency = Math.random() * 10 + 5;
+      const frequency = Math.random() * 8 + 4;
       const wave = new Wave(maxAmplitude, length, frequency);
       this.waves.push(wave);
     }
   }
 
-  draw(context: CanvasRenderingContext2D) {
+  draw(canvas: HTMLCanvasElement, context: CanvasRenderingContext2D) {
     context.beginPath();
-    this.ctx.fillStyle = `rgba(0,0,0,0)`;
-    context.fillRect(0, 0, this.canvas.width, this.canvas.height);
+    context.fillStyle = `rgba(0,0,0,0)`;
+    context.fillRect(0, 0, canvas.width, canvas.height);
     context.closePath();
     this.waves.forEach((wave) => {
-      wave.draw(this.canvas, this.ctx);
+      wave.draw(canvas, context);
     });
   }
 
-  start() {
-    this.draw(this.ctx);
-    requestAnimationFrame(this.start.bind(this));
+  start(canvas: HTMLCanvasElement) {
+    const context = canvas.getContext('2d');
+    if (!context) return;
+    this.draw(canvas, context);
+    requestAnimationFrame(() => this.start(canvas));
   }
 }

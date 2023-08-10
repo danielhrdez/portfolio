@@ -31,7 +31,7 @@
 </script>
 
 <Modal {show}>
-    <div class="min-w-[255px]">
+    <div class="min-w-[255px] div-bg-color rounded-2xl">
         <Block title={$t('settings.title')}>
             <img
                 loading="lazy"

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Icon from "$components/Icon.svelte";
-  import githubIcon from "$assets/github.svg";
+  import githubIcon from "$assets/contact/github.svg";
 	import { t } from "svelte-i18n";
 	import ArrowRight from "$components/icons/ArrowRight.svelte";
 
@@ -18,29 +18,30 @@
   class=" 
     rounded-2xl
     overflow-hidden
-    drop-shadow-md
     w-[200px] h-[200px]
+    drop-shadow-md
+    hover:scale-[1.01]
   "
 >
   <div
     class="
-      p-2
+      p-3
       w-[200px] h-[50px]
       absolute
       z-30
       bg-gradient-to-t
-      from-white/0
-      to-white/15
+      from-black/0
+      to-black/25
     "
   >
     <div class="relative w-full h-full">
       <a {href} class="absolute" target="_blank">
-        <h3 class="font-bold text-black dark:text-white">
+        <h3 class="font-bold text-white">
           {name}
         </h3>
       </a>
-      <a href={srcCodeLink} class="absolute right-0" target="_blank">
-        <Icon src={githubIcon} alt="GitHub icon" />
+      <a href={srcCodeLink} class="absolute right-0 invert" target="_blank">
+        <Icon src={githubIcon} alt="GitHub icon" invert={false} />
       </a>
     </div>
   </div>
@@ -67,7 +68,7 @@
         flex
         w-full
         bg-black/25
-        p-2
+        p-3
         justify-between
       "
       on:click={() => clickedDescription = !clickedDescription}
@@ -75,15 +76,15 @@
       <p>
         {$t('page.projects.description')}
       </p>
-      <div class={clickedDescription ? 'rotate-90' : '-rotate-90'}>
+      <div class={clickedDescription ? '-rotate-90' : 'rotate-90'}>
         <ArrowRight />
       </div>
     </button>
     {#if clickedDescription}
-      <p class="bg-black/25 p-2">
+      <p class="bg-black/25 p-3 pt-0 h-28 overflow-y-scroll">
         {description}
       </p>
     {/if}
   </div>
-  <img loading="lazy" src={srcImg} alt={name} class="opacity-25 blur-[2px]" />
+  <img loading="lazy" src={srcImg} alt={name} class="opacity-75 blur-[1px] brightness-50" />
 </div>

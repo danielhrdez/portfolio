@@ -63,7 +63,7 @@
 		setTimeout(() => {
 			navBar.style.setProperty('--_left', newPosition);
 			navBar.style.setProperty('--_width', newWidth + '');
-		}, 100);
+		}, 200);
 	}
 
 	let navBar: HTMLElement;
@@ -72,7 +72,7 @@
 		setTimeout(() => {
 			navBar.style.setProperty('--_opacity', '1');
 			navBar.style.setProperty('--_duration', '.5s');
-		}, 500);
+		}, 400);
 	});
 
 	let newTab = writable<HTMLElement | null>(null);

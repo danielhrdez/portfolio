@@ -21,10 +21,10 @@
 	}}
 >
 	<div class="flex flex-col sm:flex-row gap-4">
-		<FadeIn durationMillis={500}>
+		<FadeIn durationMs={500}>
 			<MailForm {email} {subjectPlaceholder} {messagePlaceholder} />
 		</FadeIn>
-		<FadeIn durationMillis={750}>
+		<FadeIn durationMs={750}>
 			<ContactLinks {email} {github} {linkedIn} />
 		</FadeIn>
 	</div>

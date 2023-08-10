@@ -2,8 +2,7 @@
   import { Waves } from "$utils/wave";
   import { onMount } from "svelte";
 
-  export let opacity = 0.1;
-  export let numberOfWaves = 5;
+  export let numberOfWaves = 10;
 
   let canvas: HTMLCanvasElement;
   let waves: Waves;
@@ -12,9 +11,8 @@
   let height = 0;
 
   onMount(() => {
-    waves = new Waves(canvas, numberOfWaves, opacity);
-    waves.start();
-    console.log(width, height);
+    waves = new Waves(numberOfWaves);
+    waves.start(canvas);
   });
 </script>
 
@@ -22,7 +20,9 @@
 
 <canvas
   bind:this={canvas}
-  class="absolute inset-0 -z-10 blur scale-110 opacity-10"
+  class="absolute inset-0 -z-10 blur-xl opacity-50 dark:opacity-25 h-full w-full"
   width={width}
   height={height}
 />
+<div class="absolute -z-20 div-bg-color w-full h-full" />
+

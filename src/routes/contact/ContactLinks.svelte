@@ -1,8 +1,8 @@
 <script lang="ts">
 	import Block from '$components/Block.svelte';
-	import emailIcon from '$assets/email.svg';
-	import linkedInIcon from '$assets/linked-in.svg';
-	import githubIcon from '$assets/github.svg';
+	import emailIcon from '$assets/contact/email.svg';
+	import linkedInIcon from '$assets/contact/linked-in.svg';
+	import githubIcon from '$assets/contact/github.svg';
 	import AIcon from '$components/AIcon.svelte';
 
 	export let email: string;
