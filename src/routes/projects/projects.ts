@@ -1,4 +1,4 @@
-import skLearnIcon from '$assets/tech/sk-learn.webp';
+import skLearnIcon from '$assets/tech/sk-learn.svg';
 import solidJSIcon from '$assets/tech/solid-js.svg';
 import fastAPIIcon from '$assets/tech/fast-api.svg';
 
