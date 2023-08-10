@@ -36,9 +36,9 @@
   >
     <div class="relative w-full h-full">
       <a {href} class="absolute" target="_blank">
-        <h3 class="font-bold text-white">
+        <h2 class="font-bold text-white">
           {name}
-        </h3>
+        </h2>
       </a>
       <a href={srcCodeLink} class="absolute right-0 invert" target="_blank">
         <Icon src={githubIcon} alt="GitHub icon" invert={false} />
@@ -57,7 +57,7 @@
         <div class="relative">
           <div class="absolute flex gap-2 right-0">
             {#each techStack as { src, alt }}
-              <img {src} {alt} class="h-8 grayscale hover:grayscale-0"/>
+              <img {src} {alt} class="w-8 h-8 grayscale hover:grayscale-0"/>
             {/each}
           </div>
         </div>
@@ -86,5 +86,5 @@
       </p>
     {/if}
   </div>
-  <img loading="lazy" src={srcImg} alt={name} class="opacity-75 blur-[1px] brightness-50" />
+  <img loading="lazy" src={srcImg} alt={name} class="opacity-75 blur-[1px] brightness-50 w-full h-full" />
 </div>
