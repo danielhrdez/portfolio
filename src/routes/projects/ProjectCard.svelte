@@ -18,7 +18,7 @@
   class=" 
     rounded-2xl
     overflow-hidden
-    w-[200px] h-[200px]
+    w-[250px] h-[250px]
     drop-shadow-md
     hover:scale-[1.01]
   "
@@ -26,7 +26,8 @@
   <div
     class="
       p-3
-      w-[200px] h-[50px]
+      w-[250px]
+      h-[50px]
       absolute
       z-30
       bg-gradient-to-t
@@ -81,7 +82,7 @@
       </div>
     </button>
     {#if clickedDescription}
-      <p class="bg-black/25 p-3 pt-0 h-28 overflow-y-scroll">
+      <p class="bg-black/25 p-3 pt-0 h-32 overflow-y-scroll">
         {description}
       </p>
     {/if}

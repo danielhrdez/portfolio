@@ -17,12 +17,12 @@ a {
 	@apply dark:text-white text-black;
 }
 
-.div-bg-color {
+.div-bg-color, body {
     @apply dark:bg-neutral-800 bg-neutral-200;
 }
 
 body * {
-	@apply transition-all;
+	@apply transition-all duration-75;
 }
 
 .hover-scale {
