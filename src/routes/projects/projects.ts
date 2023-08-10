@@ -1,3 +1,7 @@
+import skLearnIcon from '$assets/tech/sk-learn.webp';
+import solidJSIcon from '$assets/tech/solid-js.svg';
+import fastAPIIcon from '$assets/tech/fast-api.svg';
+
 type Project = {
 	name: string;
 	href: string;
@@ -10,7 +14,7 @@ type Project = {
 	}[];
 };
 
-const assets = 'src/lib/assets/tech';
+const assets = '$assets/tech';
 
 export const projects: Project[] = [
 	{
@@ -21,15 +25,15 @@ export const projects: Project[] = [
 		description: 'Lorem ipsum.',
 		techStack: [
 			{
-				src: `${assets}/sk-learn.webp`,
+				src: skLearnIcon,
 				alt: 'Sklearn'
 			},
 			{
-				src: `${assets}/solid-js.svg`,
+				src: solidJSIcon,
 				alt: 'SolidJS'
 			},
 			{
-				src: `${assets}/fast-api.svg`,
+				src: fastAPIIcon,
 				alt: 'FastAPI'
 			}
 		]

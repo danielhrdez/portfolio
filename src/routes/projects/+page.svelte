@@ -2,8 +2,6 @@
 	import Page from '../Page.svelte';
 	import { t } from 'svelte-i18n';
 	import ProjectCard from './ProjectCard.svelte';
-	// import solidJSIcon from '$assets/solid-js.svg';
-	// import fastAPIIcon from '$assets/fast-api.svg';
 	import FadeIn from '$components/FadeIn.svelte';
 	import { projects } from './projects';
 </script>
