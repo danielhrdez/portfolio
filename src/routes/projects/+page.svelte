@@ -4,6 +4,25 @@
 	import ProjectCard from './ProjectCard.svelte';
 	import FadeIn from '$components/FadeIn.svelte';
 	import { projects } from './projects';
+	import { onMount } from 'svelte';
+
+	let windowWidth = 0;
+	let windowPadding = 10;
+	let itemWidth = 250;
+	let gap = 8;
+	let numberOfColumns = 0;
+
+	onMount(() => {
+		function calcNumberOfColumns(min: number, max: number) {
+			numberOfColumns = Math.floor((windowWidth - windowPadding * 2) / (itemWidth + gap * 2));
+			numberOfColumns = Math.min(Math.max(numberOfColumns, min), max);
+		}
+		window.addEventListener('resize', () => {
+			windowWidth = window.innerWidth;
+			calcNumberOfColumns(1, 4);
+		});
+		calcNumberOfColumns(1, 4);
+	});
 </script>
 
 <Page
@@ -18,10 +37,21 @@
 	}}
 >
 	<div class="flex flex-wrap gap-4 justify-center max-w-6xl">
-		{#each projects as { name, href, srcImg, srcCodeLink, description, techStack }, i}
-			<FadeIn durationMs={500 + 100 * i}>
-				<ProjectCard {name} {href} {srcImg} {srcCodeLink} {description} {techStack} />
-			</FadeIn>
-		{/each}
+		{#if numberOfColumns > 0}
+			{#each projects as { name, href, srcImg, srcCodeLink, description, techStack }, i}
+				<FadeIn durationMs={100 + 400 * ((i % numberOfColumns) + Math.floor(i / numberOfColumns))}>
+					<ProjectCard
+						{name}
+						{href}
+						{srcImg}
+						{srcCodeLink}
+						{description}
+						{techStack}
+						width={itemWidth}
+						{gap}
+					/>
+				</FadeIn>
+			{/each}
+		{/if}
 	</div>
 </Page>

@@ -3,11 +3,11 @@ import solidJSIcon from '$assets/tech/solid-js.svg';
 import fastAPIIcon from '$assets/tech/fast-api.svg';
 import typescriptIcon from '$assets/tech/typescript.svg';
 import javascriptIcon from '$assets/tech/javascript.svg';
-import javaIcon from '$assets/tech/java.svg';
-import cppIcon from '$assets/tech/cpp.svg';
-import csharpIcon from '$assets/tech/csharp.svg';
-import pythonIcon from '$assets/tech/python.svg';
-import prologIcon from '$assets/tech/prolog.svg';
+import javaIcon from '$assets/tech/javascript.svg'; // TODO
+import cppIcon from '$assets/tech/javascript.svg'; // TODO
+import csharpIcon from '$assets/tech/javascript.svg'; // TODO
+import pythonIcon from '$assets/tech/javascript.svg'; // TODO
+import prologIcon from '$assets/tech/javascript.svg'; // TODO
 
 import pokerTSImage from '$assets/projects/poker.ts.png';
 import pathfinder from '$assets/projects/pathfinder.webp';

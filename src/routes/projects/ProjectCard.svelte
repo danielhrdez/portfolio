@@ -4,6 +4,9 @@
 	import { t } from 'svelte-i18n';
 	import ArrowRight from '$components/icons/ArrowRight.svelte';
 
+	export let width = 250;
+	export let gap = 8;
+
 	export let name: string;
 	export let href: string;
 	export let srcImg: string;
@@ -18,7 +21,7 @@
 	class=" 
     rounded-2xl
     overflow-hidden
-    w-[250px] h-[250px]
+    w-[{width}px] h-[{width}px]
     drop-shadow-md
     hover:scale-[1.01]
   "
@@ -26,7 +29,7 @@
 	<div
 		class="
       p-3
-      w-[250px]
+      w-[{width}px]
       h-[50px]
       absolute
       z-30
@@ -57,7 +60,7 @@
 			"
 		>
 			<div class="relative {!clickedDescription ? 'opacity-100' : 'opacity-0'}">
-				<div class="absolute flex gap-2 right-0">
+				<div class="absolute flex gap-[{gap}px] right-0">
 					{#each techStack as { src, alt }}
 						<img {src} {alt} class="w-8 h-8 grayscale hover:grayscale-0" />
 					{/each}
@@ -94,12 +97,7 @@
 			{description}
 		</p>
 	</div>
-	<img
-		loading="lazy"
-		src={srcImg}
-		alt={name}
-		class="brightness-50 w-full h-full object-cover"
-	/>
+	<img loading="lazy" src={srcImg} alt={name} class="brightness-50 w-full h-full object-cover" />
 </div>
 
 <style>
@@ -110,6 +108,7 @@
 		bottom: 0px;
 		position: absolute;
 		display: block;
+		mask-image: radial-gradient(circle 16px at 16px 0, transparent 0, transparent 16px, black 16px);
 		-webkit-mask-image: radial-gradient(
 			circle 16px at 16px 0,
 			transparent 0,
@@ -119,7 +118,7 @@
 		left: 0px;
 		content: '';
 	}
-	
+
 	.test::after {
 		width: 16px;
 		height: 16px;
@@ -127,6 +126,7 @@
 		bottom: 0px;
 		position: absolute;
 		display: block;
+		mask-image: radial-gradient(circle 16px at 16px 0, transparent 0, transparent 16px, black 16px);
 		-webkit-mask-image: radial-gradient(
 			circle 16px at 0px 0,
 			transparent 0,
