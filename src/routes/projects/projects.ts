@@ -8,6 +8,8 @@ import cppIcon from '$assets/tech/javascript.svg'; // TODO
 import csharpIcon from '$assets/tech/javascript.svg'; // TODO
 import pythonIcon from '$assets/tech/javascript.svg'; // TODO
 import prologIcon from '$assets/tech/javascript.svg'; // TODO
+import svelteIcon from '$assets/tech/javascript.svg'; // TODO
+import tailwindIcon from '$assets/tech/javascript.svg'; // TODO
 
 import pokerTSImage from '$assets/projects/poker.ts.png';
 import pathfinder from '$assets/projects/pathfinder.webp';
@@ -22,6 +24,24 @@ type Project = {
 		src: string;
 		alt: string;
 	}[];
+};
+
+const portfolio: Project = {
+	name: 'Portfolio',
+	href: 'https://www.danielhrdez.dev/',
+	srcImg: 'https://www.danielhrdez.dev/',
+	srcCodeLink: 'https://github.com/DanielHrdez/portfolio',
+	description: 'Lorem ipsum.',
+	techStack: [
+		{
+			src: svelteIcon,
+			alt: 'Svelte'
+		},
+		{
+			src: tailwindIcon,
+			alt: 'Tailwind'
+		},
+	]
 };
 
 const cloudML: Project = {
@@ -195,6 +215,7 @@ const nMagicSquare: Project = {
 };
 
 export const projects: Project[] = [
+	portfolio,
 	cloudML,
 	fpsBot,
 	pathFinder,
