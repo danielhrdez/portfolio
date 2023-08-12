@@ -4,9 +4,6 @@
 	import { t } from 'svelte-i18n';
 	import ArrowRight from '$components/icons/ArrowRight.svelte';
 
-	export let width = 250;
-	export let gap = 8;
-
 	export let name: string;
 	export let href: string;
 	export let srcImg: string;
@@ -21,7 +18,7 @@
 	class=" 
     rounded-2xl
     overflow-hidden
-    w-[{width}px] h-[{width}px]
+    w-[250px] h-[250px]
     drop-shadow-md
     hover:scale-[1.01]
   "
@@ -29,7 +26,7 @@
 	<div
 		class="
       p-3
-      w-[{width}px]
+      w-[250px]
       h-[50px]
       absolute
       z-30
@@ -60,7 +57,7 @@
 			"
 		>
 			<div class="relative {!clickedDescription ? 'opacity-100' : 'opacity-0'}">
-				<div class="absolute flex gap-[{gap}px] right-0">
+				<div class="absolute flex gap-2 right-0">
 					{#each techStack as { src, alt }}
 						<img {src} {alt} class="w-8 h-8 grayscale hover:grayscale-0" />
 					{/each}
