@@ -49,12 +49,12 @@
 	<div class="absolute bottom-0 w-full z-20 text-white">
 		<div
 			class="
-      w-full h-10
-      bg-gradient-to-b
-      from-black/0
-      to-black/25
-      p-2
-    "
+				w-full h-10
+				bg-gradient-to-b
+				from-black/0
+				to-black/25
+				p-2
+			"
 		>
 			<div class="relative {!clickedDescription ? 'opacity-100' : 'opacity-0'}">
 				<div class="absolute flex gap-2 right-0">
@@ -66,12 +66,14 @@
 		</div>
 		<button
 			class="
-        flex
-        w-full
-        bg-black/25
-        p-3
-        justify-between
-      "
+				flex
+				w-full
+				bg-black/25
+				p-3
+				justify-between
+				relative
+				test
+			"
 			on:click={() => (clickedDescription = !clickedDescription)}
 		>
 			<p>
@@ -82,7 +84,13 @@
 			</div>
 		</button>
 
-		<p class="bg-black/25 p-3 pt-0 {clickedDescription ? 'h-32' : 'h-0 p-0'} overflow-y-scroll">
+		<p
+			class="
+				bg-neutral-600
+				{clickedDescription ? 'h-32 p-3 pt-0' : 'h-0 p-0'}
+				overflow-y-scroll
+			"
+		>
 			{description}
 		</p>
 	</div>
@@ -93,3 +101,39 @@
 		class="opacity-75 blur-[1px] brightness-50 w-full h-full"
 	/>
 </div>
+
+<style>
+	.test::before {
+		width: 16px;
+		height: 16px;
+		background: rgb(82, 82, 82);
+		bottom: 0px;
+		position: absolute;
+		display: block;
+		-webkit-mask-image: radial-gradient(
+			circle 16px at 16px 0,
+			transparent 0,
+			transparent 16px,
+			black 16px
+		);
+		left: 0px;
+		content: '';
+	}
+	
+	.test::after {
+		width: 16px;
+		height: 16px;
+		background: rgb(82, 82, 82);
+		bottom: 0px;
+		position: absolute;
+		display: block;
+		-webkit-mask-image: radial-gradient(
+			circle 16px at 0px 0,
+			transparent 0,
+			transparent 16px,
+			black 16px
+		);
+		right: 0px;
+		content: '';
+	}
+</style>

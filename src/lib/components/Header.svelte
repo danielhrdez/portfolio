@@ -69,10 +69,12 @@
 	let navBar: HTMLElement;
 
 	onMount(() => {
-		setTimeout(() => {
-			navBar.style.setProperty('--_opacity', '1');
-			navBar.style.setProperty('--_duration', '.5s');
-		}, 400);
+		if ($page.route.id) {
+			setTimeout(() => {
+				navBar.style.setProperty('--_opacity', '1');
+				navBar.style.setProperty('--_duration', '.5s');
+			}, 400);
+		}
 	});
 
 	let newTab = writable<HTMLElement | null>(null);
@@ -145,11 +147,7 @@
 		{/each}
 	</nav>
 	<button on:click={toggleSettings}>
-		<Icon
-			src={settingsIcon}
-			alt="settings"
-			className="hover:rotate-90 hover-scale"
-		/>
+		<Icon src={settingsIcon} alt="settings" className="hover:rotate-90 hover-scale" />
 	</button>
 	<div
 		class="
