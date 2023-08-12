@@ -63,7 +63,7 @@
 		setTimeout(() => {
 			navBar.style.setProperty('--_left', newPosition);
 			navBar.style.setProperty('--_width', newWidth + '');
-		}, 200);
+		}, 100);
 	}
 
 	let navBar: HTMLElement;
@@ -86,7 +86,7 @@
 			if (navBar !== null && newTab !== null) {
 				moveIndicator(navBar, oldTab, get(newTab)!);
 			}
-		}, 100);
+		}, 10);
 	}
 
 	let width = 0;

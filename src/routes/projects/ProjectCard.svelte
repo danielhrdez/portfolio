@@ -87,7 +87,7 @@
 		<p
 			class="
 				bg-neutral-600
-				{clickedDescription ? 'h-32 p-3 pt-0' : 'h-0 p-0'}
+				{clickedDescription ? 'h-32 p-3 ' : 'h-0 p-0'}
 				overflow-y-scroll
 			"
 		>
@@ -98,7 +98,7 @@
 		loading="lazy"
 		src={srcImg}
 		alt={name}
-		class="opacity-75 blur-[1px] brightness-50 w-full h-full"
+		class="brightness-50 w-full h-full object-cover"
 	/>
 </div>
 
