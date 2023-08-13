@@ -1,7 +1,8 @@
 <script lang="ts">
+	import Loader from '$components/Loader.svelte';
+	import WavesCanvas from '$components/WavesCanvas.svelte';
 	import Header from '$components/Header.svelte';
 	import Settings from '$components/Settings.svelte';
-	import Loader from '$components/Loader.svelte';
 	import '../app.css';
 	import { dev } from '$app/environment';
 	import { inject } from '@vercel/analytics';
@@ -10,7 +11,6 @@
 	import { locale, isLoading } from 'svelte-i18n';
 	import { Theme, preferences, Lang } from '$utils/storage';
 	import '$utils/i18n';
-	import WavesCanvas from '$components/WavesCanvas.svelte';
 
 	inject({ mode: dev ? 'development' : 'production' });
 
@@ -18,7 +18,7 @@
 	let dark = false;
 	let lang = Lang.ENGLISH;
 	let isLoaded = false;
-	$: useSkeleton = !isLoaded || $isLoading;
+	$: useLoader = !isLoaded || $isLoading;
 
 	function toggleSettings() {
 		showSettings = !showSettings;
@@ -44,19 +44,19 @@
 	});
 </script>
 
-{#if useSkeleton}
+<div class="h-screen flex flex-col div-color">
+{#if useLoader}
 	<Loader />
 {:else}
-	<div class="h-screen flex flex-col div-color">
-		<Settings bind:show={showSettings} {dark} {lang} />
-		<Header on:settings={toggleSettings} />
-		<div class="h-full overflow-auto">
-			<div class="flex gap-4 justify-center items-center h-full flex-wrap">
-				<main class="flex flex-col gap-4 p-4 relative">
-					<slot />
-				</main>
-			</div>
+	<Settings bind:show={showSettings} {dark} {lang} />
+	<Header on:settings={toggleSettings} />
+	<div class="h-full overflow-auto">
+		<div class="flex gap-4 justify-center items-center h-full flex-wrap">
+			<main class="flex flex-col gap-4 p-4 relative">
+				<slot />
+			</main>
 		</div>
-		<WavesCanvas />
 	</div>
 {/if}
+	<WavesCanvas />
+</div>

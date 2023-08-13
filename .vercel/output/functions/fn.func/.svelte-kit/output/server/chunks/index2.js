@@ -140,12 +140,12 @@ function add_attribute(name, value, boolean) {
   return ` ${name}${assignment}`;
 }
 export {
-  subscribe as a,
-  createEventDispatcher as b,
+  add_attribute as a,
+  subscribe as b,
   create_ssr_component as c,
-  get_store_value as d,
-  add_attribute as e,
-  escape as f,
+  createEventDispatcher as d,
+  escape as e,
+  get_store_value as f,
   getContext as g,
   each as h,
   safe_not_equal as i,

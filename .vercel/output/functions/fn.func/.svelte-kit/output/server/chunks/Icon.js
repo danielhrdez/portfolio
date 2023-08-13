@@ -1,4 +1,4 @@
-import { c as create_ssr_component, e as add_attribute, f as escape } from "./index2.js";
+import { c as create_ssr_component, a as add_attribute, e as escape } from "./index2.js";
 const Icon = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { src } = $$props;
   let { alt } = $$props;

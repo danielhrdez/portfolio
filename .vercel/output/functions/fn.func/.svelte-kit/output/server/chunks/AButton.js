@@ -1,4 +1,4 @@
-import { c as create_ssr_component, e as add_attribute } from "./index2.js";
+import { c as create_ssr_component, a as add_attribute } from "./index2.js";
 const AButton = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { hrefLabel = void 0 } = $$props;
   if ($$props.hrefLabel === void 0 && $$bindings.hrefLabel && hrefLabel !== void 0)

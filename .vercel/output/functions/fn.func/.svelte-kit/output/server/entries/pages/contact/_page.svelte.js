@@ -1,4 +1,4 @@
-import { c as create_ssr_component, a as subscribe, v as validate_component, f as escape, e as add_attribute } from "../../../chunks/index2.js";
+import { c as create_ssr_component, b as subscribe, v as validate_component, e as escape, a as add_attribute } from "../../../chunks/index2.js";
 import { B as Block } from "../../../chunks/Block.js";
 import { X } from "../../../chunks/runtime.esm.js";
 import { I as Icon } from "../../../chunks/Icon.js";

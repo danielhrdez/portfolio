@@ -1,4 +1,4 @@
-import { c as create_ssr_component, e as add_attribute } from "./index2.js";
+import { c as create_ssr_component, a as add_attribute } from "./index2.js";
 const FadeIn = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { durationMs = 0 } = $$props;
   let opacityDiv;

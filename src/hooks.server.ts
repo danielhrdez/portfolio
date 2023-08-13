@@ -2,7 +2,6 @@ import type { Handle } from '@sveltejs/kit';
 import { minify } from 'html-minifier'; // @ts-ignore
 
 const options = {
-    caseSensitive: true,
     collapseBooleanAttributes: true,
     collapseInlineTagWhitespace: true,
     collapseWhitespace: true,
@@ -13,7 +12,6 @@ const options = {
     minifyURLs: true,
     removeComments: true,
     removeEmptyAttributes: true,
-    removeEmptyElements: true,
     removeRedundantAttributes: true,
     removeScriptTypeAttributes: true,
     removeStyleLinkTypeAttributes: true,

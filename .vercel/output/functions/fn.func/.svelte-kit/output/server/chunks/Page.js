@@ -1,4 +1,4 @@
-import { c as create_ssr_component, f as escape, v as validate_component } from "./index2.js";
+import { c as create_ssr_component, e as escape, v as validate_component } from "./index2.js";
 import { A as AButton } from "./AButton.js";
 const TitlePage = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { title = "" } = $$props;

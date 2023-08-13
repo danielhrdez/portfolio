@@ -1,4 +1,4 @@
-import { c as create_ssr_component, a as subscribe, v as validate_component } from "../../../chunks/index2.js";
+import { c as create_ssr_component, b as subscribe, v as validate_component } from "../../../chunks/index2.js";
 import { P as Page } from "../../../chunks/Page.js";
 import { X } from "../../../chunks/runtime.esm.js";
 const ProjectCard_svelte_svelte_type_style_lang = "";

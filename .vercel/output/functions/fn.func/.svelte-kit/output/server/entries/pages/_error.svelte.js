@@ -1,4 +1,4 @@
-import { c as create_ssr_component, a as subscribe, f as escape, e as add_attribute, v as validate_component } from "../../chunks/index2.js";
+import { c as create_ssr_component, b as subscribe, e as escape, a as add_attribute, v as validate_component } from "../../chunks/index2.js";
 import { X } from "../../chunks/runtime.esm.js";
 import { A as AButton } from "../../chunks/AButton.js";
 const simpson404 = "/_app/immutable/assets/404-simpson.f59e0d38.webm";
