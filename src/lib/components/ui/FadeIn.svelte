@@ -7,7 +7,7 @@
 			opacityDiv.style.opacity = '0';
 			const keyframes = [
 				{ opacity: 1, scale: 1 },
-				{ opacity: 0.85, scale: 0.99 },
+				{ opacity: 0.75, scale: 0.99 },
 				{ opacity: 1, scale: 1 }
 			];
 			const options: KeyframeAnimationOptions = {

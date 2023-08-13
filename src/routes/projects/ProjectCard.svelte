@@ -4,44 +4,46 @@
 	import { t } from 'svelte-i18n';
 	import ArrowRight from '$components/icons/ArrowRight.svelte';
 
-	export let name: string;
-	export let href: string;
-	export let srcImg: string;
-	export let srcCodeLink: string;
-	export let description: string;
-	export let techStack: { src: string; alt: string }[];
+	import type { Project } from './project/project.d';
+	import HoverIcon from '$components/ui/HoverIcon.svelte';
+
+	export let { name, description, srcImg, srcCodeLink, href, technologies }: Project = {
+		name: '',
+		description: '',
+		srcImg: '',
+		srcCodeLink: '',
+		href: '',
+		technologies: []
+	};
 
 	let clickedDescription = false;
 </script>
 
 <div
 	class=" 
-    rounded-2xl
-    overflow-hidden
-    w-[250px] h-[250px]
-    drop-shadow-md
-    hover:scale-[1.01]
-  "
+		rounded-2xl
+		overflow-hidden
+		w-[250px] h-[250px]
+		drop-shadow-md
+		hover:scale-[1.01]
+	"
 >
 	<div
 		class="
-      p-3
-      w-[250px]
-      h-[50px]
-      absolute
-      z-30
-      bg-gradient-to-t
-      from-black/0
-      to-black/25
-    "
+			p-3
+			w-[250px]
+			h-[50px]
+			absolute
+			z-30
+		"
 	>
 		<div class="relative w-full h-full">
 			<a {href} class="absolute" target="_blank">
-				<h2 class="font-bold text-white">
+				<h2 class="font-bold text-white text-shadow">
 					{name}
 				</h2>
 			</a>
-			<a href={srcCodeLink} class="absolute right-0 invert" target="_blank">
+			<a href={srcCodeLink} class="absolute right-0 svg-stroke" target="_blank">
 				<Icon src={githubIcon} alt="GitHub icon" invert={false} />
 			</a>
 		</div>
@@ -52,14 +54,14 @@
 				w-full h-10
 				bg-gradient-to-b
 				from-black/0
-				to-black/25
+				to-neutral-800/50
 				p-2
 			"
 		>
 			<div class="relative {!clickedDescription ? 'opacity-100' : 'opacity-0'}">
 				<div class="absolute flex gap-2 right-0">
-					{#each techStack as { src, alt }}
-						<img {src} {alt} class="w-8 h-8 grayscale hover:grayscale-0" />
+					{#each technologies as { src, alt }}
+						<HoverIcon {src} {alt} />
 					{/each}
 				</div>
 			</div>
@@ -68,7 +70,7 @@
 			class="
 				flex
 				w-full
-				bg-black/25
+				bg-neutral-800/50
 				p-3
 				justify-between
 				relative
@@ -87,14 +89,26 @@
 		<p
 			class="
 				bg-neutral-600
-				{clickedDescription ? 'h-32 p-3 ' : 'h-0 p-0'}
+				{clickedDescription ? 'h-32 p-3' : 'h-0'}
 				overflow-y-scroll
+				transition-all
 			"
 		>
 			{description}
 		</p>
 	</div>
-	<img loading="lazy" src={srcImg} alt={name} class="brightness-50 w-full h-full object-cover" />
+	<img
+		loading="lazy"
+		src={srcImg}
+		alt={name}
+		class="
+			w-full
+			h-full
+			object-cover
+			opacity-75
+			blur-[1px]
+		"
+	/>
 </div>
 
 <style>
@@ -105,11 +119,11 @@
 		bottom: 0px;
 		position: absolute;
 		display: block;
-		mask-image: radial-gradient(circle 16px at 16px 0, transparent 0, transparent 16px, black 16px);
+		mask-image: radial-gradient(circle 16px at 16px 0, transparent 0, transparent 17px, black 16px);
 		-webkit-mask-image: radial-gradient(
 			circle 16px at 16px 0,
 			transparent 0,
-			transparent 16px,
+			transparent 17px,
 			black 16px
 		);
 		left: 0px;
@@ -123,14 +137,23 @@
 		bottom: 0px;
 		position: absolute;
 		display: block;
-		mask-image: radial-gradient(circle 16px at 16px 0, transparent 0, transparent 16px, black 16px);
+		mask-image: radial-gradient(circle 16px at 16px 0, transparent 0, transparent 17px, black 16px);
 		-webkit-mask-image: radial-gradient(
 			circle 16px at 0px 0,
 			transparent 0,
-			transparent 16px,
+			transparent 17px,
 			black 16px
 		);
 		right: 0px;
 		content: '';
+	}
+
+	.text-shadow {
+		--color: #000;
+		text-shadow: 1px 0 var(--color), -1px 0 var(--color), 0 1px var(--color), 0 -1px var(--color);
+	}
+
+	.svg-stroke {
+		filter: drop-shadow(0px 0px 1px rgb(255, 255, 255)) invert(100%);
 	}
 </style>

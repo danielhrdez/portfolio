@@ -6,25 +6,26 @@
 
     function animateText(
         text: string,
-        delay: number = 0,
+        duration: number = 0,
         pctFalseKeys: number = 0.1
     ) {
         resultText = '';
+        const delayChar = duration / text.length;
         for (let i = 0; i < text.length; i++) {
             setTimeout(() => {
                 resultText += Math.random().toString(36).slice(2, 3);
                 setTimeout(() => {
                     resultText = resultText.slice(0, resultText.length - 1);
                     resultText += text[i];
-                }, delay * pctFalseKeys);
-            }, delay * i);
+                }, delayChar * pctFalseKeys);
+            }, delayChar * i);
         }
         setTimeout(() => {
             resultText = text;
-        }, delay * text.length);
+        }, duration);
     }
 
-    $: animateText(title, 75, 0.1);
+    $: animateText(title, 500, 0.1);
     
     setInterval(() => {
         showCursor = !showCursor;
