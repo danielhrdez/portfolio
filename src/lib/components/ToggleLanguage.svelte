@@ -22,10 +22,6 @@
 	});
 </script>
 
-<button on:click={toggleLanguage} class="w-10 h-10" aria-label="Toggle language">
-	{#if lang === Lang.ENGLISH}
-		{Lang.ENGLISH.toUpperCase()}
-	{:else}
-		{Lang.SPANISH.toUpperCase()}
-	{/if}
+<button on:click={toggleLanguage} class="w-10 h-10" aria-label={lang.toUpperCase()}>
+	{lang.toUpperCase()}
 </button>
