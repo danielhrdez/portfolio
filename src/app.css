@@ -21,10 +21,6 @@ a {
     @apply dark:bg-neutral-800 bg-neutral-200;
 }
 
-body * {
-	@apply transition-all duration-75;
-}
-
 .hover-scale {
 	@apply hover:scale-110;
 }
@@ -54,7 +50,7 @@ body * {
 }
 
 nav {
-    @apply before:bg-black dark:before:bg-white;
+    @apply before:bg-neutral-500 dark:before:bg-neutral-500;
 }
 
 nav::before {

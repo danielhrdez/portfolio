@@ -1,21 +1,27 @@
 import type { Handle } from '@sveltejs/kit';
+import { minify } from 'html-minifier'; // @ts-ignore
 
-export const handle: Handle = async ({ event, resolve }) => {
-    const response = await resolve(event, {
-        transformPageChunk: ({ html }) => minifyHTML(html)
-    });
-    return response;
+const options = {
+    caseSensitive: true,
+    collapseBooleanAttributes: true,
+    collapseInlineTagWhitespace: true,
+    collapseWhitespace: true,
+    decodeEntities: true,
+    html5: true,
+    minifyCSS: true,
+    minifyJS: true,
+    minifyURLs: true,
+    removeComments: true,
+    removeEmptyAttributes: true,
+    removeEmptyElements: true,
+    removeRedundantAttributes: true,
+    removeScriptTypeAttributes: true,
+    removeStyleLinkTypeAttributes: true,
+    useShortDoctype: true
 };
 
-function minifyHTML(html: string) {
-    return html
-        .replace(/<!--[\s\S]*?-->/g, '')
-        .replace(/>\s+</g, '><')
-        .replace(/\s+/g, ' ')
-        .replace(/<script[^>]*>([\s\S]*?)<\/script>/g, (match, p1) => {
-            return `<script>${p1.replace(/\/\/.*\n/g, '')}</script>`;
-        })
-        .replace(/<style[^>]*>([\s\S]*?)<\/style>/g, (match, p1) => {
-            return `<style>${p1.replace(/\/\*.*\*\//g, '')}</style>`;
-        });
-}
+export const handle: Handle = async ({ event, resolve }) => {
+	return await resolve(event, {
+		transformPageChunk: ({ html }) => minify(html, options)
+    });
+};

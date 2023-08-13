@@ -31,6 +31,7 @@
 		"@sveltejs/adapter-auto": "^2.0.0",
 		"@sveltejs/adapter-vercel": "^2.4.3",
 		"@sveltejs/kit": "^1.5.0",
+		"@types/html-minifier": "^4.0.2",
 		"@typescript-eslint/eslint-plugin": "^5.45.0",
 		"@typescript-eslint/parser": "^5.45.0",
 		"autoprefixer": "^10.4.14",
@@ -52,6 +53,7 @@
 	"type": "module",
 	"dependencies": {
 		"@vercel/analytics": "^1.0.0",
+		"html-minifier": "^4.0.0",
 		"svelte-i18n": "^3.6.0",
 		"svelte-local-storage-store": "^0.4.0"
 	},

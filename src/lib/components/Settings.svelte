@@ -1,9 +1,9 @@
 <script lang="ts">
-    import Block from './Block.svelte';
-    import Switch from './Switch.svelte';
+    import Block from './ui/Block.svelte';
+    import Switch from './ui/Switch.svelte';
     import { t, locale } from 'svelte-i18n';
     import { Theme, preferences } from '$utils/storage';
-    import Modal from './Modal.svelte';
+    import Modal from './ui/Modal.svelte';
     import settingsExit from '$lib/assets/settings-exit.svg';
     import { Lang } from '$utils/storage';
 
@@ -13,18 +13,18 @@
 
     function toggleMode() {
         dark = !dark;
-        preferences.update((prefs) => {
-            prefs.theme = dark ? Theme.DARK : Theme.LIGHT;
-            return prefs;
+        preferences.update((preference) => {
+            preference.theme = dark ? Theme.DARK : Theme.LIGHT;
+            return preference;
         });
         document.documentElement.classList.toggle('dark');
     }
 
     function toggleLanguage(e: CustomEvent<any>) {
         lang = e.detail.checked ? Lang.SPANISH : Lang.ENGLISH;
-        preferences.update((prefs) => {
-            prefs.lang = lang;
-            return prefs;
+        preferences.update((preference) => {
+            preference.lang = lang;
+            return preference;
         });
         locale.set(lang);
     }
@@ -37,7 +37,7 @@
                 loading="lazy"
                 src={settingsExit}
                 alt="settings"
-                class="absolute top-0 right-0 w-5 h-5 m-6 cursor-pointer dark:invert hover-scale"
+                class="absolute top-0 right-0 w-5 h-5 m-6 cursor-pointer dark:invert hover-scale transition-all"
                 on:click={() => (show = false)}
                 on:keypress={(e) => {
                     if (e.key === 'Enter') show = false;

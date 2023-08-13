@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Block from '$components/Block.svelte';
+	import Block from '$components/ui/Block.svelte';
 	import { t, json, isLoading } from 'svelte-i18n';
 
 	$: description = $json('page.about.me.description') as string[];

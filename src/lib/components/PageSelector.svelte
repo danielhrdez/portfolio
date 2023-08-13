@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-    import type { HrefLabel } from './AButton';
-    import AButton from './AButton.svelte';
+    import type { HrefLabel } from './ui/AButton';
+    import AButton from './ui/AButton.svelte';
     import ArrowLeft from './icons/ArrowLeft.svelte';
     import ArrowRight from './icons/ArrowRight.svelte';
 	import { goto } from '$app/navigation';

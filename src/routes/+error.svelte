@@ -1,7 +1,7 @@
 <script>
 	import simpson404 from '$assets/404-simpson.webm';
 	import { t } from 'svelte-i18n';
-	import AButton from '$components/AButton.svelte';
+	import AButton from '$components/ui/AButton.svelte';
 	import ArrowDown from '$components/icons/ArrowDown.svelte';
 </script>
 

@@ -25,4 +25,3 @@
   height={height}
 />
 <div class="absolute -z-20 div-bg-color w-full h-full" />
-

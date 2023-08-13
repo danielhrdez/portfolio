@@ -1,9 +1,9 @@
 <script lang="ts">
-	import Block from '$components/Block.svelte';
+	import Block from '$components/ui/Block.svelte';
 	import emailIcon from '$assets/contact/email.svg';
 	import linkedInIcon from '$assets/contact/linked-in.svg';
 	import githubIcon from '$assets/contact/github.svg';
-	import AIcon from '$components/AIcon.svelte';
+	import AIcon from '$components/ui/AIcon.svelte';
 
 	export let email: string;
 	export let linkedIn: string;

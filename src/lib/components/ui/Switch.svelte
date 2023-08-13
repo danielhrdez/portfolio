@@ -54,6 +54,7 @@
                     text-center
                     hover-scale
                     hover:drop-shadow-md
+                    transition-all
                 "
             >
                 {checked ? right : left}

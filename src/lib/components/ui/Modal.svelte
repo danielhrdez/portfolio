@@ -3,12 +3,14 @@
     $: showClass = show ? 'block' : 'hidden';
 </script>
 
-<div
+<dialog
     class="
         {showClass}
         absolute
-        bg-opacity-20
-        dark:bg-opacity-20
+        bg-white/50
+        text-black
+        dark:text-white
+        dark:bg-black/50
         backdrop-blur-sm
         h-screen
         w-screen
@@ -19,4 +21,4 @@
     "
 >
     <slot />
-</div>
+</dialog>

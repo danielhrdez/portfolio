@@ -6,7 +6,7 @@
 	import { t } from 'svelte-i18n';
 	import { page } from '$app/stores';
 	import { writable, get } from 'svelte/store';
-	import Icon from './Icon.svelte';
+	import Icon from './ui/Icon.svelte';
 
 	const dispatch = createEventDispatcher();
 
@@ -63,7 +63,7 @@
 		setTimeout(() => {
 			navBar.style.setProperty('--_left', newPosition);
 			navBar.style.setProperty('--_width', newWidth + '');
-		}, 100);
+		}, 200);
 	}
 
 	let navBar: HTMLElement;
@@ -98,7 +98,7 @@
 	class="
         flex
         justify-between
-				gap-[15vw]
+		gap-[15vw]
         py-1
         px-3
         drop-shadow-sm
@@ -147,7 +147,7 @@
 		{/each}
 	</nav>
 	<button on:click={toggleSettings}>
-		<Icon src={settingsIcon} alt="settings" className="hover:rotate-90 hover-scale" />
+		<Icon src={settingsIcon} alt="settings" className="hover:rotate-90 hover-scale transition-all" />
 	</button>
 	<div
 		class="

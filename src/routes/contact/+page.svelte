@@ -3,7 +3,7 @@
 	import ContactLinks from './ContactLinks.svelte';
 	import Page from '../Page.svelte';
 	import { t } from 'svelte-i18n';
-	import FadeIn from '$components/FadeIn.svelte';
+	import FadeIn from '$components/ui/FadeIn.svelte';
 
 	const email = 'contact@danielhrdez.dev';
 	const linkedIn = 'https://www.linkedin.com/in/danihrdez/';

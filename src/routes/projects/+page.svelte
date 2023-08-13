@@ -2,7 +2,7 @@
 	import Page from '../Page.svelte';
 	import { t } from 'svelte-i18n';
 	import ProjectCard from './ProjectCard.svelte';
-	import FadeIn from '$components/FadeIn.svelte';
+	import FadeIn from '$components/ui/FadeIn.svelte';
 	import { projects } from './projects';
 	import { onMount } from 'svelte';
 

@@ -4,10 +4,9 @@
 	import Education from './Education.svelte';
 	import { t } from 'svelte-i18n';
 	import Page from './Page.svelte';
-	import FadeIn from '$components/FadeIn.svelte';
+	import FadeIn from '$components/ui/FadeIn.svelte';
 
 	let width = 0;
-
 	const durations = [500, 750, 1000];
 </script>
 

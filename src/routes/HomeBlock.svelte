@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Block from '$lib/components/Block.svelte';
+	import Block from '$lib/components/ui/Block.svelte';
 	import Entity from '$components/Entity.svelte';
 	import { t, json, isLoading } from 'svelte-i18n';
 

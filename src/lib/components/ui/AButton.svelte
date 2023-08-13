@@ -4,7 +4,7 @@
 </script>
 
 {#if hrefLabel}
-    <a class="abutton" href={hrefLabel.href} style="opacity: 1" aria-label={hrefLabel.label}>
+    <a class="abutton transition-all" href={hrefLabel.href} style="opacity: 1" aria-label={hrefLabel.label}>
         <slot />
     </a>
 {:else}

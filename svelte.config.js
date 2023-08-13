@@ -17,7 +17,7 @@ const config = {
             $locales: './src/locales',
             $utils: './src/lib/utils',
             $assets: './src/lib/assets',
-            $fonts: './src/lib/fonts'
+            $fonts: './static/fonts'
         }
     }
 };

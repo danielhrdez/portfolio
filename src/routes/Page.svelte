@@ -1,5 +1,5 @@
 <script lang="ts">
-    import type { HrefLabel } from '$components/AButton';
+    import type { HrefLabel } from '$components/ui/AButton';
     import TitlePage from '$components/TitlePage.svelte';
     import PageSelector from '$components/PageSelector.svelte';
 

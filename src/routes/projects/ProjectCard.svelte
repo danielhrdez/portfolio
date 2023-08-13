@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Icon from '$components/Icon.svelte';
+	import Icon from '$components/ui/Icon.svelte';
 	import githubIcon from '$assets/contact/github.svg';
 	import { t } from 'svelte-i18n';
 	import ArrowRight from '$components/icons/ArrowRight.svelte';

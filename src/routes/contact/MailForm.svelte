@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Block from '$components/Block.svelte';
+	import Block from '$components/ui/Block.svelte';
 	import { t } from 'svelte-i18n';
 
 	export let email: string;
