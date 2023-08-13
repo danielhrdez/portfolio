@@ -19,7 +19,12 @@ const config = {
 			$assets: './src/lib/assets',
 			$fonts: './static/fonts'
 		},
-		csp: false
+		csp: {
+			directives: {
+				'script-src': ['self', 'https://va.vercel-scripts.com/'],
+				'connect-src': ['self', 'https://va.vercel-scripts.com/']
+			}
+		}
 	}
 };
 
