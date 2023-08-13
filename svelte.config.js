@@ -25,7 +25,8 @@ const config = {
 					'self',
 					'https://va.vercel-scripts.com/',
 					'https://vercel.live/',
-					'unsafe-inline'
+                    'unsafe-eval',
+                    'unsafe-inline'
 				]
 			}
 		}
