@@ -1,16 +1,9 @@
-import { c as create_ssr_component, b as subscribe, e as escape, a as add_attribute, v as validate_component } from "../../chunks/index2.js";
+import { c as create_ssr_component, d as subscribe, e as escape, a as add_attribute, v as validate_component } from "../../chunks/index2.js";
 import { X } from "../../chunks/runtime.esm.js";
 import { A as AButton } from "../../chunks/AButton.js";
 const simpson404 = "/_app/immutable/assets/404-simpson.f59e0d38.webm";
 const ArrowDown = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `<svg class="h-6 w-6 animate-bounce transition-none" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="
-            M 19 14
-            l -7 7
-            m 0 0
-            l -7-7
-            m 7 7
-            V 3
-        "></path></svg>`;
+  return `<svg fill="none" stroke="currentColor" class="h-6 w-6 animate-bounce transition-none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m19 14-7 7m0 0-7-7m7 7V3"></path></svg>`;
 });
 const Error = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $t, $$unsubscribe_t;

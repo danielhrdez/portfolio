@@ -1,8 +1,7 @@
-import { c as create_ssr_component, b as subscribe, v as validate_component, h as each, e as escape, a as add_attribute } from "../../chunks/index2.js";
-import { B as Block } from "../../chunks/Block.js";
+import { c as create_ssr_component, d as subscribe, v as validate_component, f as each, e as escape, a as add_attribute } from "../../chunks/index2.js";
+import { B as Block, F as FadeIn } from "../../chunks/FadeIn.js";
 import { t as te, X, $ } from "../../chunks/runtime.esm.js";
 import { P as Page } from "../../chunks/Page.js";
-import { F as FadeIn } from "../../chunks/FadeIn.js";
 const Description = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let description;
   let $json, $$unsubscribe_json;

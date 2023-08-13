@@ -1,8 +1,7 @@
-import { c as create_ssr_component, e as escape, v as validate_component, a as add_attribute, g as getContext, b as subscribe, d as createEventDispatcher, f as get_store_value, h as each } from "../../chunks/index2.js";
-import { X, z, y, O, $ } from "../../chunks/runtime.esm.js";
+import { c as create_ssr_component, e as escape, v as validate_component, a as add_attribute, g as getContext, b as get_store_value, d as subscribe, f as each } from "../../chunks/index2.js";
+import { z, X, y, O, $ } from "../../chunks/runtime.esm.js";
 import { w as writable } from "../../chunks/index.js";
 import { I as Icon } from "../../chunks/Icon.js";
-import { B as Block } from "../../chunks/Block.js";
 import { inject } from "@vercel/analytics";
 const Circle_svelte_svelte_type_style_lang = "";
 const Circle2_svelte_svelte_type_style_lang = "";
@@ -92,7 +91,6 @@ const WavesCanvas = create_ssr_component(($$result, $$props, $$bindings, slots) 
 <div class="absolute -z-20 div-bg-color w-full h-full"></div>`;
 });
 const danielWebp = "data:image/webp;base64,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";
-const settingsIcon = "/_app/immutable/assets/settings-btn.2ba372a2.svg";
 const menuIcon = "/_app/immutable/assets/menu-icon.7a9847ab.svg";
 const getStores = () => {
   const stores2 = getContext("__svelte__");
@@ -113,6 +111,69 @@ const page = {
     return store.subscribe(fn);
   }
 };
+var stores = {};
+function getStorage(type) {
+  return type === "local" ? localStorage : sessionStorage;
+}
+function persisted(key, initialValue, options) {
+  const serializer = (options == null ? void 0 : options.serializer) ?? JSON;
+  const storageType = (options == null ? void 0 : options.storage) ?? "local";
+  const browser = typeof window !== "undefined" && typeof document !== "undefined";
+  function updateStorage(key2, value) {
+    if (!browser)
+      return;
+    getStorage(storageType).setItem(key2, serializer.stringify(value));
+  }
+  if (!stores[key]) {
+    const store = writable(initialValue, (set2) => {
+      const json = browser ? getStorage(storageType).getItem(key) : null;
+      if (json) {
+        set2(serializer.parse(json));
+      }
+      if (browser) {
+        const handleStorage = (event) => {
+          if (event.key === key)
+            set2(event.newValue ? serializer.parse(event.newValue) : null);
+        };
+        window.addEventListener("storage", handleStorage);
+        return () => window.removeEventListener("storage", handleStorage);
+      }
+    });
+    const { subscribe: subscribe2, set } = store;
+    stores[key] = {
+      set(value) {
+        updateStorage(key, value);
+        set(value);
+      },
+      update(updater) {
+        const value = updater(get_store_value(store));
+        updateStorage(key, value);
+        set(value);
+      },
+      subscribe: subscribe2
+    };
+  }
+  return stores[key];
+}
+var Lang = /* @__PURE__ */ ((Lang2) => {
+  Lang2["ENGLISH"] = "en";
+  Lang2["SPANISH"] = "es";
+  return Lang2;
+})(Lang || {});
+const preferences = persisted("preferences", {
+  theme: "system",
+  lang: z() || "en"
+  /* ENGLISH */
+});
+const ToggleLanguage = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let { lang = Lang.ENGLISH } = $$props;
+  if ($$props.lang === void 0 && $$bindings.lang && lang !== void 0)
+    $$bindings.lang(lang);
+  return `<button class="w-10 h-10">${lang === Lang.ENGLISH ? `${escape(Lang.ENGLISH.toUpperCase())}` : `${escape(Lang.SPANISH.toUpperCase())}`}</button>`;
+});
+const ToggleTheme = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `<button class="w-6 h-6">${`<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 256 256"><path d="M127.9 192.5A64.7 64.7 0 1 1 128 63a64.7 64.7 0 0 1-.1 129.4zM110 50.9a2.8 2.8 0 0 1-2.6-3.9l17.9-43.8a2.8 2.8 0 0 1 5.2 0L148.3 47a2.8 2.8 0 0 1-3.2 3.8 81 81 0 0 0-35 0zm17.9 203.4c-1.2 0-2.2-.7-2.6-1.7l-17.9-44a2.8 2.8 0 0 1 3.2-3.7 80.9 80.9 0 0 0 34.5 0 2.8 2.8 0 0 1 3.2 3.8l-17.8 43.9a3 3 0 0 1-2.6 1.7zM48 148.5c-.3 0-.6 0-1-.2L3.2 130.5a2.8 2.8 0 0 1 0-5.2L47 107.4a2.8 2.8 0 0 1 3.8 3.2 81 81 0 0 0 0 34.5 2.8 2.8 0 0 1-2.7 3.4zm159.6 0a2.8 2.8 0 0 1-2.7-3.4 81.3 81.3 0 0 0 0-34.5 2.8 2.8 0 0 1 3.8-3.2l43.9 17.9a2.8 2.8 0 0 1 0 5.2l-44 17.8-1 .2zM58.8 86.9h-.2a3 3 0 0 1-2.4-1.7L37.8 41.5a2.8 2.8 0 0 1 3.7-3.7l43.7 18.4a2.8 2.8 0 0 1 .4 5 81.2 81.2 0 0 0-24.4 24.4c-.5.8-1.4 1.3-2.4 1.3zM215.3 218l-1.1-.1-43.6-18.4a2.8 2.8 0 0 1-.5-5 81 81 0 0 0 24.4-24.4 3 3 0 0 1 2.6-1.2c1 0 2 .7 2.4 1.7l18.4 43.6a2.8 2.8 0 0 1-2.6 3.9zM196.9 86.9c-1 0-1.9-.5-2.4-1.3a81 81 0 0 0-24.4-24.4 2.8 2.8 0 0 1 .5-5l43.6-18.4a2.8 2.8 0 0 1 3.7 3.7l-18.4 43.7a2.8 2.8 0 0 1-2.6 1.7zM40.4 218a2.8 2.8 0 0 1-2.6-3.8l18.4-43.6c.4-1 1.4-1.7 2.4-1.7 1-.2 2 .4 2.6 1.2a81 81 0 0 0 24.4 24.4 2.8 2.8 0 0 1-.4 5l-43.7 18.4-1 .2z"></path></svg>`}</button>`;
+});
 function moveIndicator(navBar2, oldTab, newTab2) {
   let transitionWidth = 0;
   const isRight = oldTab?.compareDocumentPosition(newTab2) === 4;
@@ -141,7 +202,6 @@ const Header = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $t, $$unsubscribe_t;
   $$unsubscribe_page = subscribe(page, (value) => $page = value);
   $$unsubscribe_t = subscribe(X, (value) => $t = value);
-  createEventDispatcher();
   var Route = ((Route2) => {
     Route2["ABOUT"] = "/";
     Route2["PROJECTS"] = "/projects";
@@ -205,144 +265,9 @@ const Header = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     )}">${escape(link.text)}
 			</a>`;
   })}</nav>
-	<button>${validate_component(Icon, "Icon").$$render(
-    $$result,
-    {
-      src: settingsIcon,
-      alt: "settings",
-      className: "hover:rotate-90 hover-scale transition-all"
-    },
-    {},
-    {}
-  )}</button>
+	<div class="flex items-center">${validate_component(ToggleTheme, "ToggleTheme").$$render($$result, {}, {}, {})}
+		${validate_component(ToggleLanguage, "ToggleLanguage").$$render($$result, {}, {}, {})}</div>
 	<div class="bg-neutral-100 dark:bg-neutral-700 w-full h-full absolute inset-0 -z-10 "></div></header>`;
-});
-const Switch = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let { title } = $$props;
-  let { left = "On" } = $$props;
-  let { right = "Off" } = $$props;
-  let { checked = false } = $$props;
-  createEventDispatcher();
-  if ($$props.title === void 0 && $$bindings.title && title !== void 0)
-    $$bindings.title(title);
-  if ($$props.left === void 0 && $$bindings.left && left !== void 0)
-    $$bindings.left(left);
-  if ($$props.right === void 0 && $$bindings.right && right !== void 0)
-    $$bindings.right(right);
-  if ($$props.checked === void 0 && $$bindings.checked && checked !== void 0)
-    $$bindings.checked(checked);
-  return `<div class="flex flex-col bg-transparent dark:bg-transparent items-center w-full "><h2 class="text-xl">${escape(title)}</h2>
-    <label class="w-full"><input class="sr-only" type="checkbox"${add_attribute("checked", checked, 1)}>
-        <div class="flex bg-neutral-300/75 dark:bg-neutral-700/75 cursor-pointer rounded-xl h-6 relative "><p class="${"bg-[#b7a6e6] dark:bg-[#0bb88d] px-2 rounded-full absolute w-20 " + escape(checked ? "left-[calc(100%-5rem)]" : "left-0", true) + " text-center hover-scale hover:drop-shadow-md transition-all"}">${escape(checked ? right : left)}</p></div></label></div>`;
-});
-var stores = {};
-function getStorage(type) {
-  return type === "local" ? localStorage : sessionStorage;
-}
-function persisted(key, initialValue, options) {
-  const serializer = (options == null ? void 0 : options.serializer) ?? JSON;
-  const storageType = (options == null ? void 0 : options.storage) ?? "local";
-  const browser = typeof window !== "undefined" && typeof document !== "undefined";
-  function updateStorage(key2, value) {
-    if (!browser)
-      return;
-    getStorage(storageType).setItem(key2, serializer.stringify(value));
-  }
-  if (!stores[key]) {
-    const store = writable(initialValue, (set2) => {
-      const json = browser ? getStorage(storageType).getItem(key) : null;
-      if (json) {
-        set2(serializer.parse(json));
-      }
-      if (browser) {
-        const handleStorage = (event) => {
-          if (event.key === key)
-            set2(event.newValue ? serializer.parse(event.newValue) : null);
-        };
-        window.addEventListener("storage", handleStorage);
-        return () => window.removeEventListener("storage", handleStorage);
-      }
-    });
-    const { subscribe: subscribe2, set } = store;
-    stores[key] = {
-      set(value) {
-        updateStorage(key, value);
-        set(value);
-      },
-      update(updater) {
-        const value = updater(get_store_value(store));
-        updateStorage(key, value);
-        set(value);
-      },
-      subscribe: subscribe2
-    };
-  }
-  return stores[key];
-}
-var Lang = /* @__PURE__ */ ((Lang2) => {
-  Lang2["ENGLISH"] = "en";
-  Lang2["SPANISH"] = "es";
-  return Lang2;
-})(Lang || {});
-const preferences = persisted("preferences", {
-  theme: "system",
-  lang: z() || "en"
-  /* ENGLISH */
-});
-const Modal = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let showClass;
-  let { show } = $$props;
-  if ($$props.show === void 0 && $$bindings.show && show !== void 0)
-    $$bindings.show(show);
-  showClass = show ? "block" : "hidden";
-  return `<dialog class="${"" + escape(showClass, true) + " absolute bg-white/50 text-black dark:text-white dark:bg-black/50 backdrop-blur-sm h-screen w-screen flex justify-center items-center z-30"}">${slots.default ? slots.default({}) : ``}</dialog>`;
-});
-const settingsExit = "/_app/immutable/assets/settings-exit.06c289c8.svg";
-const Settings = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let $t, $$unsubscribe_t;
-  $$unsubscribe_t = subscribe(X, (value) => $t = value);
-  let { show = false } = $$props;
-  let { dark = false } = $$props;
-  let { lang = Lang.ENGLISH } = $$props;
-  if ($$props.show === void 0 && $$bindings.show && show !== void 0)
-    $$bindings.show(show);
-  if ($$props.dark === void 0 && $$bindings.dark && dark !== void 0)
-    $$bindings.dark(dark);
-  if ($$props.lang === void 0 && $$bindings.lang && lang !== void 0)
-    $$bindings.lang(lang);
-  $$unsubscribe_t();
-  return `${validate_component(Modal, "Modal").$$render($$result, { show }, {}, {
-    default: () => {
-      return `<div class="min-w-[255px] div-bg-color rounded-2xl">${validate_component(Block, "Block").$$render($$result, { title: $t("settings.title") }, {}, {
-        default: () => {
-          return `<img loading="lazy"${add_attribute("src", settingsExit, 0)} alt="settings" class="absolute top-0 right-0 w-5 h-5 m-6 cursor-pointer dark:invert hover-scale transition-all">
-            ${validate_component(Switch, "Switch").$$render(
-            $$result,
-            {
-              title: $t("settings.mode"),
-              left: $t("settings.light"),
-              right: $t("settings.dark"),
-              checked: dark
-            },
-            {},
-            {}
-          )}
-            <br>
-            ${validate_component(Switch, "Switch").$$render(
-            $$result,
-            {
-              title: $t("settings.lang"),
-              left: $t("settings.en"),
-              right: $t("settings.es"),
-              checked: lang.startsWith("es")
-            },
-            {},
-            {}
-          )}`;
-        }
-      })}</div>`;
-    }
-  })}`;
 });
 const app = "";
 y(Lang.ENGLISH, () => import("../../chunks/en.js"));
@@ -356,32 +281,12 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$unsubscribe_isLoading;
   $$unsubscribe_isLoading = subscribe($, (value) => value);
   inject({ mode: "production" });
-  let showSettings = false;
-  let dark = false;
-  let lang = Lang.ENGLISH;
   let isLoaded = false;
-  let $$settled;
-  let $$rendered;
-  do {
-    $$settled = true;
-    useLoader = !isLoaded;
-    $$rendered = `<div class="h-screen flex flex-col div-color">${useLoader ? `${validate_component(Loader, "Loader").$$render($$result, {}, {}, {})}` : `${validate_component(Settings, "Settings").$$render(
-      $$result,
-      { dark, lang, show: showSettings },
-      {
-        show: ($$value) => {
-          showSettings = $$value;
-          $$settled = false;
-        }
-      },
-      {}
-    )}
-	${validate_component(Header, "Header").$$render($$result, {}, {}, {})}
+  useLoader = !isLoaded;
+  $$unsubscribe_isLoading();
+  return `<div class="h-screen flex flex-col div-color">${useLoader ? `${validate_component(Loader, "Loader").$$render($$result, {}, {}, {})}` : `${validate_component(Header, "Header").$$render($$result, {}, {}, {})}
 	<div class="h-full overflow-auto"><div class="flex gap-4 justify-center items-center h-full flex-wrap"><main class="flex flex-col gap-4 p-4 relative">${slots.default ? slots.default({}) : ``}</main></div></div>`}
 	${validate_component(WavesCanvas, "WavesCanvas").$$render($$result, {}, {}, {})}</div>`;
-  } while (!$$settled);
-  $$unsubscribe_isLoading();
-  return $$rendered;
 });
 export {
   Layout as default

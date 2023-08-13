@@ -1,9 +1,8 @@
-import { c as create_ssr_component, b as subscribe, v as validate_component, e as escape, a as add_attribute } from "../../../chunks/index2.js";
-import { B as Block } from "../../../chunks/Block.js";
+import { c as create_ssr_component, d as subscribe, v as validate_component, e as escape, a as add_attribute } from "../../../chunks/index2.js";
+import { B as Block, F as FadeIn } from "../../../chunks/FadeIn.js";
 import { X } from "../../../chunks/runtime.esm.js";
 import { I as Icon } from "../../../chunks/Icon.js";
 import { P as Page } from "../../../chunks/Page.js";
-import { F as FadeIn } from "../../../chunks/FadeIn.js";
 const MailForm = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $t, $$unsubscribe_t;
   $$unsubscribe_t = subscribe(X, (value) => $t = value);

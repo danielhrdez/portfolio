@@ -6,7 +6,7 @@ import fastAPIIcon from '$assets/tech/fast-api.svg';
 export const cloudML: Project = {
 	name: 'CloudML',
 	href: 'https://cloudml.danielhrdez.dev/',
-	srcImg: 'https://cloudml.danielhrdez.dev/',
+	srcImg: '',
 	srcCodeLink: 'https://github.com/DanielHrdez/cloudml',
 	description: 'Lorem ipsum.',
 	technologies: [

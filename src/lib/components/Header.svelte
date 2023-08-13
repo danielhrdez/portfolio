@@ -1,20 +1,15 @@
 <script lang="ts">
 	import danielWebp from '$assets/daniel.webp';
-	import settingsIcon from '$assets/settings-btn.svg';
 	import menuIcon from '$assets/menu-icon.svg';
-	import { createEventDispatcher, onMount } from 'svelte';
+	import { onMount } from 'svelte';
 	import { t } from 'svelte-i18n';
 	import { page } from '$app/stores';
 	import { writable, get } from 'svelte/store';
 	import Icon from './ui/Icon.svelte';
-
-	const dispatch = createEventDispatcher();
+	import ToggleLanguage from './ToggleLanguage.svelte';
+	import ToggleTheme from './ToggleTheme.svelte';
 
 	let navDisplayed = false;
-
-	function toggleSettings() {
-		dispatch('settings');
-	}
 
 	function toggleMenu() {
 		navDisplayed = !navDisplayed;
@@ -146,9 +141,10 @@
 			</a>
 		{/each}
 	</nav>
-	<button on:click={toggleSettings}>
-		<Icon src={settingsIcon} alt="settings" className="hover:rotate-90 hover-scale transition-all" />
-	</button>
+	<div class="flex items-center">
+		<ToggleTheme />
+		<ToggleLanguage />
+	</div>
 	<div
 		class="
 			bg-neutral-100

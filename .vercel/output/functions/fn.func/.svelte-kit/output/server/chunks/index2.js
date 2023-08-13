@@ -27,11 +27,6 @@ function get_store_value(store) {
   subscribe(store, (_) => value = _)();
   return value;
 }
-function custom_event(type, detail, { bubbles = false, cancelable = false } = {}) {
-  const e = document.createEvent("CustomEvent");
-  e.initCustomEvent(type, bubbles, cancelable, detail);
-  return e;
-}
 let current_component;
 function set_current_component(component) {
   current_component = component;
@@ -40,20 +35,6 @@ function get_current_component() {
   if (!current_component)
     throw new Error("Function called outside component initialization");
   return current_component;
-}
-function createEventDispatcher() {
-  const component = get_current_component();
-  return (type, detail, { cancelable = false } = {}) => {
-    const callbacks = component.$$.callbacks[type];
-    if (callbacks) {
-      const event = custom_event(type, detail, { cancelable });
-      callbacks.slice().forEach((fn) => {
-        fn.call(component, event);
-      });
-      return !event.defaultPrevented;
-    }
-    return true;
-  };
 }
 function setContext(key, context) {
   get_current_component().$$.context.set(key, context);
@@ -141,15 +122,14 @@ function add_attribute(name, value, boolean) {
 }
 export {
   add_attribute as a,
-  subscribe as b,
+  get_store_value as b,
   create_ssr_component as c,
-  createEventDispatcher as d,
+  subscribe as d,
   escape as e,
-  get_store_value as f,
+  each as f,
   getContext as g,
-  each as h,
-  safe_not_equal as i,
-  is_function as j,
+  safe_not_equal as h,
+  is_function as i,
   missing_component as m,
   noop as n,
   run_all as r,
