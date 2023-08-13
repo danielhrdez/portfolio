@@ -20,13 +20,14 @@ const config = {
 			$fonts: './static/fonts'
 		},
 		csp: {
+			mode: 'auto',
 			directives: {
 				'script-src': [
 					'self',
 					'https://va.vercel-scripts.com/',
 					'https://vercel.live/',
-                    'unsafe-eval',
-                    'unsafe-inline'
+					'unsafe-eval',
+					'unsafe-inline'
 				]
 			}
 		}
