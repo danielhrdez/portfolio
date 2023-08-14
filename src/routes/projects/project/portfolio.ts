@@ -8,7 +8,7 @@ export const portfolio: Project = {
 	href: 'https://www.danielhrdez.dev/',
 	srcImg: portfolioWebp,
 	srcCodeLink: 'https://github.com/DanielHrdez/portfolio',
-	description: 'Lorem ipsum.',
+	description: 'portfolio',
 	technologies: [
 		{
 			src: svelteIcon,

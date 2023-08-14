@@ -48,7 +48,21 @@
 		},
 		"projects": {
 			"title": "Projects",
-			"description": "Description"
+			"description": "Description",
+			"portfolio": "Personal website exhibiting my own projects and skills.",
+			"cloud-ml": "Machine Learning prediction service to predict the cloud cost and error rate of the processes.",
+			"fps-bot": "FPS game bot in Unity using C# and ML.",
+			"path-finder": "Path finder using A* algorithm.",
+			"egg-lang": "Egg programming language interpreter.",
+			"herlock-sholmes-vr": "VR game where you play as Sherlock Holmes.",
+			"hand-recognition": "Hand recognition using OpenCV.",
+			"n-magic-square": "N-Magic Square solver using backtracking.",
+			"lissajous-curve": "Lissajous and hypocloid curve visualization using TypeScript.",
+			"mandelbrot": "Mandelbrot visualization using TypeScript.",
+			"poker-ts": "Poker game using TypeScript.",
+			"prf-power": "Implementation of Primitive Recursive Function of the Power (a^b)",
+			"ram-machine": "RAM Machine simulator.",
+			"turing-machine": "Turing Machine simulator."
 		},
 		"contact": {
 			"title": "Contact",

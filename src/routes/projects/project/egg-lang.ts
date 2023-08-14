@@ -4,10 +4,9 @@ import eggLangImg from '$assets/projects/egg-lang.webp';
 
 export const eggLang: Project = {
 	name: 'Egg Language',
-	href: '',
 	srcImg: eggLangImg,
 	srcCodeLink: 'https://github.com/DanielHrdez/egg-language',
-	description: 'Lorem ipsum.',
+	description: 'egg-lang',
 	technologies: [
 		{
 			src: javascriptIcon,

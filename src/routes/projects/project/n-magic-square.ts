@@ -5,10 +5,9 @@ import nMagicSquareImg from '$assets/projects/n-magic-square.webp';
 
 export const nMagicSquare: Project = {
 	name: 'N Magic Square',
-	href: '',
 	srcImg: nMagicSquareImg,
-	srcCodeLink: 'https://github.com/DanielHrdez/n-magic-square',
-	description: 'Lorem ipsum.',
+	srcCodeLink: 'https://github.com/DanielHrdez/n-magic-square.pl',
+	description: 'n-magic-square',
 	technologies: [
 		{
 			src: pythonIcon,

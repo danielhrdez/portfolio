@@ -8,7 +8,7 @@ export const pathFinder: Project = {
 	href: 'https://danielhrdez.github.io/Path-Finder/',
 	srcImg: pathfinder,
 	srcCodeLink: 'https://github.com/DanielHrdez/Path-Finder',
-	description: 'Lorem ipsum.',
+	description: 'path-finder',
 	technologies: [
 		{
 			src: javascriptIcon,

@@ -1,4 +1,4 @@
-import type { Project } from './project.d';
+import type { Project } from './project';
 
 import { portfolio } from './portfolio';
 import { cloudML } from './cloud-ml';
@@ -27,7 +27,7 @@ export const projects: Project[] = [
 	nMagicSquare,
 	mandelbrot,
 	pokerTS,
-	ramMachine,
 	prfPower,
+	ramMachine,
 	turingMachine
 ];

@@ -3,7 +3,7 @@
 	import { t } from 'svelte-i18n';
 	import ProjectCard from './ProjectCard.svelte';
 	import FadeIn from '$components/ui/FadeIn.svelte';
-	import { projects } from './project/project';
+	import { projects } from './project/__index__';
 	import { onMount } from 'svelte';
 
 	let windowWidth = 0;
@@ -43,7 +43,7 @@
 		{#if numberOfColumns > 0}
 			{#each projects as { name, href, srcImg, srcCodeLink, description, technologies }, i}
 				<FadeIn durationMs={100 + 400 * ((i % numberOfColumns) + Math.floor(i / numberOfColumns))}>
-					<ProjectCard {name} {href} {srcImg} {srcCodeLink} {description} {technologies} />
+					<ProjectCard {name} {href} {srcImg} {srcCodeLink} description={$t('page.projects.' + description)} {technologies} />
 				</FadeIn>
 			{/each}
 		{/if}

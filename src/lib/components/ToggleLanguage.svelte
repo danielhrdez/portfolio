@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { t, locale } from 'svelte-i18n';
-	import { Theme, preferences } from '$utils/storage';
+	import { locale } from 'svelte-i18n';
+	import { preferences } from '$utils/storage';
 	import { Lang } from '$utils/storage';
 	import { onMount } from 'svelte';
 	import { get } from 'svelte/store';

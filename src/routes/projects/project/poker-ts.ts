@@ -7,7 +7,7 @@ export const pokerTS: Project = {
 	href: 'https://danielhrdez.github.io/mvc-poker.ts/daniel-hernandez-poker.html',
 	srcImg: pokerTSImage,
 	srcCodeLink: 'https://github.com/DanielHrdez/mvc-poker.ts/tree/master',
-	description: 'Lorem ipsum.',
+	description: 'poker-ts',
 	technologies: [
 		{
 			src: typescriptIcon,

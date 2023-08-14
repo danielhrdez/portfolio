@@ -7,7 +7,7 @@ export const mandelbrot: Project = {
 	href: 'https://danielhrdez.github.io/mandelbrot.ts/index.html',
 	srcImg: mandelbrotImg,
 	srcCodeLink: 'https://github.com/DanielHrdez/mandelbrot.ts',
-	description: 'Lorem ipsum.',
+	description: 'mandelbrot',
 	technologies: [
 		{
 			src: typescriptIcon,

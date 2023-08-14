@@ -7,7 +7,7 @@ export const lissajousHypocloid: Project = {
 	href: 'https://danielhrdez.github.io/lissajous.ts/index.html',
 	srcImg: lissajousImg,
 	srcCodeLink: 'https://github.com/DanielHrdez/lissajous.ts',
-	description: 'Lorem ipsum.',
+	description: 'lissajous-curve',
 	technologies: [
 		{
 			src: typescriptIcon,

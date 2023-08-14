@@ -1,6 +1,6 @@
 export type Project = {
 	name: string;
-	href: string;
+	href?: string;
 	srcImg: string;
 	srcCodeLink: string;
 	description: string;
