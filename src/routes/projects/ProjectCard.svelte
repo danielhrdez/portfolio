@@ -25,7 +25,6 @@
 		overflow-hidden
 		w-[250px] h-[250px]
 		drop-shadow-md
-		hover:scale-[1.01]
 	"
 >
 	<div
