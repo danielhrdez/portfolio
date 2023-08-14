@@ -6,6 +6,7 @@
 	import { get } from 'svelte/store';
 
 	export let lang = Lang.ENGLISH as Lang;
+	$: langUpperCase = lang.toUpperCase();
 
 	function toggleLanguage() {
 		lang = lang === Lang.ENGLISH ? Lang.SPANISH : Lang.ENGLISH;
@@ -23,10 +24,10 @@
 
 	function sliceUpperCase() {
 		locale.set(lang);
-		lang = lang.slice(0, 2).toUpperCase() as Lang;
+		lang = lang.slice(0, 2) as Lang;
 	}
 </script>
 
-<button on:click={toggleLanguage} class="w-10 h-10" aria-label={lang}>
-	{lang}
+<button on:click={toggleLanguage} class="w-10 h-10" aria-label={langUpperCase}>
+	{langUpperCase}
 </button>
