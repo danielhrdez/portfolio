@@ -4,7 +4,7 @@
 			"title": "Sobre Mí",
 			"me": {
 				"job": "Ingeniero de Software",
-				"descripción": [
+				"description": [
 					"Ingeniero de IA y desarrollador de aplicaciones, creando aplicaciones dinámicas con tecnología avanzada.",
 					"Innovando soluciones, basadas en datos y comprometido con el aprendizaje y la innovación."
 				]
@@ -18,8 +18,9 @@
 						"title": "Especialista en Machine Learning",
 						"from": "02/2023",
 						"to": "05/2023",
-						"descripción": [
-							"Construí modelos de ML en PyTorch que lograron >95% de confianza al predecir clientes. Resolví la Enrutamiento de Vehículos con los algoritmos más recientes.",
+						"description": [
+							"Construí modelos de ML en PyTorch que lograron >95% de confianza al predecir clientes.",
+							"Resolución del problema del Enrutamiento de Vehículos con los algoritmos más recientes.",
 							"Desarrollé una aplicación interactiva full stack (React.JS, Flask) para visualización de algoritmos, mejorando la comprensión.",
 							"Optimicé y automaticé procesos SQL Server. Siempre utilizando metodologías Ágiles para desarrollo el colaborativo e iterativo."
 						]
@@ -36,11 +37,10 @@
 						"to": "07/2023",
 						"title": "Ingeniería Informática",
 						"description": [
-							"Desarrollo de un agente de bot para juegos de disparos en C# dentro del marco de Unity, demostrando destreza en desarrollo de juegos e IA.",
-							"Versatilidad al crear un intérprete y compilador en JavaScript, y habilidad en diseño centrado en el usuario al elaborar sitios web frontend utilizando TypeScript.",
-							"Diseño de software de clasificación de texto utilizando procesamiento del lenguaje natural y aprendizaje automático, resaltando experiencia en visión por computadora a través de la implementación de un reconocedor de gestos de mano con Python.",
-							"Programación de redes y comunicación en tiempo real construyendo sockets en C/C++.",
-							"Capacidades en SQL para la gestión de bases de datos, abarcando así una amplia gama de experiencia técnica."
+							"Construí un bot para juegos de disparos (C# Unity) mostrando habilidades en juegos y IA.",
+							"Creé un intérprete en JS y sitios web con TypeScript.",
+							"Clasificador de texto NLP y reconocedor de gestos en Python destacando experiencia en IA.",
+							"Programación de red (C/C++) para comunicación en tiempo real y SQL para gestión de bases de datos."
 						]
 					}
 				]

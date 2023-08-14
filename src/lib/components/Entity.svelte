@@ -18,7 +18,7 @@
 		</h2>
 	</div>
 	<h3 class="text-sm text-neutral-600 dark:text-[#D6D6D6]">{interval[0]} - {interval[1]}</h3>
-	<div class="max-w-[40ch] sm:max-w-[60ch] flex flex-col gap-3 leading-5">
+	<div class="max-w-[40ch] sm:max-w-[60ch] flex flex-col gap-2 leading-5">
 		{#each description as line}
 			<p>{line}</p>
 		{/each}

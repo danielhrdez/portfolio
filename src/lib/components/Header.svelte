@@ -8,6 +8,7 @@
 	import Icon from './ui/Icon.svelte';
 	import ToggleLanguage from './ToggleLanguage.svelte';
 	import ToggleTheme from './ToggleTheme.svelte';
+	import { preferences } from '$utils/storage';
 
 	let navDisplayed = false;
 
@@ -74,7 +75,7 @@
 
 	let newTab = writable<HTMLElement | null>(null);
 
-	$: if ($page && width) {
+	$: if ($page && width && $preferences.lang) {
 		setTimeout(() => {
 			let oldTab = get(newTab);
 			newTab.set(document.querySelector('.nav-a-active') as HTMLElement);

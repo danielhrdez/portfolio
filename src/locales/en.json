@@ -19,7 +19,8 @@
 						"from": "02/2023",
 						"to": "05/2023",
 						"description": [
-							"Built ML models in PyTorch that achieved >95% confidence predicting customers. Solved Vehicle Routing with the latest algorithms.",
+							"Built ML models in PyTorch that achieved >95% confidence predicting customers.",
+							"Solved the Vehicle Routing Problem with the latest algorithms.",
 							"Developed interactive full-stack app (React.JS, Flask) for algorithm visualization, boosting comprehension.",
 							"Optimized and automated SQL Server processes. Always using Agile methods to advocate for collaborative and iterative development."
 						]
@@ -37,7 +38,7 @@
 						"title": "Computer Science",
 						"description": [
 							"Built shooting game bot (C# Unity) showing game & AI skills.",
-							"Made an interpreter in JS and user-friendly TypeScript websites.",
+							"Made an interpreter in JS and TypeScript websites.",
 							"NLP text classifier and gesture recognizer in Python highlighting AI expertise.",
 							"Network programming (C/C++) for real-time communication and SQL for DB management."
 						]
