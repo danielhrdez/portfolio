@@ -11,7 +11,7 @@
 	{:else if description.length === 0}
 		No data
 	{:else}
-		<div class="max-w-[40ch] sm:max-w-[60ch] flex flex-col gap-3 leading-5">
+		<div class="max-w-[40ch] sm:max-w-[60ch] flex flex-col leading-5">
 			{#each description as line}
 				<p>{line}</p>
 			{/each}

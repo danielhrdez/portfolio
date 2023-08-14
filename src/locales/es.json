@@ -4,8 +4,9 @@
 			"title": "Sobre Mí",
 			"me": {
 				"job": "Ingeniero de Software",
-				"description": [
-					"Desarrollador de aplicaciones con experiencia e Ingeniero en Inteligencia Artificial. Experto en crear aplicaciones dinámicas con tecnologías avanzadas, y crear soluciones innovadoras y decisiones basadas en datos. Comprometido con el aprendizaje continuo para ofrecer innovación y practicidad."
+				"descripción": [
+					"Ingeniero de IA y desarrollador de aplicaciones, creando aplicaciones dinámicas con tecnología avanzada.",
+					"Innovando soluciones, basadas en datos y comprometido con el aprendizaje y la innovación."
 				]
 			},
 			"experience": {
@@ -17,12 +18,10 @@
 						"title": "Especialista en Machine Learning",
 						"from": "02/2023",
 						"to": "05/2023",
-						"description": [
-							"Destreza demostrada en aprendizaje automático, a través de modelos avanzados que utilizan PyTorch. Logrando niveles de confianza superiores al 95% al predecir el número de clientes.",
-							"Resolución del Problema de Enrutamiento de Vehículos Abierto, implementando algoritmos de vanguardia. Estas soluciones no solo abordaron la complejidad del problema, sino que también demostraron la capacidad para aprovechar enfoques de última generación.",
-							"Desarrollo de una aplicación web dinámica Full-Stack mediante React.JS y Flask. Proporcionando a los usuarios una vía interactiva para visualizar los algoritmos en acción, mejorando la comprensión y la participación.",
-							"Aprovechando los datos mediante un análisis y automatización eficiente con SQL Server. Resultó en la aceleración de procesos críticos y en la facilitación de la toma de decisiones basada en datos.",
-							"Siempre integrando las mejores prácticas basadas en metodologías ágiles, asegurando una colaboración armoniosa y un desarrollo iterativo."
+						"descripción": [
+							"Construí modelos de ML en PyTorch que lograron >95% de confianza al predecir clientes. Resolví la Enrutamiento de Vehículos con los algoritmos más recientes.",
+							"Desarrollé una aplicación interactiva full stack (React.JS, Flask) para visualización de algoritmos, mejorando la comprensión.",
+							"Optimicé y automaticé procesos SQL Server. Siempre utilizando metodologías Ágiles para desarrollo el colaborativo e iterativo."
 						]
 					}
 				]

@@ -91,37 +91,47 @@
 
 <header
 	class="
-        flex
-        justify-between
-		gap-[15vw]
+		relative
         py-1
         px-3
         drop-shadow-sm
         z-20
+		h-12
     "
 >
-	<button on:click={toggleMenu} class="sm:hidden">
+	<button on:click={toggleMenu} class="sm:hidden absolute top-[6px]">
 		<Icon src={menuIcon} alt="menu" />
 	</button>
-	<img src={danielWebp} alt="me" class="w-10 h-10 rounded-md" />
+	<img
+		src={danielWebp}
+		alt="me"
+		class="
+			w-10 h-10
+			rounded-md
+			absolute
+			left-[50%] top-[3px] translate-x-[-50%]
+			sm:left-3 sm:translate-x-0
+		"
+	/>
 	<nav
 		bind:this={navBar}
 		class="
             flex
-            absolute sm:relative
+            absolute
             flex-row
+			w-full
+			sm:w-[60%] max-w-3xl
             justify-between
-            items-start sm:items-center
-            {navDisplayed ? 'top-12' : '-top-20'}
-            sm:top-0
-            container
+            {navDisplayed ? 'top-11' : '-top-20'}
+            sm:top-3
             bg-neutral-100 dark:bg-neutral-700
             px-4 sm:pl-0
             pb-2 sm:pb-0
-            left-0
+            left-0 sm:left-[50%] sm:translate-x-[-50%]
             rounded-b-xl sm:rounded-none
             {navDisplayed ? 'drop-shadow-md' : ''} sm:drop-shadow-none
             -z-10 sm:z-10
+			sm:before:bottom-1
         "
 	>
 		{#each links as link}
@@ -141,7 +151,7 @@
 			</a>
 		{/each}
 	</nav>
-	<div class="flex items-center">
+	<div class="flex items-center absolute right-0 top-0.5">
 		<ToggleTheme />
 		<ToggleLanguage />
 	</div>

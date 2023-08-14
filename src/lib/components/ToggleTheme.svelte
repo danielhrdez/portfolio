@@ -31,7 +31,7 @@
 	}
 </script>
 
-<button on:click={toggleMode} class="w-6 h-6" aria-label="Toggle theme">
+<button on:click={toggleMode} class="w-10 h-10 p-2" aria-label="Toggle theme">
     {#if !dark}
         <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 256 256">
             <path
