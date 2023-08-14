@@ -14,15 +14,15 @@
 			preference.lang = lang;
 			return preference;
 		});
-		sliceUpperCase();
+		setSlice();
 	}
 
 	onMount(async () => {
 		lang = get(preferences).lang;
-		sliceUpperCase();
+		setSlice();
 	});
 
-	function sliceUpperCase() {
+	function setSlice() {
 		locale.set(lang);
 		lang = lang.slice(0, 2) as Lang;
 	}
