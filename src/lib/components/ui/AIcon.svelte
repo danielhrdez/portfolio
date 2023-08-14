@@ -6,6 +6,6 @@
   export let className: string = '';
 </script>
 
-<a {href}>
+<a {href} target="_blank">
   <Icon {src} {alt} {className} />
 </a>
