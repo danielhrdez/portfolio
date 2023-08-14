@@ -13,15 +13,20 @@
 			preference.lang = lang;
 			return preference;
 		});
-		locale.set(lang);
+		sliceUpperCase();
 	}
 
 	onMount(async () => {
 		lang = get(preferences).lang;
-		locale.set(lang);
+		sliceUpperCase();
 	});
+
+	function sliceUpperCase() {
+		locale.set(lang);
+		lang = lang.slice(0, 2).toUpperCase() as Lang;
+	}
 </script>
 
-<button on:click={toggleLanguage} class="w-10 h-10" aria-label={lang.toUpperCase()}>
-	{lang.toUpperCase()}
+<button on:click={toggleLanguage} class="w-10 h-10" aria-label={lang}>
+	{lang}
 </button>
