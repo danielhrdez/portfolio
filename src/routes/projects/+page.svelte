@@ -41,9 +41,9 @@
 >
 	<div class="flex flex-wrap gap-4 justify-center max-w-6xl">
 		{#if numberOfColumns > 0}
-			{#each projects as { name, href, srcImg, srcCodeLink, description, technologies }, i}
+			{#each projects as project, i}
 				<FadeIn durationMs={100 + 400 * ((i % numberOfColumns) + Math.floor(i / numberOfColumns))}>
-					<ProjectCard {name} {href} {srcImg} {srcCodeLink} description={$t('page.projects.' + description)} {technologies} />
+					<ProjectCard {project} />
 				</FadeIn>
 			{/each}
 		{/if}

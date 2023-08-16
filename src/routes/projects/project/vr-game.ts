@@ -4,7 +4,7 @@ import unityIcon from '$assets/tech/unity.svg';
 import herlockImg from '$assets/projects/herlock.webp';
 
 export const vrGame: Project = {
-	name: 'Herlock Sholmes - VR',
+	name: 'Herlock Sholmes - VR Game',
 	srcImg: herlockImg,
 	srcCodeLink: 'https://github.com/DanielHrdez/herlock-sholmes-vr',
 	description: 'herlock-sholmes-vr',

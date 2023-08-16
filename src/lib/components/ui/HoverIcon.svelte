@@ -11,7 +11,8 @@
                 absolute
                 -top-6
                 right-0
-                bg-neutral-500
+                bg-neutral-300 dark:bg-neutral-700
+				text-neutral-700 dark:text-neutral-300
                 z-10
                 rounded-md
                 px-1

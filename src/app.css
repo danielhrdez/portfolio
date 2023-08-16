@@ -4,11 +4,9 @@
 
 a {
 	@apply text-[#0522FF]
-        dark:hover:text-[#0AFFFB]
-        hover:text-[#7400C2]
         dark:text-green-400
         focus:text-[#7400C2]
-        dark:focus:text-green-400;
+        dark:focus:text-[#0AFFFB];
 }
 
 .div-color {
@@ -90,4 +88,50 @@ input, textarea, [type='submit'], [type='reset'] {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #888;
+}
+
+
+.test::before {
+    width: 16px;
+    height: 16px;
+    background: rgb(82, 82, 82);
+    bottom: 0px;
+    position: absolute;
+    display: block;
+    mask-image: radial-gradient(circle 16px at 16px 0, transparent 0, transparent 16px, black 16px);
+    -webkit-mask-image: radial-gradient(
+        circle 16px at 16px 0,
+        transparent 0,
+        transparent 16px,
+        black 16px
+    );
+    left: 0px;
+    content: '';
+    @apply
+        w-4
+        h-4
+        bg-neutral-400
+        dark:bg-neutral-600
+        bottom-0
+        absolute
+        block
+        left-0;
+}
+
+.test::after {
+    width: 16px;
+    height: 16px;
+    background: rgb(82, 82, 82);
+    bottom: 0px;
+    position: absolute;
+    display: block;
+    mask-image: radial-gradient(circle 16px at 16px 0, transparent 0, transparent 17px, black 16px);
+    -webkit-mask-image: radial-gradient(
+        circle 16px at 0px 0,
+        transparent 0,
+        transparent 17px,
+        black 16px
+    );
+    right: 0px;
+    content: '';
 }
