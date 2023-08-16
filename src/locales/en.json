@@ -49,6 +49,7 @@
 		"projects": {
 			"title": "Projects",
 			"description": "Description",
+			"goto": "Go to project",
 			"portfolio": "Personal website exhibiting my own projects and skills.",
 			"cloud-ml": "Machine Learning prediction service to predict the cloud cost and error rate of the processes.",
 			"fps-bot": "FPS game bot in Unity using C# and ML.",

@@ -70,7 +70,12 @@
 		</div>
 		<div class="flex right-0 gap-2 pl-2">
 			{#if href}
-				<a {href} target="_blank" class="w-6 h-6 text-black dark:text-white">
+				<a
+					{href}
+					target="_blank"
+					class="w-6 h-6 text-black dark:text-white"
+					aria-label="{$t('page.projects.goto')} {name}"
+				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						version="1.0"

@@ -49,6 +49,7 @@
 		"projects": {
 			"title": "Proyectos",
 			"description": "Descripción",
+			"goto": "Ir al proyecto",
 			"portfolio": "Sitio web personal que exhibe mis propios proyectos y habilidades.",
 			"cloud-ml": "Servicio de predicción de Machine Learning para predecir el coste en la nube y la tasa de error de los procesos.",
 			"fps-bot": "Bot de juego FPS en Unity usando C# y ML.",
