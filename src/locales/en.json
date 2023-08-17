@@ -22,7 +22,7 @@
 							"Built ML models in PyTorch that achieved >95% confidence predicting customers.",
 							"Solved the Vehicle Routing Problem with the latest algorithms.",
 							"Developed interactive full-stack app (React.JS, Flask) for algorithm visualization, boosting comprehension.",
-							"Optimized and automated SQL Server processes. Always using Agile methods to advocate for collaborative and iterative development."
+							"Optimized and automated SQL Server processes using Agile methods."
 						]
 					}
 				]
@@ -37,10 +37,10 @@
 						"to": "07/2023",
 						"title": "Computer Science",
 						"description": [
-							"Built shooting game bot (C# Unity) showing game & AI skills.",
-							"Made an interpreter in JS and TypeScript websites.",
-							"NLP text classifier and gesture recognizer in Python highlighting AI expertise.",
-							"Network programming (C/C++) for real-time communication and SQL for DB management."
+							"Built AI shooting game bot in Unity/C#.",
+							"Made an interpreter in JS and TypeScript static websites.",
+							"NLP text classifier and gesture recognizer in Python.",
+							"Network programming (C/C++) for real-time communication and use of SQL for database management."
 						]
 					}
 				]

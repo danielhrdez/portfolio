@@ -22,7 +22,7 @@
 							"Construí modelos de ML en PyTorch que lograron >95% de confianza al predecir clientes.",
 							"Resolución del problema del Enrutamiento de Vehículos con los algoritmos más recientes.",
 							"Desarrollé una aplicación interactiva full stack (React.JS, Flask) para visualización de algoritmos, mejorando la comprensión.",
-							"Optimicé y automaticé procesos SQL Server. Siempre utilizando metodologías Ágiles para desarrollo el colaborativo e iterativo."
+							"Optimicé y automaticé procesos SQL Server utilizando metodologías Ágiles."
 						]
 					}
 				]
@@ -37,10 +37,10 @@
 						"to": "07/2023",
 						"title": "Ingeniería Informática",
 						"description": [
-							"Construí un bot para juegos de disparos (C# Unity) mostrando habilidades en juegos y IA.",
-							"Creé un intérprete en JS y sitios web con TypeScript.",
-							"Clasificador de texto NLP y reconocedor de gestos en Python destacando experiencia en IA.",
-							"Programación de red (C/C++) para comunicación en tiempo real y SQL para gestión de bases de datos."
+							"Construí un bot de IA para juegos de disparos en Unity/C#.",
+							"Creé un intérprete en JS y sitios web estáticos con TypeScript.",
+							"Clasificador de texto NLP y reconocedor de gestos en Python.",
+							"Programación de red (C/C++) para comunicación en tiempo real y uso de SQL para la gestión de bases de datos."
 						]
 					}
 				]
