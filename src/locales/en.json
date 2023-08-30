@@ -15,14 +15,14 @@
 					{
 						"entity": "TITSA",
 						"url": "https://www.titsa.com/",
-						"title": "Machine Learning Specialist",
+						"title": "Software Engineer",
 						"from": "02/2023",
 						"to": "05/2023",
 						"description": [
-							"Built ML models in PyTorch that achieved >95% confidence predicting customers.",
-							"Solved the Vehicle Routing Problem with the latest algorithms.",
+							"Solving algorithms in Python with a microservices infrastructure.",
 							"Developed interactive full-stack app (React.JS, Flask) for algorithm visualization, boosting comprehension.",
-							"Optimized and automated SQL Server processes using Agile methods."
+							"Built ML models that achieved >95% confidence predicting customers.",
+							"Optimized and automated SQL Server processes for data analysis."
 						]
 					}
 				]

@@ -15,14 +15,14 @@
 					{
 						"entity": "TITSA",
 						"url": "https://www.titsa.com/",
-						"title": "Especialista en Machine Learning",
+						"title": "Ingeniero de Software",
 						"from": "02/2023",
 						"to": "05/2023",
 						"description": [
-							"Construí modelos de ML en PyTorch que lograron >95% de confianza al predecir clientes.",
-							"Resolución del problema del Enrutamiento de Vehículos con los algoritmos más recientes.",
-							"Desarrollé una aplicación interactiva full stack (React.JS, Flask) para visualización de algoritmos, mejorando la comprensión.",
-							"Optimicé y automaticé procesos SQL Server utilizando metodologías Ágiles."
+							"Resolviendo algoritmos en Python con una infraestructura de microservicios.",
+							"Desarrollé una aplicación interactiva full-stack (React.JS, Flask) para la visualización de algoritmos, aumentando la comprensión.",
+							"Construí modelos de ML que lograron una confianza >95% prediciendo clientes.",
+							"Optimicé y automaticé procesos de SQL Server para el análisis de datos."
 						]
 					}
 				]
