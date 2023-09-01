@@ -5,7 +5,7 @@
 			"me": {
 				"job": "Ingeniero de Software",
 				"description": [
-					"Ingeniero de IA y desarrollador de aplicaciones, creando aplicaciones dinámicas con tecnología avanzada.",
+					"Desarrollador de software con tecnologías avanzadas.",
 					"Innovando soluciones, basadas en datos y comprometido con el aprendizaje y la innovación."
 				]
 			},
@@ -40,7 +40,8 @@
 							"Construí un bot de IA para juegos de disparos en Unity/C#.",
 							"Creé un intérprete en JavaScript y sitios web estáticos con TypeScript.",
 							"Clasificador de texto NLP y reconocedor de gestos en Python.",
-							"Programación de red (C/C++) para comunicación en tiempo real y uso de SQL para la gestión de bases de datos."
+							"Programación de red (C/C++) para comunicación en tiempo real",
+							"Uso de SQL para la gestión de bases de datos."
 						]
 					}
 				]
